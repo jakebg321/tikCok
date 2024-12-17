@@ -53,6 +53,7 @@ const TikTokActivity = ({ onVideoProcessed }) => {
   
   const processTimeoutRef = useRef(null);
   const currentVideoRef = useRef(null);
+  const nextIndexRef = useRef(currentIndex); // Add this line
 
   const saveState = useCallback(() => {
     localStorage.setItem(STORAGE_KEY, JSON.stringify({
@@ -71,8 +72,12 @@ const TikTokActivity = ({ onVideoProcessed }) => {
   }, []);
 
   const simulateDiscovery = useCallback((video) => {
-    if (!video) return;
+    if (!video) {
+      console.log('No video provided to simulateDiscovery');
+      return;
+    }
     
+    console.log('Starting discovery for video:', video.id);
     setScanning(true);
     setDiscoveredInfo({});
     setFoundElements(new Set());
@@ -84,9 +89,27 @@ const TikTokActivity = ({ onVideoProcessed }) => {
     
     const scanInterval = setInterval(() => {
       if (currentLine >= htmlLines.length) {
+        console.log('Finished processing HTML for video:', video.id);
         clearInterval(scanInterval);
+        
+        const processedVideo = {
+          ...video,
+          foundElements: Array.from(foundElements),
+          processedAt: Date.now() // Add timestamp to ensure uniqueness
+        };
+
+        // Remove any existing instance of this video and add the new one
+        setDisplayedVideos(prev => {
+          const filteredVideos = prev.filter(v => v.id !== video.id);
+          return [processedVideo, ...filteredVideos].slice(0, 4);
+        });
+        
+        onVideoProcessed?.(processedVideo);
+
+        const nextIndex = (nextIndexRef.current + 1) % tiktokData.videos.length;
+        nextIndexRef.current = nextIndex;
+        setCurrentIndex(nextIndex);
         setScanning(false);
-        onVideoProcessed?.(video);
         return;
       }
 
@@ -132,34 +155,30 @@ const TikTokActivity = ({ onVideoProcessed }) => {
   }, [onVideoProcessed]);
 
   useEffect(() => {
-    if (!tiktokData?.videos?.length) return;
+    if (!tiktokData?.videos?.length) {
+      console.log('No TikTok videos available');
+      return;
+    }
 
     const processNextVideo = () => {
-      if (currentIndex >= tiktokData.videos.length) {
-        setCurrentIndex(0);
-        return;
-      }
-
+      console.log('Processing next video. Current index:', currentIndex);
       const video = tiktokData.videos[currentIndex];
+      console.log('Selected video:', video.id);
       simulateDiscovery(video);
-      
-      processTimeoutRef.current = setTimeout(() => {
-        setDisplayedVideos(prev => [{
-          ...video,
-          foundElements: Array.from(foundElements)
-        }, ...prev.slice(0, 4)]);
-        setCurrentIndex(prev => prev + 1);
-      }, SCAN_DURATION);
     };
 
     if (!scanning) {
+      console.log('Not currently scanning, starting next video process');
       processNextVideo();
     }
 
     return () => {
-      if (processTimeoutRef.current) clearTimeout(processTimeoutRef.current);
+      if (processTimeoutRef.current) {
+        console.log('Cleaning up timeout');
+        clearTimeout(processTimeoutRef.current);
+      }
     };
-  }, [currentIndex, scanning, simulateDiscovery, foundElements]);
+  }, [currentIndex, scanning, simulateDiscovery]);
 
   return (
     <div className="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-lg">

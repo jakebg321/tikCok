@@ -173,17 +173,23 @@ const TikTokActivity = ({ onVideoProcessed }) => {
           </div>
           
           {/* HTML Scanner */}
-          <div className="font-mono text-xs text-gray-500 max-h-32 overflow-y-auto bg-white p-2 rounded border border-gray-100">
-            {displayedHtml.map((line, idx) => (
-              <div 
-                key={idx} 
-                className={`transition-colors duration-200 ${
-                  idx === displayedHtml.length - 1 ? 'bg-blue-50 border-l-2 border-blue-400 pl-2' : ''
-                }`}
-              >
-                {line}
+          <div className="font-mono text-xs text-gray-500 h-48 overflow-y-auto bg-white p-2 rounded border border-gray-100 scrollbar-hide">
+            {displayedHtml.length === 0 ? (
+              <div className="h-full flex items-center justify-center text-gray-400">
+                Waiting for HTML content...
               </div>
-            ))}
+            ) : (
+              displayedHtml.map((line, idx) => (
+                <div 
+                  key={idx} 
+                  className={`transition-colors duration-200 ${
+                    idx === displayedHtml.length - 1 ? 'bg-blue-50 border-l-2 border-blue-400 pl-2' : ''
+                  }`}
+                >
+                  {line}
+                </div>
+              ))
+            )}
           </div>
 
           {/* Discovered Information */}

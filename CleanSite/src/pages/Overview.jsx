@@ -1,15 +1,14 @@
 import { useState, useEffect } from 'react';
-import tiktokData from '../data/tiktok_data.json';
-import DashboardStats from '../components/DashboardStats';
 import TikTokActivity from '../components/TikTokActivity';
+import YouTubeActivity from '../components/YouTubeActivity';
 import AnimatedHeader from '../components/AnimatedHeader';
 import AnimatedBackground from '../components/AnimatedBackground';
 
 const Overview = () => {
     const [isLoading, setIsLoading] = useState(true);
     const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 1024);
-    const [processedVideos, setProcessedVideos] = useState([]);
-    const [latestVideo, setLatestVideo] = useState(null);
+    const [processedTikTokVideos, setProcessedTikTokVideos] = useState([]);
+    const [processedYouTubeVideos, setProcessedYouTubeVideos] = useState([]);
   
     useEffect(() => {
       const handleResize = () => {
@@ -22,9 +21,12 @@ const Overview = () => {
       return () => window.removeEventListener('resize', handleResize);
     }, []);
   
-    const handleVideoProcessed = (video) => {
-      setProcessedVideos(prev => [...prev, video]);
-      setLatestVideo(video);
+    const handleTikTokVideoProcessed = (video) => {
+      setProcessedTikTokVideos(prev => [...prev, video]);
+    };
+
+    const handleYouTubeVideoProcessed = (video) => {
+      setProcessedYouTubeVideos(prev => [...prev, video]);
     };
   
     if (isLoading) {
@@ -37,30 +39,22 @@ const Overview = () => {
   
     return (
       <div className="min-h-screen">
-        {/* Background */}
         <div className={`fixed inset-0 ${isDesktop ? 'ml-[15%]' : 'ml-0'}`}>
           <AnimatedBackground />
         </div>
   
-        {/* Content */}
         <div className={`relative ${isDesktop ? 'ml-[15%]' : 'ml-0'}`}>
           <AnimatedHeader />
           
           <div className="max-w-7xl mx-auto px-4">
-            <div className="bg-opacity-80 bg-[rgba(11,17,33,0.8)] backdrop-blur-sm rounded-xl p-4 shadow-lg border border-teal-400/10">
-              <DashboardStats 
-                processedVideos={processedVideos} 
-                latestVideo={latestVideo}
-              />
-            </div>
-  
-            <div className="mt-4 bg-[rgba(11,17,33,0.8)] backdrop-blur-sm rounded-xl p-4 shadow-lg border border-teal-400/10">
-              <TikTokActivity onVideoProcessed={handleVideoProcessed} />
+            <div className="mt-4 grid grid-cols-1 lg:grid-cols-2 gap-4">
+              <TikTokActivity onVideoProcessed={handleTikTokVideoProcessed} />
+              <YouTubeActivity onVideoProcessed={handleYouTubeVideoProcessed} />
             </div>
           </div>
         </div>
       </div>
     );
-  };
-  
-  export default Overview;
+};
+
+export default Overview;

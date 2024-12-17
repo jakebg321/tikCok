@@ -1,16 +1,24 @@
 import React from 'react';
 
 const AnimatedBackground = () => {
+  // Color constants from the provided scheme
+  const colors = {
+    slateGray: '#708090',
+    powderBlue: '#B0E0E6',
+    softWhite: '#F5F5F5',
+    lightCharcoal: '#3C4048' // Assuming this is a suitable light charcoal color
+  };
+
   return (
-    <div className="fixed inset-0 bg-[#0B1121] overflow-hidden">
+    <div className="fixed inset-0 bg-slate-900 overflow-hidden" style={{ backgroundColor: colors.lightCharcoal }}>
       {/* City Grid Background */}
       <div className="absolute inset-0 opacity-10">
         <div 
           className="w-full h-full"
           style={{
             backgroundImage: `
-              linear-gradient(to right, rgba(45, 212, 191, 0.1) 1px, transparent 1px),
-              linear-gradient(to bottom, rgba(45, 212, 191, 0.1) 1px, transparent 1px)
+              linear-gradient(to right, ${colors.powderBlue} 1px, transparent 1px),
+              linear-gradient(to bottom, ${colors.powderBlue} 1px, transparent 1px)
             `,
             backgroundSize: '40px 40px',
           }}
@@ -26,8 +34,8 @@ const AnimatedBackground = () => {
             style={{
               width: `${4 + (i % 4) * 3}px`,
               height: `${4 + (i % 4) * 3}px`,
-              background: 'rgba(45, 212, 191, 0.3)',
-              boxShadow: '0 0 10px rgba(45, 212, 191, 0.5)',
+              background: `rgba(176, 224, 230, ${0.3 + (i % 3) * 0.1})`, // powderBlue with varying opacity
+              boxShadow: `0 0 10px rgba(176, 224, 230, 0.5)`,
               left: `${(i * 7) % 100}%`,
               top: `${10 + ((i * 13) % 80)}%`,
               animationDuration: `${4 + (i % 3)}s`,
@@ -46,7 +54,7 @@ const AnimatedBackground = () => {
             style={{
               width: `${300 + i * 100}px`,
               height: `${300 + i * 100}px`,
-              background: `radial-gradient(circle at center, rgba(45, 212, 191, 0.03) 0%, transparent 70%)`,
+              background: `radial-gradient(circle at center, rgba(176, 224, 230, 0.05) 0%, transparent 70%)`,
               left: `${(i * 30) % 100}%`,
               top: `${-50 + (i * 30)}%`,
               animation: `float ${10 + i * 2}s ease-in-out infinite`,

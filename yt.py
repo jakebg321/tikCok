@@ -33,34 +33,41 @@ class YouTubeDataCollector:
             return {}
         
         soup = BeautifulSoup(html, 'html.parser')
-        html_elements = {
-            'view_count_element': '',
-            'like_button_element': '',
-            'description_container': '',
-            'upload_info_element': ''
-        }
+        html_elements = {}
 
         try:
-            # Find and extract relevant HTML elements
-            # Note: These selectors might need adjustment based on YouTube's current structure
-            view_count = soup.find('meta', {'itemprop': 'interactionCount'})
-            if view_count:
-                html_elements['view_count_element'] = str(view_count.parent)
+            # Extract engagement buttons section
+            engagement_panel = soup.find('div', {'id': 'top-level-buttons-computed'})
+            if engagement_panel:
+                html_elements['engagement_panel'] = str(engagement_panel)
 
-            # Get the container that typically holds the like button
-            like_section = soup.find('yt-formatted-string', {'id': 'text', 'class': 'ytd-toggle-button-renderer'})
-            if like_section:
-                html_elements['like_button_element'] = str(like_section.parent)
-
-            # Get the description container
-            description = soup.find('div', {'id': 'description-content'})
+            # Extract video description
+            description = soup.find('div', {'id': 'description-inline-expander'})
             if description:
-                html_elements['description_container'] = str(description)
+                html_elements['description'] = str(description)
 
-            # Get upload info section
-            upload_info = soup.find('div', {'id': 'info-strings'})
-            if upload_info:
-                html_elements['upload_info_element'] = str(upload_info)
+            # Extract comments section
+            comments_section = soup.find('ytd-comments', {'id': 'comments'})
+            if comments_section:
+                html_elements['comments_section'] = str(comments_section)
+
+            # Extract video metadata
+            meta_section = soup.find('div', {'id': 'above-the-fold'})
+            if meta_section:
+                html_elements['meta_section'] = str(meta_section)
+
+            # Extract view count
+            view_count = soup.select_one('ytd-video-view-count-renderer')
+            if view_count:
+                html_elements['view_count'] = str(view_count)
+
+            # Extract like button
+            like_button = soup.find('ytd-menu-renderer', {'class': 'ytd-video-primary-info-renderer'})
+            if like_button:
+                html_elements['like_button'] = str(like_button)
+
+            # Extract raw page data
+            html_elements['raw_page'] = str(soup)
 
         except Exception as e:
             print(f"Error parsing HTML elements: {str(e)}")
@@ -90,15 +97,21 @@ class YouTubeDataCollector:
                 html_elements = self.extract_html_elements(page_html)
                 
                 return {
-                    'title': info.get('title'),
-                    'views': info.get('view_count'),
-                    'likes': info.get('like_count'),
-                    'duration': info.get('duration'),
-                    'description_html': info.get('description_html', ''),
-                    'upload_date': info.get('upload_date'),
-                    'channel': info.get('channel'),
-                    'url': url,
-                    'html_elements': html_elements,  # Include the HTML elements
+                    'id': video_id,
+                    'desc': info.get('title'),
+                    'create_time': info.get('upload_date'),
+                    'statistics': {
+                        'likes': info.get('like_count', 0),
+                        'comments': info.get('comment_count', 0),
+                        'shares': 0,  # YouTube doesn't provide share count
+                        'views': info.get('view_count', 0)
+                    },
+                    'author': {
+                        'username': info.get('channel_id'),
+                        'nickname': info.get('channel')
+                    },
+                    'video_url': url,
+                    'html_elements': html_elements,
                     'timestamp': datetime.now().isoformat()
                 }
         except Exception as e:
@@ -114,58 +127,8 @@ class YouTubeDataCollector:
             with open(filename, 'w', encoding='utf-8') as f:
                 json.dump(data, f, indent=4, ensure_ascii=False)
             print(f"Data successfully logged to {filename}")
-            
-            # Also create an HTML log file for easy viewing
-            html_filename = filename.replace('.json', '.html')
-            self.create_html_log(data, html_filename)
-            
         except Exception as e:
             print(f"Error logging data: {str(e)}")
-
-    def create_html_log(self, data, filename):
-        """Create an HTML file for visualizing the logged data."""
-        html_content = f"""
-        <!DOCTYPE html>
-        <html>
-        <head>
-            <title>YouTube Data Log</title>
-            <style>
-                body {{ font-family: Arial, sans-serif; margin: 20px; }}
-                .video-entry {{ border: 1px solid #ccc; margin: 10px 0; padding: 15px; }}
-                .html-section {{ background-color: #f5f5f5; padding: 10px; margin: 5px 0; }}
-                pre {{ white-space: pre-wrap; }}
-            </style>
-        </head>
-        <body>
-            <h1>YouTube Data Log</h1>
-            <p>Search Query: {data['search_query']}</p>
-            <p>Timestamp: {data['timestamp']}</p>
-            
-            <h2>Videos:</h2>
-            {''.join(f'''
-            <div class="video-entry">
-                <h3>{video['title']}</h3>
-                <p>URL: <a href="{video['url']}">{video['url']}</a></p>
-                <p>Views: {video['views']}</p>
-                <p>Likes: {video['likes']}</p>
-                <p>Duration: {video['duration']} seconds</p>
-                <p>Upload Date: {video['upload_date']}</p>
-                <h4>HTML Elements:</h4>
-                <div class="html-section">
-                    <pre>{json.dumps(video['html_elements'], indent=2)}</pre>
-                </div>
-            </div>
-            ''' for video in data['videos'])}
-        </body>
-        </html>
-        """
-        
-        try:
-            with open(filename, 'w', encoding='utf-8') as f:
-                f.write(html_content)
-            print(f"HTML log created at {filename}")
-        except Exception as e:
-            print(f"Error creating HTML log: {str(e)}")
 
 def main():
     collector = YouTubeDataCollector()

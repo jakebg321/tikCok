@@ -2,33 +2,83 @@ import React from 'react';
 import { TrendingUp } from 'lucide-react';
 
 const StatsCard = ({ icon: Icon, title, value, trend, subtitle }) => (
-  <div className="bg-[#F5F5F5] p-4 rounded-lg shadow-md border border-[#708090]/20 
-    transition-all duration-300 hover:shadow-lg hover:scale-[1.02] 
-    hover:border-[#B0E0E6]/40 group">
-    <div className="flex items-center gap-4">
-      <div className="p-3 rounded-lg bg-gradient-to-br from-[#B0E0E6]/30 to-[#708090]/10
-        group-hover:from-[#B0E0E6]/40 group-hover:to-[#708090]/20 
-        transition-all duration-300">
-        <Icon className="w-7 h-7 text-[#708090] group-hover:text-[#4A4A4A] 
-          transition-all duration-300 group-hover:rotate-[360deg]" />
+  <div className="relative overflow-hidden bg-[#F5F5F5] p-6 rounded-lg 
+    border border-[#708090]/20 transition-all duration-300 hover:shadow-lg group">
+    
+    {/* Background decorative elements using existing colors */}
+    <div className="absolute top-0 right-0 w-32 h-32 bg-[#B0E0E6]/10 rounded-full -mr-16 -mt-16" />
+    <div className="absolute bottom-0 left-0 w-24 h-24 bg-[#708090]/10 rounded-full -ml-12 -mb-12" />
+    
+    <div className="relative flex items-center gap-4">
+      {/* Icon container using existing color scheme */}
+      <div className="p-4 rounded-lg bg-[#B0E0E6]/20 
+        group-hover:bg-[#B0E0E6]/30 transition-all duration-300">
+        <Icon className="w-8 h-8 text-[#708090] group-hover:text-[#4A4A4A] 
+          transition-all duration-300" />
       </div>
+
       <div className="flex-1">
-        <p className="text-sm text-[#708090] font-medium">{title}</p>
-        <p className="text-2xl font-semibold text-[#4A4A4A] tracking-tight">
+        {/* Title using existing text color */}
+        <h3 className="text-sm font-medium text-[#708090]">
+          {title}
+        </h3>
+        
+        {/* Value with enhanced styling but using existing colors */}
+        <p className="text-2xl font-bold text-[#4A4A4A] mt-1">
           {value.toLocaleString()}
         </p>
+        
+        {/* Trend indicator using existing color scheme */}
         {trend && (
-          <div className="flex items-center gap-1 text-xs text-[#708090]">
-            <TrendingUp className="w-3 h-3" />
-            <span>{trend}% increase</span>
+          <div className="flex items-center gap-1 mt-2">
+            <div className="flex items-center gap-1 px-2 py-1 rounded-full 
+              bg-[#B0E0E6]/20 text-xs text-[#708090]">
+              <TrendingUp className="w-3 h-3" />
+              <span>{trend}% increase</span>
+            </div>
           </div>
         )}
+        
+        {/* Subtitle using existing text color */}
         {subtitle && (
-          <p className="text-xs text-[#708090]/80 mt-1">{subtitle}</p>
+          <p className="text-xs text-[#708090] mt-2">
+            {subtitle}
+          </p>
         )}
       </div>
     </div>
   </div>
 );
+
+// Demo component showing the updated stats cards
+const StatsOverview = ({ data }) => {
+  return (
+    <div className="max-w-7xl mx-auto px-4 py-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <StatsCard
+          icon={Share2}
+          title="Total Memes Tracked"
+          value="36"
+          subtitle="Last updated: 12/16/2024, 5:32:36 PM"
+        />
+        <StatsCard
+          icon={AlertCircle}
+          title="Success Rate"
+          value="100.0%"
+        />
+        <StatsCard
+          icon={RotateCcw}
+          title="Pages Scraped"
+          value="15"
+        />
+        <StatsCard
+          icon={Clock}
+          title="Processing Time"
+          value="11284.4s"
+        />
+      </div>
+    </div>
+  );
+};
 
 export default StatsCard;

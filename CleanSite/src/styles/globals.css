@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  
+  /* Color scheme */
+  --slate-gray: #708090;
+  --powder-blue: #B0E0E6;
+  --soft-white: #F5F5F5;
+  --light-charcoal: #4A4A4A;
+}
+
+body {
+  background-color: var(--soft-white);
+  color: var(--light-charcoal);
+}

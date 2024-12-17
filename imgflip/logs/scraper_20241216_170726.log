@@ -1,0 +1,782 @@
+2024-12-16 17:07:26,079 - INFO - Logging setup complete. Log file: c:\Users\jakeb\VSCODE\FreshTok\imgflip\logs\scraper_20241216_170726.log
+2024-12-16 17:07:27,880 - INFO - Chrome WebDriver setup complete with SSL and stability fixes
+2024-12-16 17:07:30,882 - INFO - Fetching template listing page 1 (Attempt 1/3)
+2024-12-16 17:07:31,172 - INFO - Found 40 templates on page 1
+2024-12-16 17:07:31,173 - INFO - Found 40 templates on page 1
+2024-12-16 17:07:37,176 - INFO - Fetching template listing page 2 (Attempt 1/3)
+2024-12-16 17:07:37,451 - INFO - Found 40 templates on page 2
+2024-12-16 17:07:37,452 - INFO - Found 40 templates on page 2
+2024-12-16 17:07:43,474 - INFO - Fetching template listing page 3 (Attempt 1/3)
+2024-12-16 17:07:43,795 - INFO - Found 40 templates on page 3
+2024-12-16 17:07:43,796 - INFO - Found 40 templates on page 3
+2024-12-16 17:07:49,805 - INFO - Fetching template listing page 4 (Attempt 1/3)
+2024-12-16 17:07:50,123 - INFO - Found 40 templates on page 4
+2024-12-16 17:07:50,124 - INFO - Found 40 templates on page 4
+2024-12-16 17:07:56,134 - INFO - Fetching template listing page 5 (Attempt 1/3)
+2024-12-16 17:07:56,461 - INFO - Found 40 templates on page 5
+2024-12-16 17:07:56,462 - INFO - Found 40 templates on page 5
+2024-12-16 17:08:02,477 - INFO - Fetching template listing page 6 (Attempt 1/3)
+2024-12-16 17:08:02,906 - INFO - Found 40 templates on page 6
+2024-12-16 17:08:02,906 - INFO - Found 40 templates on page 6
+2024-12-16 17:08:08,921 - INFO - Fetching template listing page 7 (Attempt 1/3)
+2024-12-16 17:08:09,152 - INFO - Found 40 templates on page 7
+2024-12-16 17:08:09,153 - INFO - Found 40 templates on page 7
+2024-12-16 17:08:15,160 - INFO - Fetching template listing page 8 (Attempt 1/3)
+2024-12-16 17:08:15,491 - INFO - Found 38 templates on page 8
+2024-12-16 17:08:15,492 - INFO - Found 38 templates on page 8
+2024-12-16 17:08:21,508 - INFO - Fetching template listing page 9 (Attempt 1/3)
+2024-12-16 17:08:21,846 - INFO - Found 40 templates on page 9
+2024-12-16 17:08:21,846 - INFO - Found 40 templates on page 9
+2024-12-16 17:08:27,851 - INFO - Fetching template listing page 10 (Attempt 1/3)
+2024-12-16 17:08:28,308 - INFO - Found 40 templates on page 10
+2024-12-16 17:08:28,309 - INFO - Found 40 templates on page 10
+2024-12-16 17:08:34,320 - INFO - Fetching template listing page 11 (Attempt 1/3)
+2024-12-16 17:08:34,699 - INFO - Found 40 templates on page 11
+2024-12-16 17:08:34,700 - INFO - Found 40 templates on page 11
+2024-12-16 17:08:40,713 - INFO - Fetching template listing page 12 (Attempt 1/3)
+2024-12-16 17:08:40,947 - INFO - Found 40 templates on page 12
+2024-12-16 17:08:40,948 - INFO - Found 40 templates on page 12
+2024-12-16 17:08:46,970 - INFO - Fetching template listing page 13 (Attempt 1/3)
+2024-12-16 17:08:47,401 - INFO - Found 40 templates on page 13
+2024-12-16 17:08:47,402 - INFO - Found 40 templates on page 13
+2024-12-16 17:08:53,425 - INFO - Fetching template listing page 14 (Attempt 1/3)
+2024-12-16 17:08:53,662 - INFO - Found 39 templates on page 14
+2024-12-16 17:08:53,663 - INFO - Found 39 templates on page 14
+2024-12-16 17:08:59,681 - INFO - Fetching template listing page 15 (Attempt 1/3)
+2024-12-16 17:08:59,925 - INFO - Found 40 templates on page 15
+2024-12-16 17:08:59,926 - INFO - Found 40 templates on page 15
+2024-12-16 17:09:02,929 - INFO - Total templates to process: 597
+2024-12-16 17:09:02,929 - INFO - Processing template 1/597: https://imgflip.com/meme/224015000/Bernie-Sanders-Once-Again-Asking
+2024-12-16 17:09:02,929 - INFO - Processing template: https://imgflip.com/meme/224015000/Bernie-Sanders-Once-Again-Asking (Attempt 1/3)
+2024-12-16 17:09:11,921 - INFO - Chrome WebDriver setup complete with SSL and stability fixes
+2024-12-16 17:09:11,926 - INFO - Fetching meme: https://imgflip.com/meme/224015000/Bernie-Sanders-Once-Again-Asking
+2024-12-16 17:09:15,474 - INFO - Successfully extracted 35 data points for Bernie Sanders Once Again Asking
+2024-12-16 17:09:15,474 - INFO - First data point: 2022-01-01 - 6650 captions
+2024-12-16 17:09:15,474 - INFO - Last data point: 2024-11-01 - 12800 captions
+2024-12-16 17:09:15,475 - INFO - Saved data for Bernie Sanders Once Again Asking to data/meme_Bernie_Sanders_Once_Again_Asking_20241216_170915.json
+2024-12-16 17:09:15,476 - INFO - Successfully processed Bernie Sanders Once Again Asking
+2024-12-16 17:09:17,816 - INFO - Updated data saved to data\meme_data_20241216_170727.json
+2024-12-16 17:09:21,604 - INFO - Processing template 2/597: https://imgflip.com/meme/One-Does-Not-Simply
+2024-12-16 17:09:21,604 - INFO - Processing template: https://imgflip.com/meme/One-Does-Not-Simply (Attempt 1/3)
+2024-12-16 17:09:47,964 - INFO - Chrome WebDriver setup complete with SSL and stability fixes
+2024-12-16 17:09:47,967 - INFO - Fetching meme: https://imgflip.com/meme/One-Does-Not-Simply
+2024-12-16 17:09:55,436 - INFO - Successfully extracted 35 data points for One Does Not Simply
+2024-12-16 17:09:55,437 - INFO - First data point: 2022-01-01 - 17950 captions
+2024-12-16 17:09:55,437 - INFO - Last data point: 2024-11-01 - 14900 captions
+2024-12-16 17:09:55,438 - INFO - Saved data for One Does Not Simply to data/meme_One_Does_Not_Simply_20241216_170955.json
+2024-12-16 17:09:55,438 - INFO - Successfully processed One Does Not Simply
+2024-12-16 17:09:57,581 - INFO - Updated data saved to data\meme_data_20241216_170727.json
+2024-12-16 17:10:01,287 - INFO - Processing template 3/597: https://imgflip.com/meme/562391530/Chill-guy
+2024-12-16 17:10:01,287 - INFO - Processing template: https://imgflip.com/meme/562391530/Chill-guy (Attempt 1/3)
+2024-12-16 17:10:28,091 - INFO - Chrome WebDriver setup complete with SSL and stability fixes
+2024-12-16 17:10:28,094 - INFO - Fetching meme: https://imgflip.com/meme/562391530/Chill-guy
+2024-12-16 17:10:31,542 - DEBUG - Skipping invalid data point: [2024-11-19, 50]. Error: unconverted data remains: -19
+2024-12-16 17:10:31,542 - DEBUG - Skipping invalid data point: [2024-11-20, 275]. Error: unconverted data remains: -20
+2024-12-16 17:10:31,542 - DEBUG - Skipping invalid data point: [2024-11-21, 1525]. Error: unconverted data remains: -21
+2024-12-16 17:10:31,542 - DEBUG - Skipping invalid data point: [2024-11-22, 3375]. Error: unconverted data remains: -22
+2024-12-16 17:10:31,542 - DEBUG - Skipping invalid data point: [2024-11-23, 2325]. Error: unconverted data remains: -23
+2024-12-16 17:10:31,542 - DEBUG - Skipping invalid data point: [2024-11-24, 2325]. Error: unconverted data remains: -24
+2024-12-16 17:10:31,542 - DEBUG - Skipping invalid data point: [2024-11-25, 3175]. Error: unconverted data remains: -25
+2024-12-16 17:10:31,542 - DEBUG - Skipping invalid data point: [2024-11-26, 3325]. Error: unconverted data remains: -26
+2024-12-16 17:10:31,542 - DEBUG - Skipping invalid data point: [2024-11-27, 2950]. Error: unconverted data remains: -27
+2024-12-16 17:10:31,542 - DEBUG - Skipping invalid data point: [2024-11-28, 2425]. Error: unconverted data remains: -28
+2024-12-16 17:10:31,542 - DEBUG - Skipping invalid data point: [2024-11-29, 1950]. Error: unconverted data remains: -29
+2024-12-16 17:10:31,542 - DEBUG - Skipping invalid data point: [2024-11-30, 1375]. Error: unconverted data remains: -30
+2024-12-16 17:10:31,542 - DEBUG - Skipping invalid data point: [2024-12-01, 1350]. Error: unconverted data remains: -01
+2024-12-16 17:10:31,543 - DEBUG - Skipping invalid data point: [2024-12-02, 2300]. Error: unconverted data remains: -02
+2024-12-16 17:10:31,543 - DEBUG - Skipping invalid data point: [2024-12-03, 2000]. Error: unconverted data remains: -03
+2024-12-16 17:10:31,543 - DEBUG - Skipping invalid data point: [2024-12-04, 1825]. Error: unconverted data remains: -04
+2024-12-16 17:10:31,543 - DEBUG - Skipping invalid data point: [2024-12-05, 1750]. Error: unconverted data remains: -05
+2024-12-16 17:10:31,543 - DEBUG - Skipping invalid data point: [2024-12-06, 1425]. Error: unconverted data remains: -06
+2024-12-16 17:10:31,543 - DEBUG - Skipping invalid data point: [2024-12-07, 825]. Error: unconverted data remains: -07
+2024-12-16 17:10:31,543 - DEBUG - Skipping invalid data point: [2024-12-08, 850]. Error: unconverted data remains: -08
+2024-12-16 17:10:31,543 - DEBUG - Skipping invalid data point: [2024-12-09, 1375]. Error: unconverted data remains: -09
+2024-12-16 17:10:31,543 - DEBUG - Skipping invalid data point: [2024-12-10, 1375]. Error: unconverted data remains: -10
+2024-12-16 17:10:31,543 - DEBUG - Skipping invalid data point: [2024-12-11, 1325]. Error: unconverted data remains: -11
+2024-12-16 17:10:31,543 - DEBUG - Skipping invalid data point: [2024-12-12, 1300]. Error: unconverted data remains: -12
+2024-12-16 17:10:31,543 - DEBUG - Skipping invalid data point: [2024-12-13, 1100]. Error: unconverted data remains: -13
+2024-12-16 17:10:31,543 - DEBUG - Skipping invalid data point: [2024-12-14, 675]. Error: unconverted data remains: -14
+2024-12-16 17:10:31,543 - DEBUG - Skipping invalid data point: [2024-12-15, 725]. Error: unconverted data remains: -15
+2024-12-16 17:10:31,543 - INFO - Saved data for Chill guy to data/meme_Chill_guy_20241216_171031.json
+2024-12-16 17:10:31,544 - INFO - Successfully processed Chill guy
+2024-12-16 17:10:33,631 - INFO - Updated data saved to data\meme_data_20241216_170727.json
+2024-12-16 17:10:36,982 - INFO - Processing template 4/597: https://imgflip.com/meme/Two-Buttons
+2024-12-16 17:10:36,982 - INFO - Processing template: https://imgflip.com/meme/Two-Buttons (Attempt 1/3)
+2024-12-16 17:11:04,105 - INFO - Chrome WebDriver setup complete with SSL and stability fixes
+2024-12-16 17:11:04,109 - INFO - Fetching meme: https://imgflip.com/meme/Two-Buttons
+2024-12-16 17:11:11,742 - INFO - Successfully extracted 35 data points for Two Buttons
+2024-12-16 17:11:11,742 - INFO - First data point: 2022-01-01 - 107300 captions
+2024-12-16 17:11:11,742 - INFO - Last data point: 2024-11-01 - 75900 captions
+2024-12-16 17:11:11,743 - INFO - Saved data for Two Buttons to data/meme_Two_Buttons_20241216_171111.json
+2024-12-16 17:11:11,743 - INFO - Successfully processed Two Buttons
+2024-12-16 17:11:13,842 - INFO - Updated data saved to data\meme_data_20241216_170727.json
+2024-12-16 17:11:17,716 - INFO - Processing template 5/597: https://imgflip.com/meme/Epic-Handshake
+2024-12-16 17:11:17,716 - INFO - Processing template: https://imgflip.com/meme/Epic-Handshake (Attempt 1/3)
+2024-12-16 17:11:44,485 - INFO - Chrome WebDriver setup complete with SSL and stability fixes
+2024-12-16 17:11:44,489 - INFO - Fetching meme: https://imgflip.com/meme/Epic-Handshake
+2024-12-16 17:11:48,137 - INFO - Successfully extracted 35 data points for Epic Handshake
+2024-12-16 17:11:48,137 - INFO - First data point: 2022-01-01 - 30050 captions
+2024-12-16 17:11:48,137 - INFO - Last data point: 2024-11-01 - 25700 captions
+2024-12-16 17:11:48,138 - INFO - Saved data for Epic Handshake to data/meme_Epic_Handshake_20241216_171148.json
+2024-12-16 17:11:48,138 - INFO - Successfully processed Epic Handshake
+2024-12-16 17:11:50,225 - INFO - Updated data saved to data\meme_data_20241216_170727.json
+2024-12-16 17:11:54,958 - INFO - 
+Progress Update:
+2024-12-16 17:11:54,958 - INFO - Processed: 5/597 templates
+2024-12-16 17:11:54,959 - INFO - Success: 5, Failed: 0
+2024-12-16 17:11:54,959 - INFO - Processing template 6/597: https://imgflip.com/meme/X-X-Everywhere
+2024-12-16 17:11:54,959 - INFO - Processing template: https://imgflip.com/meme/X-X-Everywhere (Attempt 1/3)
+2024-12-16 17:12:22,482 - INFO - Chrome WebDriver setup complete with SSL and stability fixes
+2024-12-16 17:12:22,486 - INFO - Fetching meme: https://imgflip.com/meme/X-X-Everywhere
+2024-12-16 17:12:30,267 - INFO - Successfully extracted 35 data points for X X Everywhere
+2024-12-16 17:12:30,267 - INFO - First data point: 2022-01-01 - 20550 captions
+2024-12-16 17:12:30,267 - INFO - Last data point: 2024-11-01 - 17250 captions
+2024-12-16 17:12:30,268 - INFO - Saved data for X X Everywhere to data/meme_X_X_Everywhere_20241216_171230.json
+2024-12-16 17:12:30,269 - INFO - Successfully processed X X Everywhere
+2024-12-16 17:12:32,339 - INFO - Updated data saved to data\meme_data_20241216_170727.json
+2024-12-16 17:12:36,239 - INFO - Processing template 7/597: https://imgflip.com/meme/Distracted-Boyfriend
+2024-12-16 17:12:36,239 - INFO - Processing template: https://imgflip.com/meme/Distracted-Boyfriend (Attempt 1/3)
+2024-12-16 17:13:02,856 - INFO - Chrome WebDriver setup complete with SSL and stability fixes
+2024-12-16 17:13:02,860 - INFO - Fetching meme: https://imgflip.com/meme/Distracted-Boyfriend
+2024-12-16 17:13:06,265 - INFO - Successfully extracted 35 data points for Distracted Boyfriend
+2024-12-16 17:13:06,265 - INFO - First data point: 2022-01-01 - 89300 captions
+2024-12-16 17:13:06,265 - INFO - Last data point: 2024-11-01 - 60750 captions
+2024-12-16 17:13:06,266 - INFO - Saved data for Distracted Boyfriend to data/meme_Distracted_Boyfriend_20241216_171306.json
+2024-12-16 17:13:06,266 - INFO - Successfully processed Distracted Boyfriend
+2024-12-16 17:13:08,514 - INFO - Updated data saved to data\meme_data_20241216_170727.json
+2024-12-16 17:13:12,330 - INFO - Processing template 8/597: https://imgflip.com/meme/Theyre-The-Same-Picture
+2024-12-16 17:13:12,330 - INFO - Processing template: https://imgflip.com/meme/Theyre-The-Same-Picture (Attempt 1/3)
+2024-12-16 17:13:38,981 - INFO - Chrome WebDriver setup complete with SSL and stability fixes
+2024-12-16 17:13:38,984 - INFO - Fetching meme: https://imgflip.com/meme/Theyre-The-Same-Picture
+2024-12-16 17:13:46,479 - INFO - Successfully extracted 35 data points for Theyre The Same Picture
+2024-12-16 17:13:46,480 - INFO - First data point: 2022-01-01 - 29000 captions
+2024-12-16 17:13:46,480 - INFO - Last data point: 2024-11-01 - 24800 captions
+2024-12-16 17:13:46,481 - INFO - Saved data for Theyre The Same Picture to data/meme_Theyre_The_Same_Picture_20241216_171346.json
+2024-12-16 17:13:46,482 - INFO - Successfully processed Theyre The Same Picture
+2024-12-16 17:13:48,569 - INFO - Updated data saved to data\meme_data_20241216_170727.json
+2024-12-16 17:13:51,924 - INFO - Processing template 9/597: https://imgflip.com/meme/Yall-Got-Any-More-Of-That
+2024-12-16 17:13:51,924 - INFO - Processing template: https://imgflip.com/meme/Yall-Got-Any-More-Of-That (Attempt 1/3)
+2024-12-16 17:14:19,033 - INFO - Chrome WebDriver setup complete with SSL and stability fixes
+2024-12-16 17:14:19,037 - INFO - Fetching meme: https://imgflip.com/meme/Yall-Got-Any-More-Of-That
+2024-12-16 17:14:22,818 - INFO - Successfully extracted 35 data points for Yall Got Any More Of That
+2024-12-16 17:14:22,818 - INFO - First data point: 2022-01-01 - 13150 captions
+2024-12-16 17:14:22,818 - INFO - Last data point: 2024-11-01 - 12150 captions
+2024-12-16 17:14:22,819 - INFO - Saved data for Yall Got Any More Of That to data/meme_Yall_Got_Any_More_Of_That_20241216_171422.json
+2024-12-16 17:14:22,820 - INFO - Successfully processed Yall Got Any More Of That
+2024-12-16 17:14:24,950 - INFO - Updated data saved to data\meme_data_20241216_170727.json
+2024-12-16 17:14:29,475 - INFO - Processing template 10/597: https://imgflip.com/meme/Left-Exit-12-Off-Ramp
+2024-12-16 17:14:29,475 - INFO - Processing template: https://imgflip.com/meme/Left-Exit-12-Off-Ramp (Attempt 1/3)
+2024-12-16 17:14:55,837 - INFO - Chrome WebDriver setup complete with SSL and stability fixes
+2024-12-16 17:14:55,840 - INFO - Fetching meme: https://imgflip.com/meme/Left-Exit-12-Off-Ramp
+2024-12-16 17:15:03,361 - DEBUG - Skipping invalid data point: [{}, 65500]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:15:03,361 - DEBUG - Skipping invalid data point: [{}, 54650]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:15:03,361 - DEBUG - Skipping invalid data point: [{}, 62350]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:15:03,361 - DEBUG - Skipping invalid data point: [{}, 53000]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:15:03,361 - DEBUG - Skipping invalid data point: [{}, 57800]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:15:03,361 - DEBUG - Skipping invalid data point: [{}, 46050]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:15:03,361 - DEBUG - Skipping invalid data point: [{}, 36750]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:15:03,361 - DEBUG - Skipping invalid data point: [{}, 41900]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:15:03,361 - DEBUG - Skipping invalid data point: [{}, 47150]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:15:03,361 - DEBUG - Skipping invalid data point: [{}, 50050]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:15:03,361 - DEBUG - Skipping invalid data point: [{}, 50950]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:15:03,361 - DEBUG - Skipping invalid data point: [{}, 43800]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:15:03,361 - DEBUG - Skipping invalid data point: [{}, 49100]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:15:03,361 - DEBUG - Skipping invalid data point: [{}, 46600]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:15:03,361 - DEBUG - Skipping invalid data point: [{}, 55700]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:15:03,361 - DEBUG - Skipping invalid data point: [{}, 46100]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:15:03,361 - DEBUG - Skipping invalid data point: [{}, 52850]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:15:03,361 - DEBUG - Skipping invalid data point: [{}, 42350]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:15:03,361 - DEBUG - Skipping invalid data point: [{}, 36350]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:15:03,361 - DEBUG - Skipping invalid data point: [{}, 39150]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:15:03,361 - DEBUG - Skipping invalid data point: [{}, 44150]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:15:03,361 - DEBUG - Skipping invalid data point: [{}, 45700]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:15:03,361 - DEBUG - Skipping invalid data point: [{}, 43700]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:15:03,361 - DEBUG - Skipping invalid data point: [{}, 38650]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:15:03,361 - DEBUG - Skipping invalid data point: [{}, 42600]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:15:03,361 - DEBUG - Skipping invalid data point: [{}, 41900]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:15:03,361 - DEBUG - Skipping invalid data point: [{}, 45650]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:15:03,362 - DEBUG - Skipping invalid data point: [{}, 42800]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:15:03,362 - DEBUG - Skipping invalid data point: [{}, 42100]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:15:03,362 - DEBUG - Skipping invalid data point: [{}, 33900]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:15:03,362 - DEBUG - Skipping invalid data point: [{}, 31150]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:15:03,362 - DEBUG - Skipping invalid data point: [{}, 34150]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:15:03,362 - DEBUG - Skipping invalid data point: [{}, 41500]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:15:03,362 - DEBUG - Skipping invalid data point: [{}, 44650]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:15:03,362 - DEBUG - Skipping invalid data point: [{}, 40500]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:15:03,362 - INFO - Saved data for Left Exit 12 Off Ramp to data/meme_Left_Exit_12_Off_Ramp_20241216_171503.json
+2024-12-16 17:15:03,363 - INFO - Successfully processed Left Exit 12 Off Ramp
+2024-12-16 17:15:05,488 - INFO - Updated data saved to data\meme_data_20241216_170727.json
+2024-12-16 17:15:10,320 - INFO - 
+Progress Update:
+2024-12-16 17:15:10,321 - INFO - Processed: 10/597 templates
+2024-12-16 17:15:10,321 - INFO - Success: 10, Failed: 0
+2024-12-16 17:15:10,322 - INFO - Processing template 11/597: https://imgflip.com/meme/Sad-Pablo-Escobar
+2024-12-16 17:15:10,322 - INFO - Processing template: https://imgflip.com/meme/Sad-Pablo-Escobar (Attempt 1/3)
+2024-12-16 17:15:37,003 - INFO - Chrome WebDriver setup complete with SSL and stability fixes
+2024-12-16 17:15:37,007 - INFO - Fetching meme: https://imgflip.com/meme/Sad-Pablo-Escobar
+2024-12-16 17:15:40,447 - DEBUG - Skipping invalid data point: [{}, 29600]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:15:40,447 - DEBUG - Skipping invalid data point: [{}, 26750]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:15:40,447 - DEBUG - Skipping invalid data point: [{}, 30450]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:15:40,447 - DEBUG - Skipping invalid data point: [{}, 27800]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:15:40,447 - DEBUG - Skipping invalid data point: [{}, 31150]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:15:40,447 - DEBUG - Skipping invalid data point: [{}, 27650]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:15:40,447 - DEBUG - Skipping invalid data point: [{}, 23750]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:15:40,447 - DEBUG - Skipping invalid data point: [{}, 26450]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:15:40,447 - DEBUG - Skipping invalid data point: [{}, 26600]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:15:40,447 - DEBUG - Skipping invalid data point: [{}, 25650]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:15:40,447 - DEBUG - Skipping invalid data point: [{}, 26000]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:15:40,447 - DEBUG - Skipping invalid data point: [{}, 24650]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:15:40,447 - DEBUG - Skipping invalid data point: [{}, 26600]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:15:40,447 - DEBUG - Skipping invalid data point: [{}, 26050]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:15:40,447 - DEBUG - Skipping invalid data point: [{}, 30950]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:15:40,447 - DEBUG - Skipping invalid data point: [{}, 25900]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:15:40,447 - DEBUG - Skipping invalid data point: [{}, 28800]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:15:40,448 - DEBUG - Skipping invalid data point: [{}, 25100]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:15:40,448 - DEBUG - Skipping invalid data point: [{}, 25850]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:15:40,448 - DEBUG - Skipping invalid data point: [{}, 25850]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:15:40,448 - DEBUG - Skipping invalid data point: [{}, 25650]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:15:40,448 - DEBUG - Skipping invalid data point: [{}, 26850]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:15:40,448 - DEBUG - Skipping invalid data point: [{}, 25900]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:15:40,448 - DEBUG - Skipping invalid data point: [{}, 23050]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:15:40,448 - DEBUG - Skipping invalid data point: [{}, 26200]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:15:40,448 - DEBUG - Skipping invalid data point: [{}, 25500]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:15:40,448 - DEBUG - Skipping invalid data point: [{}, 25450]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:15:40,448 - DEBUG - Skipping invalid data point: [{}, 26750]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:15:40,448 - DEBUG - Skipping invalid data point: [{}, 25050]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:15:40,448 - DEBUG - Skipping invalid data point: [{}, 22050]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:15:40,448 - DEBUG - Skipping invalid data point: [{}, 23700]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:15:40,448 - DEBUG - Skipping invalid data point: [{}, 24500]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:15:40,448 - DEBUG - Skipping invalid data point: [{}, 26400]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:15:40,448 - DEBUG - Skipping invalid data point: [{}, 26300]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:15:40,448 - DEBUG - Skipping invalid data point: [{}, 25000]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:15:40,449 - INFO - Saved data for Sad Pablo Escobar to data/meme_Sad_Pablo_Escobar_20241216_171540.json
+2024-12-16 17:15:40,449 - INFO - Successfully processed Sad Pablo Escobar
+2024-12-16 17:15:42,561 - INFO - Updated data saved to data\meme_data_20241216_170727.json
+2024-12-16 17:15:46,286 - INFO - Processing template 12/597: https://imgflip.com/meme/Success-Kid
+2024-12-16 17:15:46,286 - INFO - Processing template: https://imgflip.com/meme/Success-Kid (Attempt 1/3)
+2024-12-16 17:16:12,939 - INFO - Chrome WebDriver setup complete with SSL and stability fixes
+2024-12-16 17:16:12,944 - INFO - Fetching meme: https://imgflip.com/meme/Success-Kid
+2024-12-16 17:16:16,365 - INFO - Successfully extracted 35 data points for Success Kid
+2024-12-16 17:16:16,365 - INFO - First data point: 2022-01-01 - 13550 captions
+2024-12-16 17:16:16,365 - INFO - Last data point: 2024-11-01 - 12050 captions
+2024-12-16 17:16:16,366 - INFO - Saved data for Success Kid to data/meme_Success_Kid_20241216_171616.json
+2024-12-16 17:16:16,366 - INFO - Successfully processed Success Kid
+2024-12-16 17:16:18,492 - INFO - Updated data saved to data\meme_data_20241216_170727.json
+2024-12-16 17:16:22,711 - INFO - Processing template 13/597: https://imgflip.com/meme/Boardroom-Meeting-Suggestion
+2024-12-16 17:16:22,711 - INFO - Processing template: https://imgflip.com/meme/Boardroom-Meeting-Suggestion (Attempt 1/3)
+2024-12-16 17:16:53,110 - INFO - Chrome WebDriver setup complete with SSL and stability fixes
+2024-12-16 17:16:53,114 - INFO - Fetching meme: https://imgflip.com/meme/Boardroom-Meeting-Suggestion
+2024-12-16 17:16:56,478 - DEBUG - Skipping invalid data point: [{}, 27500]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:16:56,478 - DEBUG - Skipping invalid data point: [{}, 24800]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:16:56,478 - DEBUG - Skipping invalid data point: [{}, 26800]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:16:56,478 - DEBUG - Skipping invalid data point: [{}, 24500]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:16:56,478 - DEBUG - Skipping invalid data point: [{}, 26300]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:16:56,478 - DEBUG - Skipping invalid data point: [{}, 19750]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:16:56,478 - DEBUG - Skipping invalid data point: [{}, 17750]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:16:56,478 - DEBUG - Skipping invalid data point: [{}, 19150]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:16:56,478 - DEBUG - Skipping invalid data point: [{}, 20700]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:16:56,478 - DEBUG - Skipping invalid data point: [{}, 22550]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:16:56,478 - DEBUG - Skipping invalid data point: [{}, 22200]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:16:56,478 - DEBUG - Skipping invalid data point: [{}, 18200]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:16:56,478 - DEBUG - Skipping invalid data point: [{}, 19900]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:16:56,478 - DEBUG - Skipping invalid data point: [{}, 19200]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:16:56,478 - DEBUG - Skipping invalid data point: [{}, 21050]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:16:56,478 - DEBUG - Skipping invalid data point: [{}, 16800]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:16:56,478 - DEBUG - Skipping invalid data point: [{}, 19450]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:16:56,478 - DEBUG - Skipping invalid data point: [{}, 15600]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:16:56,478 - DEBUG - Skipping invalid data point: [{}, 14150]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:16:56,478 - DEBUG - Skipping invalid data point: [{}, 14700]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:16:56,478 - DEBUG - Skipping invalid data point: [{}, 16100]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:16:56,478 - DEBUG - Skipping invalid data point: [{}, 16200]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:16:56,478 - DEBUG - Skipping invalid data point: [{}, 17800]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:16:56,478 - DEBUG - Skipping invalid data point: [{}, 13550]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:16:56,478 - DEBUG - Skipping invalid data point: [{}, 13300]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:16:56,478 - DEBUG - Skipping invalid data point: [{}, 15250]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:16:56,479 - DEBUG - Skipping invalid data point: [{}, 15200]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:16:56,479 - DEBUG - Skipping invalid data point: [{}, 14050]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:16:56,479 - DEBUG - Skipping invalid data point: [{}, 15300]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:16:56,479 - DEBUG - Skipping invalid data point: [{}, 12550]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:16:56,479 - DEBUG - Skipping invalid data point: [{}, 11350]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:16:56,479 - DEBUG - Skipping invalid data point: [{}, 11100]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:16:56,479 - DEBUG - Skipping invalid data point: [{}, 13100]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:16:56,479 - DEBUG - Skipping invalid data point: [{}, 13750]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:16:56,479 - DEBUG - Skipping invalid data point: [{}, 14800]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:16:56,479 - INFO - Saved data for Boardroom Meeting Suggestion to data/meme_Boardroom_Meeting_Suggestion_20241216_171656.json
+2024-12-16 17:16:56,480 - INFO - Successfully processed Boardroom Meeting Suggestion
+2024-12-16 17:16:58,647 - INFO - Updated data saved to data\meme_data_20241216_170727.json
+2024-12-16 17:17:01,835 - INFO - Processing template 14/597: https://imgflip.com/meme/Expanding-Brain
+2024-12-16 17:17:01,836 - INFO - Processing template: https://imgflip.com/meme/Expanding-Brain (Attempt 1/3)
+2024-12-16 17:17:28,253 - INFO - Chrome WebDriver setup complete with SSL and stability fixes
+2024-12-16 17:17:28,255 - INFO - Fetching meme: https://imgflip.com/meme/Expanding-Brain
+2024-12-16 17:17:31,660 - DEBUG - Skipping invalid data point: [{}, 32500]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:17:31,660 - DEBUG - Skipping invalid data point: [{}, 29050]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:17:31,660 - DEBUG - Skipping invalid data point: [{}, 33000]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:17:31,660 - DEBUG - Skipping invalid data point: [{}, 28400]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:17:31,660 - DEBUG - Skipping invalid data point: [{}, 31550]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:17:31,660 - DEBUG - Skipping invalid data point: [{}, 25350]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:17:31,661 - DEBUG - Skipping invalid data point: [{}, 20800]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:17:31,661 - DEBUG - Skipping invalid data point: [{}, 22400]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:17:31,661 - DEBUG - Skipping invalid data point: [{}, 26050]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:17:31,661 - DEBUG - Skipping invalid data point: [{}, 28000]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:17:31,661 - DEBUG - Skipping invalid data point: [{}, 26150]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:17:31,661 - DEBUG - Skipping invalid data point: [{}, 22700]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:17:31,661 - DEBUG - Skipping invalid data point: [{}, 24050]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:17:31,661 - DEBUG - Skipping invalid data point: [{}, 23050]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:17:31,661 - DEBUG - Skipping invalid data point: [{}, 25750]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:17:31,661 - DEBUG - Skipping invalid data point: [{}, 20900]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:17:31,661 - DEBUG - Skipping invalid data point: [{}, 25400]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:17:31,661 - DEBUG - Skipping invalid data point: [{}, 19650]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:17:31,661 - DEBUG - Skipping invalid data point: [{}, 18000]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:17:31,661 - DEBUG - Skipping invalid data point: [{}, 18050]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:17:31,661 - DEBUG - Skipping invalid data point: [{}, 20100]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:17:31,661 - DEBUG - Skipping invalid data point: [{}, 19850]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:17:31,661 - DEBUG - Skipping invalid data point: [{}, 18450]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:17:31,661 - DEBUG - Skipping invalid data point: [{}, 16100]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:17:31,661 - DEBUG - Skipping invalid data point: [{}, 17400]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:17:31,661 - DEBUG - Skipping invalid data point: [{}, 16750]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:17:31,661 - DEBUG - Skipping invalid data point: [{}, 23950]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:17:31,661 - DEBUG - Skipping invalid data point: [{}, 17550]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:17:31,661 - DEBUG - Skipping invalid data point: [{}, 17800]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:17:31,661 - DEBUG - Skipping invalid data point: [{}, 15750]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:17:31,661 - DEBUG - Skipping invalid data point: [{}, 13650]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:17:31,661 - DEBUG - Skipping invalid data point: [{}, 15750]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:17:31,661 - DEBUG - Skipping invalid data point: [{}, 16100]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:17:31,661 - DEBUG - Skipping invalid data point: [{}, 17600]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:17:31,661 - DEBUG - Skipping invalid data point: [{}, 16800]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:17:31,662 - INFO - Saved data for Expanding Brain to data/meme_Expanding_Brain_20241216_171731.json
+2024-12-16 17:17:31,662 - INFO - Successfully processed Expanding Brain
+2024-12-16 17:17:33,760 - INFO - Updated data saved to data\meme_data_20241216_170727.json
+2024-12-16 17:17:36,866 - INFO - Processing template 15/597: https://imgflip.com/meme/Is-This-A-Pigeon
+2024-12-16 17:17:36,866 - INFO - Processing template: https://imgflip.com/meme/Is-This-A-Pigeon (Attempt 1/3)
+2024-12-16 17:18:03,524 - INFO - Chrome WebDriver setup complete with SSL and stability fixes
+2024-12-16 17:18:03,530 - INFO - Fetching meme: https://imgflip.com/meme/Is-This-A-Pigeon
+2024-12-16 17:18:11,043 - INFO - Successfully extracted 35 data points for Is This A Pigeon
+2024-12-16 17:18:11,043 - INFO - First data point: 2022-01-01 - 18500 captions
+2024-12-16 17:18:11,043 - INFO - Last data point: 2024-11-01 - 12400 captions
+2024-12-16 17:18:11,044 - INFO - Saved data for Is This A Pigeon to data/meme_Is_This_A_Pigeon_20241216_171811.json
+2024-12-16 17:18:11,044 - INFO - Successfully processed Is This A Pigeon
+2024-12-16 17:18:13,186 - INFO - Updated data saved to data\meme_data_20241216_170727.json
+2024-12-16 17:18:17,024 - INFO - 
+Progress Update:
+2024-12-16 17:18:17,024 - INFO - Processed: 15/597 templates
+2024-12-16 17:18:17,024 - INFO - Success: 15, Failed: 0
+2024-12-16 17:18:17,025 - INFO - Processing template 16/597: https://imgflip.com/meme/Mocking-Spongebob
+2024-12-16 17:18:17,025 - INFO - Processing template: https://imgflip.com/meme/Mocking-Spongebob (Attempt 1/3)
+2024-12-16 17:18:44,593 - INFO - Chrome WebDriver setup complete with SSL and stability fixes
+2024-12-16 17:18:44,597 - INFO - Fetching meme: https://imgflip.com/meme/Mocking-Spongebob
+2024-12-16 17:18:47,988 - DEBUG - Skipping invalid data point: [{}, 21100]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:18:47,988 - DEBUG - Skipping invalid data point: [{}, 19650]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:18:47,988 - DEBUG - Skipping invalid data point: [{}, 21550]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:18:47,988 - DEBUG - Skipping invalid data point: [{}, 19500]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:18:47,988 - DEBUG - Skipping invalid data point: [{}, 20800]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:18:47,988 - DEBUG - Skipping invalid data point: [{}, 18050]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:18:47,988 - DEBUG - Skipping invalid data point: [{}, 15750]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:18:47,988 - DEBUG - Skipping invalid data point: [{}, 17100]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:18:47,988 - DEBUG - Skipping invalid data point: [{}, 18450]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:18:47,988 - DEBUG - Skipping invalid data point: [{}, 17750]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:18:47,989 - DEBUG - Skipping invalid data point: [{}, 17750]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:18:47,989 - DEBUG - Skipping invalid data point: [{}, 15300]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:18:47,989 - DEBUG - Skipping invalid data point: [{}, 18650]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:18:47,989 - DEBUG - Skipping invalid data point: [{}, 16300]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:18:47,989 - DEBUG - Skipping invalid data point: [{}, 19100]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:18:47,989 - DEBUG - Skipping invalid data point: [{}, 16450]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:18:47,989 - DEBUG - Skipping invalid data point: [{}, 18750]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:18:47,989 - DEBUG - Skipping invalid data point: [{}, 19250]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:18:47,989 - DEBUG - Skipping invalid data point: [{}, 16850]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:18:47,989 - DEBUG - Skipping invalid data point: [{}, 18200]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:18:47,989 - DEBUG - Skipping invalid data point: [{}, 20700]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:18:47,989 - DEBUG - Skipping invalid data point: [{}, 19950]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:18:47,989 - DEBUG - Skipping invalid data point: [{}, 17450]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:18:47,989 - DEBUG - Skipping invalid data point: [{}, 15050]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:18:47,989 - DEBUG - Skipping invalid data point: [{}, 15500]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:18:47,989 - DEBUG - Skipping invalid data point: [{}, 16550]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:18:47,989 - DEBUG - Skipping invalid data point: [{}, 22800]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:18:47,989 - DEBUG - Skipping invalid data point: [{}, 16700]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:18:47,989 - DEBUG - Skipping invalid data point: [{}, 20400]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:18:47,989 - DEBUG - Skipping invalid data point: [{}, 21550]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:18:47,989 - DEBUG - Skipping invalid data point: [{}, 20600]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:18:47,989 - DEBUG - Skipping invalid data point: [{}, 17200]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:18:47,989 - DEBUG - Skipping invalid data point: [{}, 17200]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:18:47,989 - DEBUG - Skipping invalid data point: [{}, 17000]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:18:47,989 - DEBUG - Skipping invalid data point: [{}, 17850]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:18:47,990 - INFO - Saved data for Mocking Spongebob to data/meme_Mocking_Spongebob_20241216_171847.json
+2024-12-16 17:18:47,990 - INFO - Successfully processed Mocking Spongebob
+2024-12-16 17:18:50,173 - INFO - Updated data saved to data\meme_data_20241216_170727.json
+2024-12-16 17:18:54,429 - INFO - Processing template 17/597: https://imgflip.com/meme/I-Bet-Hes-Thinking-About-Other-Women
+2024-12-16 17:18:54,429 - INFO - Processing template: https://imgflip.com/meme/I-Bet-Hes-Thinking-About-Other-Women (Attempt 1/3)
+2024-12-16 17:19:21,410 - INFO - Chrome WebDriver setup complete with SSL and stability fixes
+2024-12-16 17:19:21,413 - INFO - Fetching meme: https://imgflip.com/meme/I-Bet-Hes-Thinking-About-Other-Women
+2024-12-16 17:20:05,823 - DEBUG - Skipping invalid data point: [{}, 26900]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:20:05,823 - DEBUG - Skipping invalid data point: [{}, 24750]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:20:05,823 - DEBUG - Skipping invalid data point: [{}, 24700]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:20:05,823 - DEBUG - Skipping invalid data point: [{}, 20300]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:20:05,823 - DEBUG - Skipping invalid data point: [{}, 20650]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:20:05,823 - DEBUG - Skipping invalid data point: [{}, 17000]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:20:05,823 - DEBUG - Skipping invalid data point: [{}, 16100]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:20:05,823 - DEBUG - Skipping invalid data point: [{}, 17950]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:20:05,823 - DEBUG - Skipping invalid data point: [{}, 18750]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:20:05,823 - DEBUG - Skipping invalid data point: [{}, 19400]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:20:05,823 - DEBUG - Skipping invalid data point: [{}, 19550]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:20:05,823 - DEBUG - Skipping invalid data point: [{}, 17350]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:20:05,823 - DEBUG - Skipping invalid data point: [{}, 21150]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:20:05,823 - DEBUG - Skipping invalid data point: [{}, 18100]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:20:05,823 - DEBUG - Skipping invalid data point: [{}, 19300]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:20:05,823 - DEBUG - Skipping invalid data point: [{}, 18150]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:20:05,823 - DEBUG - Skipping invalid data point: [{}, 18950]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:20:05,823 - DEBUG - Skipping invalid data point: [{}, 15150]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:20:05,823 - DEBUG - Skipping invalid data point: [{}, 15700]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:20:05,823 - DEBUG - Skipping invalid data point: [{}, 15200]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:20:05,823 - DEBUG - Skipping invalid data point: [{}, 17650]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:20:05,823 - DEBUG - Skipping invalid data point: [{}, 18050]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:20:05,823 - DEBUG - Skipping invalid data point: [{}, 17950]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:20:05,823 - DEBUG - Skipping invalid data point: [{}, 16650]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:20:05,823 - DEBUG - Skipping invalid data point: [{}, 16850]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:20:05,823 - DEBUG - Skipping invalid data point: [{}, 18250]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:20:05,823 - DEBUG - Skipping invalid data point: [{}, 18750]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:20:05,823 - DEBUG - Skipping invalid data point: [{}, 18400]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:20:05,823 - DEBUG - Skipping invalid data point: [{}, 18550]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:20:05,823 - DEBUG - Skipping invalid data point: [{}, 15350]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:20:05,823 - DEBUG - Skipping invalid data point: [{}, 15200]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:20:05,823 - DEBUG - Skipping invalid data point: [{}, 16500]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:20:05,824 - DEBUG - Skipping invalid data point: [{}, 17300]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:20:05,824 - DEBUG - Skipping invalid data point: [{}, 18450]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:20:05,824 - DEBUG - Skipping invalid data point: [{}, 18100]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:20:05,824 - INFO - Saved data for I Bet Hes Thinking About Other Women to data/meme_I_Bet_Hes_Thinking_About_Other_Women_20241216_172005.json
+2024-12-16 17:20:05,824 - INFO - Successfully processed I Bet Hes Thinking About Other Women
+2024-12-16 17:20:07,918 - INFO - Updated data saved to data\meme_data_20241216_170727.json
+2024-12-16 17:20:10,972 - INFO - Processing template 18/597: https://imgflip.com/meme/Running-Away-Balloon
+2024-12-16 17:20:10,973 - INFO - Processing template: https://imgflip.com/meme/Running-Away-Balloon (Attempt 1/3)
+2024-12-16 17:20:37,649 - INFO - Chrome WebDriver setup complete with SSL and stability fixes
+2024-12-16 17:20:37,654 - INFO - Fetching meme: https://imgflip.com/meme/Running-Away-Balloon
+2024-12-16 17:20:41,040 - INFO - Successfully extracted 35 data points for Running Away Balloon
+2024-12-16 17:20:41,041 - INFO - First data point: 2022-01-01 - 67950 captions
+2024-12-16 17:20:41,041 - INFO - Last data point: 2024-11-01 - 36150 captions
+2024-12-16 17:20:41,042 - INFO - Saved data for Running Away Balloon to data/meme_Running_Away_Balloon_20241216_172041.json
+2024-12-16 17:20:41,042 - INFO - Successfully processed Running Away Balloon
+2024-12-16 17:20:43,135 - INFO - Updated data saved to data\meme_data_20241216_170727.json
+2024-12-16 17:20:47,179 - INFO - Processing template 19/597: https://imgflip.com/meme/Hide-the-Pain-Harold
+2024-12-16 17:20:47,179 - INFO - Processing template: https://imgflip.com/meme/Hide-the-Pain-Harold (Attempt 1/3)
+2024-12-16 17:21:14,522 - INFO - Chrome WebDriver setup complete with SSL and stability fixes
+2024-12-16 17:21:14,527 - INFO - Fetching meme: https://imgflip.com/meme/Hide-the-Pain-Harold
+2024-12-16 17:21:22,078 - INFO - Successfully extracted 35 data points for Hide the Pain Harold
+2024-12-16 17:21:22,079 - INFO - First data point: 2022-01-01 - 21950 captions
+2024-12-16 17:21:22,079 - INFO - Last data point: 2024-11-01 - 13300 captions
+2024-12-16 17:21:22,080 - INFO - Saved data for Hide the Pain Harold to data/meme_Hide_the_Pain_Harold_20241216_172122.json
+2024-12-16 17:21:22,080 - INFO - Successfully processed Hide the Pain Harold
+2024-12-16 17:21:24,204 - INFO - Updated data saved to data\meme_data_20241216_170727.json
+2024-12-16 17:21:27,879 - INFO - Processing template 20/597: https://imgflip.com/meme/Ancient-Aliens
+2024-12-16 17:21:27,880 - INFO - Processing template: https://imgflip.com/meme/Ancient-Aliens (Attempt 1/3)
+2024-12-16 17:21:55,505 - INFO - Chrome WebDriver setup complete with SSL and stability fixes
+2024-12-16 17:21:55,508 - INFO - Fetching meme: https://imgflip.com/meme/Ancient-Aliens
+2024-12-16 17:21:59,318 - DEBUG - Skipping invalid data point: [{}, 16000]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:21:59,318 - DEBUG - Skipping invalid data point: [{}, 15850]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:21:59,318 - DEBUG - Skipping invalid data point: [{}, 17050]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:21:59,318 - DEBUG - Skipping invalid data point: [{}, 13800]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:21:59,318 - DEBUG - Skipping invalid data point: [{}, 14050]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:21:59,318 - DEBUG - Skipping invalid data point: [{}, 13150]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:21:59,318 - DEBUG - Skipping invalid data point: [{}, 12750]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:21:59,318 - DEBUG - Skipping invalid data point: [{}, 17700]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:21:59,318 - DEBUG - Skipping invalid data point: [{}, 25300]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:21:59,319 - DEBUG - Skipping invalid data point: [{}, 19100]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:21:59,319 - DEBUG - Skipping invalid data point: [{}, 14600]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:21:59,319 - DEBUG - Skipping invalid data point: [{}, 12900]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:21:59,319 - DEBUG - Skipping invalid data point: [{}, 15250]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:21:59,319 - DEBUG - Skipping invalid data point: [{}, 14700]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:21:59,319 - DEBUG - Skipping invalid data point: [{}, 15950]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:21:59,319 - DEBUG - Skipping invalid data point: [{}, 13900]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:21:59,319 - DEBUG - Skipping invalid data point: [{}, 15500]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:21:59,319 - DEBUG - Skipping invalid data point: [{}, 14000]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:21:59,319 - DEBUG - Skipping invalid data point: [{}, 13950]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:21:59,319 - DEBUG - Skipping invalid data point: [{}, 15350]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:21:59,319 - DEBUG - Skipping invalid data point: [{}, 14900]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:21:59,319 - DEBUG - Skipping invalid data point: [{}, 14900]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:21:59,319 - DEBUG - Skipping invalid data point: [{}, 13500]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:21:59,319 - DEBUG - Skipping invalid data point: [{}, 12000]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:21:59,319 - DEBUG - Skipping invalid data point: [{}, 13800]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:21:59,319 - DEBUG - Skipping invalid data point: [{}, 13750]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:21:59,319 - DEBUG - Skipping invalid data point: [{}, 18800]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:21:59,319 - DEBUG - Skipping invalid data point: [{}, 14300]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:21:59,319 - DEBUG - Skipping invalid data point: [{}, 13850]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:21:59,319 - DEBUG - Skipping invalid data point: [{}, 12100]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:21:59,319 - DEBUG - Skipping invalid data point: [{}, 11750]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:21:59,319 - DEBUG - Skipping invalid data point: [{}, 11850]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:21:59,319 - DEBUG - Skipping invalid data point: [{}, 11850]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:21:59,319 - DEBUG - Skipping invalid data point: [{}, 13750]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:21:59,319 - DEBUG - Skipping invalid data point: [{}, 12050]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:21:59,319 - INFO - Saved data for Ancient Aliens to data/meme_Ancient_Aliens_20241216_172159.json
+2024-12-16 17:21:59,320 - INFO - Successfully processed Ancient Aliens
+2024-12-16 17:22:01,416 - INFO - Updated data saved to data\meme_data_20241216_170727.json
+2024-12-16 17:22:05,050 - INFO - 
+Progress Update:
+2024-12-16 17:22:05,051 - INFO - Processed: 20/597 templates
+2024-12-16 17:22:05,051 - INFO - Success: 20, Failed: 0
+2024-12-16 17:22:05,052 - INFO - Processing template 21/597: https://imgflip.com/meme/Always-Has-Been
+2024-12-16 17:22:05,052 - INFO - Processing template: https://imgflip.com/meme/Always-Has-Been (Attempt 1/3)
+2024-12-16 17:22:31,289 - INFO - Chrome WebDriver setup complete with SSL and stability fixes
+2024-12-16 17:22:31,294 - INFO - Fetching meme: https://imgflip.com/meme/Always-Has-Been
+2024-12-16 17:22:38,928 - INFO - Successfully extracted 35 data points for Always Has Been
+2024-12-16 17:22:38,928 - INFO - First data point: 2022-01-01 - 22400 captions
+2024-12-16 17:22:38,928 - INFO - Last data point: 2024-11-01 - 23650 captions
+2024-12-16 17:22:38,929 - INFO - Saved data for Always Has Been to data/meme_Always_Has_Been_20241216_172238.json
+2024-12-16 17:22:38,930 - INFO - Successfully processed Always Has Been
+2024-12-16 17:22:41,058 - INFO - Updated data saved to data\meme_data_20241216_170727.json
+2024-12-16 17:22:46,008 - INFO - Processing template 22/597: https://imgflip.com/meme/Tuxedo-Winnie-The-Pooh
+2024-12-16 17:22:46,010 - INFO - Processing template: https://imgflip.com/meme/Tuxedo-Winnie-The-Pooh (Attempt 1/3)
+2024-12-16 17:23:14,162 - INFO - Chrome WebDriver setup complete with SSL and stability fixes
+2024-12-16 17:23:14,172 - INFO - Fetching meme: https://imgflip.com/meme/Tuxedo-Winnie-The-Pooh
+2024-12-16 17:23:17,671 - INFO - Successfully extracted 35 data points for Tuxedo Winnie The Pooh
+2024-12-16 17:23:17,672 - INFO - First data point: 2022-01-01 - 27050 captions
+2024-12-16 17:23:17,672 - INFO - Last data point: 2024-11-01 - 16950 captions
+2024-12-16 17:23:17,673 - INFO - Saved data for Tuxedo Winnie The Pooh to data/meme_Tuxedo_Winnie_The_Pooh_20241216_172317.json
+2024-12-16 17:23:17,676 - INFO - Successfully processed Tuxedo Winnie The Pooh
+2024-12-16 17:23:19,811 - INFO - Updated data saved to data\meme_data_20241216_170727.json
+2024-12-16 17:23:23,591 - INFO - Processing template 23/597: https://imgflip.com/meme/Monkey-Puppet
+2024-12-16 17:23:23,592 - INFO - Processing template: https://imgflip.com/meme/Monkey-Puppet (Attempt 1/3)
+2024-12-16 17:23:51,750 - INFO - Chrome WebDriver setup complete with SSL and stability fixes
+2024-12-16 17:23:51,761 - INFO - Fetching meme: https://imgflip.com/meme/Monkey-Puppet
+2024-12-16 17:23:59,490 - INFO - Successfully extracted 35 data points for Monkey Puppet
+2024-12-16 17:23:59,490 - INFO - First data point: 2022-01-01 - 25150 captions
+2024-12-16 17:23:59,491 - INFO - Last data point: 2024-11-01 - 15500 captions
+2024-12-16 17:23:59,495 - INFO - Saved data for Monkey Puppet to data/meme_Monkey_Puppet_20241216_172359.json
+2024-12-16 17:23:59,497 - INFO - Successfully processed Monkey Puppet
+2024-12-16 17:24:01,887 - INFO - Updated data saved to data\meme_data_20241216_170727.json
+2024-12-16 17:24:05,199 - INFO - Processing template 24/597: https://imgflip.com/meme/322841258/Anakin-Padme-4-Panel
+2024-12-16 17:24:05,201 - INFO - Processing template: https://imgflip.com/meme/322841258/Anakin-Padme-4-Panel (Attempt 1/3)
+2024-12-16 17:24:33,060 - INFO - Chrome WebDriver setup complete with SSL and stability fixes
+2024-12-16 17:24:33,065 - INFO - Fetching meme: https://imgflip.com/meme/322841258/Anakin-Padme-4-Panel
+2024-12-16 17:24:36,688 - INFO - Successfully extracted 35 data points for Anakin Padme 4 Panel
+2024-12-16 17:24:36,689 - INFO - First data point: 2022-01-01 - 23500 captions
+2024-12-16 17:24:36,690 - INFO - Last data point: 2024-11-01 - 21450 captions
+2024-12-16 17:24:36,694 - INFO - Saved data for Anakin Padme 4 Panel to data/meme_Anakin_Padme_4_Panel_20241216_172436.json
+2024-12-16 17:24:36,696 - INFO - Successfully processed Anakin Padme 4 Panel
+2024-12-16 17:24:38,839 - INFO - Updated data saved to data\meme_data_20241216_170727.json
+2024-12-16 17:24:43,792 - INFO - Processing template 25/597: https://imgflip.com/meme/Marked-Safe-From
+2024-12-16 17:24:43,794 - INFO - Processing template: https://imgflip.com/meme/Marked-Safe-From (Attempt 1/3)
+2024-12-16 17:25:11,842 - INFO - Chrome WebDriver setup complete with SSL and stability fixes
+2024-12-16 17:25:11,847 - INFO - Fetching meme: https://imgflip.com/meme/Marked-Safe-From
+2024-12-16 17:25:19,283 - INFO - Successfully extracted 35 data points for Marked Safe From
+2024-12-16 17:25:19,283 - INFO - First data point: 2022-01-01 - 16350 captions
+2024-12-16 17:25:19,284 - INFO - Last data point: 2024-11-01 - 25150 captions
+2024-12-16 17:25:19,284 - INFO - Saved data for Marked Safe From to data/meme_Marked_Safe_From_20241216_172519.json
+2024-12-16 17:25:19,285 - INFO - Successfully processed Marked Safe From
+2024-12-16 17:25:21,408 - INFO - Updated data saved to data\meme_data_20241216_170727.json
+2024-12-16 17:25:25,667 - INFO - 
+Progress Update:
+2024-12-16 17:25:25,668 - INFO - Processed: 25/597 templates
+2024-12-16 17:25:25,669 - INFO - Success: 25, Failed: 0
+2024-12-16 17:25:25,670 - INFO - Processing template 26/597: https://imgflip.com/meme/252758727/Mother-Ignoring-Kid-Drowning-In-A-Pool
+2024-12-16 17:25:25,670 - INFO - Processing template: https://imgflip.com/meme/252758727/Mother-Ignoring-Kid-Drowning-In-A-Pool (Attempt 1/3)
+2024-12-16 17:25:53,389 - INFO - Chrome WebDriver setup complete with SSL and stability fixes
+2024-12-16 17:25:53,397 - INFO - Fetching meme: https://imgflip.com/meme/252758727/Mother-Ignoring-Kid-Drowning-In-A-Pool
+2024-12-16 17:25:56,919 - DEBUG - Skipping invalid data point: [{}, 6500]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:25:56,919 - DEBUG - Skipping invalid data point: [{}, 6600]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:25:56,919 - DEBUG - Skipping invalid data point: [{}, 7350]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:25:56,919 - DEBUG - Skipping invalid data point: [{}, 6650]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:25:56,919 - DEBUG - Skipping invalid data point: [{}, 7500]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:25:56,920 - DEBUG - Skipping invalid data point: [{}, 7850]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:25:56,920 - DEBUG - Skipping invalid data point: [{}, 6950]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:25:56,920 - DEBUG - Skipping invalid data point: [{}, 7650]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:25:56,920 - DEBUG - Skipping invalid data point: [{}, 8400]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:25:56,920 - DEBUG - Skipping invalid data point: [{}, 8400]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:25:56,920 - DEBUG - Skipping invalid data point: [{}, 8500]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:25:56,920 - DEBUG - Skipping invalid data point: [{}, 8250]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:25:56,920 - DEBUG - Skipping invalid data point: [{}, 9500]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:25:56,920 - DEBUG - Skipping invalid data point: [{}, 9350]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:25:56,920 - DEBUG - Skipping invalid data point: [{}, 11250]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:25:56,920 - DEBUG - Skipping invalid data point: [{}, 9500]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:25:56,921 - DEBUG - Skipping invalid data point: [{}, 9550]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:25:56,921 - DEBUG - Skipping invalid data point: [{}, 9100]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:25:56,921 - DEBUG - Skipping invalid data point: [{}, 9400]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:25:56,921 - DEBUG - Skipping invalid data point: [{}, 10300]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:25:56,921 - DEBUG - Skipping invalid data point: [{}, 10300]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:25:56,921 - DEBUG - Skipping invalid data point: [{}, 11150]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:25:56,921 - DEBUG - Skipping invalid data point: [{}, 11200]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:25:56,921 - DEBUG - Skipping invalid data point: [{}, 9400]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:25:56,921 - DEBUG - Skipping invalid data point: [{}, 9800]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:25:56,921 - DEBUG - Skipping invalid data point: [{}, 10400]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:25:56,921 - DEBUG - Skipping invalid data point: [{}, 10650]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:25:56,921 - DEBUG - Skipping invalid data point: [{}, 10750]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:25:56,921 - DEBUG - Skipping invalid data point: [{}, 11250]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:25:56,921 - DEBUG - Skipping invalid data point: [{}, 11500]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:25:56,921 - DEBUG - Skipping invalid data point: [{}, 11300]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:25:56,921 - DEBUG - Skipping invalid data point: [{}, 11150]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:25:56,922 - DEBUG - Skipping invalid data point: [{}, 12500]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:25:56,922 - DEBUG - Skipping invalid data point: [{}, 13200]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:25:56,922 - DEBUG - Skipping invalid data point: [{}, 13050]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:25:56,923 - INFO - Saved data for Mother Ignoring Kid Drowning In A Pool to data/meme_Mother_Ignoring_Kid_Drowning_In_A_Pool_20241216_172556.json
+2024-12-16 17:25:56,925 - INFO - Successfully processed Mother Ignoring Kid Drowning In A Pool
+2024-12-16 17:25:59,082 - INFO - Updated data saved to data\meme_data_20241216_170727.json
+2024-12-16 17:26:03,241 - INFO - Processing template 27/597: https://imgflip.com/meme/Bernie-I-Am-Once-Again-Asking-For-Your-Support
+2024-12-16 17:26:03,242 - INFO - Processing template: https://imgflip.com/meme/Bernie-I-Am-Once-Again-Asking-For-Your-Support (Attempt 1/3)
+2024-12-16 17:26:29,880 - INFO - Chrome WebDriver setup complete with SSL and stability fixes
+2024-12-16 17:26:29,886 - INFO - Fetching meme: https://imgflip.com/meme/Bernie-I-Am-Once-Again-Asking-For-Your-Support
+2024-12-16 17:26:33,387 - INFO - Successfully extracted 35 data points for Bernie I Am Once Again Asking For Your Support
+2024-12-16 17:26:33,389 - INFO - First data point: 2022-01-01 - 40300 captions
+2024-12-16 17:26:33,390 - INFO - Last data point: 2024-11-01 - 40200 captions
+2024-12-16 17:26:33,396 - INFO - Saved data for Bernie I Am Once Again Asking For Your Support to data/meme_Bernie_I_Am_Once_Again_Asking_For_Your_Support_20241216_172633.json
+2024-12-16 17:26:33,397 - INFO - Successfully processed Bernie I Am Once Again Asking For Your Support
+2024-12-16 17:26:35,515 - INFO - Updated data saved to data\meme_data_20241216_170727.json
+2024-12-16 17:26:39,695 - INFO - Processing template 28/597: https://imgflip.com/meme/Buff-Doge-vs-Cheems
+2024-12-16 17:26:39,701 - INFO - Processing template: https://imgflip.com/meme/Buff-Doge-vs-Cheems (Attempt 1/3)
+2024-12-16 17:27:06,603 - INFO - Chrome WebDriver setup complete with SSL and stability fixes
+2024-12-16 17:27:06,609 - INFO - Fetching meme: https://imgflip.com/meme/Buff-Doge-vs-Cheems
+2024-12-16 17:27:18,643 - INFO - Successfully extracted 35 data points for Buff Doge vs Cheems
+2024-12-16 17:27:18,644 - INFO - First data point: 2022-01-01 - 61050 captions
+2024-12-16 17:27:18,645 - INFO - Last data point: 2024-11-01 - 19350 captions
+2024-12-16 17:27:18,650 - INFO - Saved data for Buff Doge vs Cheems to data/meme_Buff_Doge_vs_Cheems_20241216_172718.json
+2024-12-16 17:27:18,651 - INFO - Successfully processed Buff Doge vs Cheems
+2024-12-16 17:27:22,006 - INFO - Updated data saved to data\meme_data_20241216_170727.json
+2024-12-16 17:27:26,698 - INFO - Processing template 29/597: https://imgflip.com/meme/Batman-Slapping-Robin
+2024-12-16 17:27:26,699 - INFO - Processing template: https://imgflip.com/meme/Batman-Slapping-Robin (Attempt 1/3)
+2024-12-16 17:27:54,626 - INFO - Chrome WebDriver setup complete with SSL and stability fixes
+2024-12-16 17:27:54,632 - INFO - Fetching meme: https://imgflip.com/meme/Batman-Slapping-Robin
+2024-12-16 17:27:58,194 - DEBUG - Skipping invalid data point: [{}, 35300]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:27:58,194 - DEBUG - Skipping invalid data point: [{}, 33150]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:27:58,194 - DEBUG - Skipping invalid data point: [{}, 43200]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:27:58,195 - DEBUG - Skipping invalid data point: [{}, 31950]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:27:58,195 - DEBUG - Skipping invalid data point: [{}, 32100]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:27:58,195 - DEBUG - Skipping invalid data point: [{}, 26300]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:27:58,195 - DEBUG - Skipping invalid data point: [{}, 22750]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:27:58,195 - DEBUG - Skipping invalid data point: [{}, 25100]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:27:58,196 - DEBUG - Skipping invalid data point: [{}, 27850]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:27:58,196 - DEBUG - Skipping invalid data point: [{}, 28650]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:27:58,196 - DEBUG - Skipping invalid data point: [{}, 30850]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:27:58,196 - DEBUG - Skipping invalid data point: [{}, 26200]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:27:58,196 - DEBUG - Skipping invalid data point: [{}, 27800]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:27:58,197 - DEBUG - Skipping invalid data point: [{}, 27200]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:27:58,197 - DEBUG - Skipping invalid data point: [{}, 29300]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:27:58,197 - DEBUG - Skipping invalid data point: [{}, 24750]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:27:58,197 - DEBUG - Skipping invalid data point: [{}, 27950]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:27:58,197 - DEBUG - Skipping invalid data point: [{}, 24650]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:27:58,198 - DEBUG - Skipping invalid data point: [{}, 21550]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:27:58,199 - DEBUG - Skipping invalid data point: [{}, 22950]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:27:58,199 - DEBUG - Skipping invalid data point: [{}, 23900]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:27:58,199 - DEBUG - Skipping invalid data point: [{}, 26800]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:27:58,199 - DEBUG - Skipping invalid data point: [{}, 26300]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:27:58,199 - DEBUG - Skipping invalid data point: [{}, 24100]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:27:58,199 - DEBUG - Skipping invalid data point: [{}, 26400]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:27:58,199 - DEBUG - Skipping invalid data point: [{}, 26250]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:27:58,200 - DEBUG - Skipping invalid data point: [{}, 27300]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:27:58,200 - DEBUG - Skipping invalid data point: [{}, 26800]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:27:58,200 - DEBUG - Skipping invalid data point: [{}, 26000]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:27:58,200 - DEBUG - Skipping invalid data point: [{}, 21550]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:27:58,200 - DEBUG - Skipping invalid data point: [{}, 19100]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:27:58,201 - DEBUG - Skipping invalid data point: [{}, 19750]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:27:58,201 - DEBUG - Skipping invalid data point: [{}, 21500]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:27:58,201 - DEBUG - Skipping invalid data point: [{}, 25400]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:27:58,201 - DEBUG - Skipping invalid data point: [{}, 22750]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:27:58,204 - INFO - Saved data for Batman Slapping Robin to data/meme_Batman_Slapping_Robin_20241216_172758.json
+2024-12-16 17:27:58,205 - INFO - Successfully processed Batman Slapping Robin
+2024-12-16 17:28:00,346 - INFO - Updated data saved to data\meme_data_20241216_170727.json
+2024-12-16 17:28:04,989 - INFO - Processing template 30/597: https://imgflip.com/meme/Waiting-Skeleton
+2024-12-16 17:28:04,991 - INFO - Processing template: https://imgflip.com/meme/Waiting-Skeleton (Attempt 1/3)
+2024-12-16 17:28:31,590 - INFO - Chrome WebDriver setup complete with SSL and stability fixes
+2024-12-16 17:28:31,596 - INFO - Fetching meme: https://imgflip.com/meme/Waiting-Skeleton
+2024-12-16 17:28:39,209 - INFO - Successfully extracted 35 data points for Waiting Skeleton
+2024-12-16 17:28:39,211 - INFO - First data point: 2022-01-01 - 35050 captions
+2024-12-16 17:28:39,212 - INFO - Last data point: 2024-11-01 - 21550 captions
+2024-12-16 17:28:39,216 - INFO - Saved data for Waiting Skeleton to data/meme_Waiting_Skeleton_20241216_172839.json
+2024-12-16 17:28:39,218 - INFO - Successfully processed Waiting Skeleton
+2024-12-16 17:28:41,615 - INFO - Updated data saved to data\meme_data_20241216_170727.json
+2024-12-16 17:28:45,122 - INFO - 
+Progress Update:
+2024-12-16 17:28:45,122 - INFO - Processed: 30/597 templates
+2024-12-16 17:28:45,123 - INFO - Success: 30, Failed: 0
+2024-12-16 17:28:45,124 - INFO - Processing template 31/597: https://imgflip.com/meme/Drake-Hotline-Bling
+2024-12-16 17:28:45,125 - INFO - Processing template: https://imgflip.com/meme/Drake-Hotline-Bling (Attempt 1/3)
+2024-12-16 17:29:11,796 - INFO - Chrome WebDriver setup complete with SSL and stability fixes
+2024-12-16 17:29:11,801 - INFO - Fetching meme: https://imgflip.com/meme/Drake-Hotline-Bling
+2024-12-16 17:29:15,274 - INFO - Successfully extracted 35 data points for Drake Hotline Bling
+2024-12-16 17:29:15,276 - INFO - First data point: 2022-01-01 - 149950 captions
+2024-12-16 17:29:15,278 - INFO - Last data point: 2024-11-01 - 110000 captions
+2024-12-16 17:29:15,284 - INFO - Saved data for Drake Hotline Bling to data/meme_Drake_Hotline_Bling_20241216_172915.json
+2024-12-16 17:29:15,285 - INFO - Successfully processed Drake Hotline Bling
+2024-12-16 17:29:17,418 - INFO - Updated data saved to data\meme_data_20241216_170727.json
+2024-12-16 17:29:21,969 - INFO - Processing template 32/597: https://imgflip.com/meme/Woman-Yelling-At-Cat
+2024-12-16 17:29:21,972 - INFO - Processing template: https://imgflip.com/meme/Woman-Yelling-At-Cat (Attempt 1/3)
+2024-12-16 17:29:49,468 - INFO - Chrome WebDriver setup complete with SSL and stability fixes
+2024-12-16 17:29:49,474 - INFO - Fetching meme: https://imgflip.com/meme/Woman-Yelling-At-Cat
+2024-12-16 17:29:57,204 - INFO - Successfully extracted 35 data points for Woman Yelling At Cat
+2024-12-16 17:29:57,205 - INFO - First data point: 2022-01-01 - 36350 captions
+2024-12-16 17:29:57,205 - INFO - Last data point: 2024-11-01 - 20100 captions
+2024-12-16 17:29:57,209 - INFO - Saved data for Woman Yelling At Cat to data/meme_Woman_Yelling_At_Cat_20241216_172957.json
+2024-12-16 17:29:57,210 - INFO - Successfully processed Woman Yelling At Cat
+2024-12-16 17:29:59,518 - INFO - Updated data saved to data\meme_data_20241216_170727.json
+2024-12-16 17:30:04,246 - INFO - Processing template 33/597: https://imgflip.com/meme/Bike-Fall
+2024-12-16 17:30:04,248 - INFO - Processing template: https://imgflip.com/meme/Bike-Fall (Attempt 1/3)
+2024-12-16 17:30:31,842 - INFO - Chrome WebDriver setup complete with SSL and stability fixes
+2024-12-16 17:30:31,845 - INFO - Fetching meme: https://imgflip.com/meme/Bike-Fall
+2024-12-16 17:30:35,558 - INFO - Successfully extracted 35 data points for Bike Fall
+2024-12-16 17:30:35,559 - INFO - First data point: 2022-01-01 - 20400 captions
+2024-12-16 17:30:35,559 - INFO - Last data point: 2024-11-01 - 16050 captions
+2024-12-16 17:30:35,562 - INFO - Saved data for Bike Fall to data/meme_Bike_Fall_20241216_173035.json
+2024-12-16 17:30:35,565 - INFO - Successfully processed Bike Fall
+2024-12-16 17:30:37,725 - INFO - Updated data saved to data\meme_data_20241216_170727.json
+2024-12-16 17:30:40,940 - INFO - Processing template 34/597: https://imgflip.com/meme/Oprah-You-Get-A
+2024-12-16 17:30:40,942 - INFO - Processing template: https://imgflip.com/meme/Oprah-You-Get-A (Attempt 1/3)
+2024-12-16 17:31:07,265 - INFO - Chrome WebDriver setup complete with SSL and stability fixes
+2024-12-16 17:31:07,272 - INFO - Fetching meme: https://imgflip.com/meme/Oprah-You-Get-A
+2024-12-16 17:31:15,320 - INFO - Successfully extracted 35 data points for Oprah You Get A
+2024-12-16 17:31:15,321 - INFO - First data point: 2022-01-01 - 12300 captions
+2024-12-16 17:31:15,323 - INFO - Last data point: 2024-11-01 - 11300 captions
+2024-12-16 17:31:15,326 - INFO - Saved data for Oprah You Get A to data/meme_Oprah_You_Get_A_20241216_173115.json
+2024-12-16 17:31:15,328 - INFO - Successfully processed Oprah You Get A
+2024-12-16 17:31:17,638 - INFO - Updated data saved to data\meme_data_20241216_170727.json
+2024-12-16 17:31:22,632 - INFO - Processing template 35/597: https://imgflip.com/meme/UNO-Draw-25-Cards
+2024-12-16 17:31:22,635 - INFO - Processing template: https://imgflip.com/meme/UNO-Draw-25-Cards (Attempt 1/3)
+2024-12-16 17:31:49,049 - INFO - Chrome WebDriver setup complete with SSL and stability fixes
+2024-12-16 17:31:49,054 - INFO - Fetching meme: https://imgflip.com/meme/UNO-Draw-25-Cards
+2024-12-16 17:31:52,587 - DEBUG - Skipping invalid data point: [{}, 64850]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:31:52,588 - DEBUG - Skipping invalid data point: [{}, 56900]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:31:52,588 - DEBUG - Skipping invalid data point: [{}, 63900]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:31:52,589 - DEBUG - Skipping invalid data point: [{}, 56300]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:31:52,589 - DEBUG - Skipping invalid data point: [{}, 62800]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:31:52,589 - DEBUG - Skipping invalid data point: [{}, 46150]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:31:52,589 - DEBUG - Skipping invalid data point: [{}, 37850]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:31:52,590 - DEBUG - Skipping invalid data point: [{}, 44800]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:31:52,590 - DEBUG - Skipping invalid data point: [{}, 54500]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:31:52,590 - DEBUG - Skipping invalid data point: [{}, 56800]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:31:52,592 - DEBUG - Skipping invalid data point: [{}, 55600]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:31:52,592 - DEBUG - Skipping invalid data point: [{}, 49900]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:31:52,592 - DEBUG - Skipping invalid data point: [{}, 57200]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:31:52,592 - DEBUG - Skipping invalid data point: [{}, 52500]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:31:52,592 - DEBUG - Skipping invalid data point: [{}, 60500]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:31:52,592 - DEBUG - Skipping invalid data point: [{}, 52250]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:31:52,593 - DEBUG - Skipping invalid data point: [{}, 59850]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:31:52,593 - DEBUG - Skipping invalid data point: [{}, 45000]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:31:52,593 - DEBUG - Skipping invalid data point: [{}, 36600]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:31:52,594 - DEBUG - Skipping invalid data point: [{}, 41000]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:31:52,594 - DEBUG - Skipping invalid data point: [{}, 48600]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:31:52,594 - DEBUG - Skipping invalid data point: [{}, 50150]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:31:52,594 - DEBUG - Skipping invalid data point: [{}, 48800]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:31:52,595 - DEBUG - Skipping invalid data point: [{}, 39200]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:31:52,595 - DEBUG - Skipping invalid data point: [{}, 44550]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:31:52,595 - DEBUG - Skipping invalid data point: [{}, 44200]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:31:52,595 - DEBUG - Skipping invalid data point: [{}, 51150]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:31:52,595 - DEBUG - Skipping invalid data point: [{}, 45500]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:31:52,596 - DEBUG - Skipping invalid data point: [{}, 46650]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:31:52,596 - DEBUG - Skipping invalid data point: [{}, 35200]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:31:52,596 - DEBUG - Skipping invalid data point: [{}, 30200]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:31:52,596 - DEBUG - Skipping invalid data point: [{}, 33850]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:31:52,596 - DEBUG - Skipping invalid data point: [{}, 37700]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:31:52,597 - DEBUG - Skipping invalid data point: [{}, 39550]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:31:52,597 - DEBUG - Skipping invalid data point: [{}, 39300]. Error: strptime() argument 1 must be str, not dict
+2024-12-16 17:31:52,599 - INFO - Saved data for UNO Draw 25 Cards to data/meme_UNO_Draw_25_Cards_20241216_173152.json
+2024-12-16 17:31:52,601 - INFO - Successfully processed UNO Draw 25 Cards
+2024-12-16 17:31:54,731 - INFO - Updated data saved to data\meme_data_20241216_170727.json
+2024-12-16 17:31:59,679 - INFO - 
+Progress Update:
+2024-12-16 17:31:59,681 - INFO - Processed: 35/597 templates
+2024-12-16 17:31:59,682 - INFO - Success: 35, Failed: 0
+2024-12-16 17:31:59,683 - INFO - Processing template 36/597: https://imgflip.com/meme/Grus-Plan
+2024-12-16 17:31:59,684 - INFO - Processing template: https://imgflip.com/meme/Grus-Plan (Attempt 1/3)
+2024-12-16 17:32:26,491 - INFO - Chrome WebDriver setup complete with SSL and stability fixes
+2024-12-16 17:32:26,494 - INFO - Fetching meme: https://imgflip.com/meme/Grus-Plan
+2024-12-16 17:32:34,438 - INFO - Successfully extracted 35 data points for Grus Plan
+2024-12-16 17:32:34,440 - INFO - First data point: 2022-01-01 - 48750 captions
+2024-12-16 17:32:34,441 - INFO - Last data point: 2024-11-01 - 26200 captions
+2024-12-16 17:32:34,447 - INFO - Saved data for Grus Plan to data/meme_Grus_Plan_20241216_173234.json
+2024-12-16 17:32:34,449 - INFO - Successfully processed Grus Plan
+2024-12-16 17:32:36,818 - INFO - Updated data saved to data\meme_data_20241216_170727.json
+2024-12-16 17:32:40,884 - INFO - Processing template 37/597: https://imgflip.com/meme/This-Is-Where-Id-Put-My-Trophy-If-I-Had-One
+2024-12-16 17:32:40,886 - INFO - Processing template: https://imgflip.com/meme/This-Is-Where-Id-Put-My-Trophy-If-I-Had-One (Attempt 1/3)

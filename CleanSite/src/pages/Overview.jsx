@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import TikTokActivity from '../components/TikTokActivity';
 import YouTubeActivity from '../components/YouTubeActivity';
-import AnimatedHeader from '../components/AnimatedHeader';
+import AnimatedHeader from '../components/header/AnimatedHeader';
 import AnimatedBackground from '../components/AnimatedBackground';
 
 const Overview = () => {

@@ -44,13 +44,13 @@ const Navbar = () => {
       <div className={`${isDesktop ? 'h-full pt-8' : 'relative'}`}>
         {/* Header Area */}
         <div className="px-6 mb-8 space-y-1">
-          <h1 className="text-base font-mono font-bold">
+          <h1 className="text-base font-mono font-bold text-black">
             LAUNCH TERMINAL
           </h1>
-          <div className="text-sm text-gray-500 font-mono">
+          <div className="text-sm text-black font-mono">
             UPDATED: {currentDate}
           </div>
-          <div className="text-sm text-gray-500 font-mono">
+          <div className="text-sm text-black font-mono">
             V2.0
           </div>
         </div>
@@ -60,7 +60,7 @@ const Navbar = () => {
             onClick={() => setIsOpen(!isOpen)}
             className="p-2 hover:bg-gray-100 rounded-lg transition-all duration-300"
           >
-            <HiMenu className="h-6 w-6 text-gray-700" />
+            <HiMenu className="h-6 w-6 text-black" />
           </button>
         )}
 
@@ -82,13 +82,13 @@ const Navbar = () => {
                     ${isActive ? 'bg-gray-100' : 'hover:bg-gray-50'}
                   `}
                 >
-                  <span className="text-gray-400 font-mono text-sm w-8">{item.number}</span>
-                  <item.icon className={`w-5 h-5 mr-3 ${isActive ? 'text-gray-900' : 'text-gray-400'}`} />
-                  <span className={`font-medium ${isActive ? 'text-black' : 'text-gray-600'}`}>
+                  <span className="text-black font-mono text-sm w-8">{item.number}</span>
+                  <item.icon className={`w-5 h-5 mr-3 ${isActive ? 'text-black' : 'text-black'}`} />
+                  <span className={`font-medium text-black`}>
                     {item.label}
                   </span>
                   {isActive && (
-                    <span className="ml-auto text-gray-400">→</span>
+                    <span className="ml-auto text-black">→</span>
                   )}
                 </Link>
               );

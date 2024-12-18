@@ -8,7 +8,7 @@ const animatedBackground = () => {
       <div 
         className="absolute inset-0 opacity-30"
         style={{
-          background: 'radial-gradient(circle at 50% 0%, rgba(59, 130, 246, 0.12), transparent 70%)'
+          background: 'radial-gradient(circle at 50% 0%, rgba(0, 0, 0, 0.12), transparent 70%)'
         }}
       />
 
@@ -19,7 +19,7 @@ const animatedBackground = () => {
             key={`line-${i}`}
             className="absolute w-full h-px opacity-20"
             style={{
-              background: 'linear-gradient(90deg, transparent 0%, rgba(59, 130, 246, 0.3) 50%, transparent 100%)',
+              background: 'linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.3) 50%, transparent 100%)',
               top: `${30 + i * 20}%`,
               animation: `float ${15 + i * 2}s ease-in-out infinite`,
               animationDelay: `${-i * 3}s`,
@@ -33,7 +33,7 @@ const animatedBackground = () => {
         <div 
           className="w-full h-full"
           style={{
-            backgroundImage: 'radial-gradient(rgba(59, 130, 246, 0.2) 1px, transparent 1px)',
+            backgroundImage: 'radial-gradient(rgba(59, 246, 75, 0.2) 1px, transparent 1px)',
             backgroundSize: '50px 50px',
           }}
         />

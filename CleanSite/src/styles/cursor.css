@@ -10,131 +10,163 @@ body,
   pointer-events: none;
   z-index: 9999;
   transform: translate(-50%, -50%);
-  mix-blend-mode: difference;
 }
 
-/* Main cursor container */
-.cursor-scanner {
-  width: 40px;
-  height: 40px;
+.radar-cursor {
+  width: 50px;
+  height: 50px;
   position: relative;
+  transition: all 0.3s ease;
+}
+
+/* Radar background circle */
+.radar-circle {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 1.5px solid rgba(112, 128, 144, 0.8); /* slate-gray with high opacity */
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.1);
+  box-shadow: 
+    inset 0 0 10px rgba(176, 224, 230, 0.3),
+    0 0 5px rgba(112, 128, 144, 0.5);
+}
+
+/* Inner circles */
+.radar-circle::before,
+.radar-circle::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid rgba(112, 128, 144, 0.6);
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(176, 224, 230, 0.3);
+}
+
+.radar-circle::before {
+  width: 70%;
+  height: 70%;
+}
+
+.radar-circle::after {
+  width: 40%;
+  height: 40%;
+}
+
+/* Radar sweep line container */
+.radar-sweep {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  height: 2px;
+  transform-origin: left center;
+  animation: sweep 2s infinite linear;
+}
+
+/* Sweep line */
+.radar-sweep::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    var(--slate-gray) 0%,
+    var(--powder-blue) 50%,
+    transparent 100%
+  );
+  box-shadow: 
+    0 0 4px var(--powder-blue),
+    0 0 6px var(--slate-gray);
 }
 
 /* Center dot */
-.cursor-dot {
+.radar-dot {
   position: absolute;
-  top: 50%;
-  left: 50%;
   width: 4px;
   height: 4px;
-  background: var(--powder-blue);
+  background: var(--slate-gray);
   border-radius: 50%;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
+  box-shadow: 
+    0 0 4px var(--powder-blue),
+    0 0 6px var(--slate-gray);
 }
 
-/* Scanning lines */
-.scan-x, .scan-y {
+/* Enhanced crosshair */
+.radar-crosshair-h,
+.radar-crosshair-v {
   position: absolute;
-  background: var(--powder-blue);
-  opacity: 0.5;
+  background: var(--slate-gray);
+  pointer-events: none;
+  opacity: 0.7;
+  box-shadow: 0 0 4px rgba(176, 224, 230, 0.5);
 }
 
-.scan-x {
+.radar-crosshair-h {
   width: 100%;
   height: 1px;
   top: 50%;
-  animation: scanX 1.5s linear infinite;
+  transform: translateY(-50%);
 }
 
-.scan-y {
+.radar-crosshair-v {
   width: 1px;
   height: 100%;
   left: 50%;
-  animation: scanY 1.5s linear infinite;
-}
-
-/* Rotating frame */
-.cursor-frame {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border: 1px solid var(--powder-blue);
-  animation: rotate 3s linear infinite;
-}
-
-/* Corner brackets */
-.corner {
-  position: absolute;
-  width: 8px;
-  height: 8px;
-  border: 1px solid var(--powder-blue);
-}
-
-.top-left { top: 0; left: 0; border-right: 0; border-bottom: 0; }
-.top-right { top: 0; right: 0; border-left: 0; border-bottom: 0; }
-.bottom-left { bottom: 0; left: 0; border-right: 0; border-top: 0; }
-.bottom-right { bottom: 0; right: 0; border-left: 0; border-top: 0; }
-
-/* Ripple effect */
-.cursor-ripple {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  height: 100%;
-  border: 1px solid var(--powder-blue);
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-  animation: ripple 2s linear infinite;
+  transform: translateX(-50%);
 }
 
 /* Hover state */
-.custom-cursor.hover .cursor-scanner {
-  width: 60px;
-  height: 60px;
+.custom-cursor.hover .radar-cursor {
+  width: 70px;
+  height: 70px;
 }
 
-.custom-cursor.hover .cursor-ripple {
-  animation: rippleHover 1s linear infinite;
+.custom-cursor.hover .radar-sweep::after {
+  box-shadow: 
+    0 0 8px var(--powder-blue),
+    0 0 12px var(--slate-gray);
 }
 
-@keyframes scanX {
-  0%, 100% { transform: scaleX(0); }
-  50% { transform: scaleX(1); }
+@keyframes sweep {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
-@keyframes scanY {
-  0%, 100% { transform: scaleY(0); }
-  50% { transform: scaleY(1); }
+/* Enhanced glow effect with better contrast */
+.radar-glow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at center,
+    rgba(112, 128, 144, 0.3) 0%,
+    rgba(176, 224, 230, 0.2) 50%,
+    transparent 100%
+  );
+  mix-blend-mode: multiply;
+  animation: pulse 2s infinite linear;
 }
 
-@keyframes rotate {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
-
-@keyframes ripple {
-  0% { 
-    width: 0%;
-    height: 0%;
+@keyframes pulse {
+  0% {
     opacity: 0.5;
   }
-  100% { 
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-  }
-}
-
-@keyframes rippleHover {
-  0% { 
-    width: 0%;
-    height: 0%;
+  50% {
     opacity: 0.8;
   }
-  100% { 
-    width: 150%;
-    height: 150%;
-    opacity: 0;
+  100% {
+    opacity: 0.5;
   }
 }

@@ -1,4 +1,5 @@
 // src/components/CustomCursor.jsx
+// src/components/CustomCursor.jsx
 import { useEffect, useState } from 'react';
 
 const CustomCursor = () => {
@@ -54,16 +55,13 @@ const CustomCursor = () => {
         top: `${position.y}px`,
       }}
     >
-      <div className="cursor-scanner">
-        <div className="cursor-frame" />
-        <div className="corner top-left" />
-        <div className="corner top-right" />
-        <div className="corner bottom-left" />
-        <div className="corner bottom-right" />
-        <div className="cursor-dot" />
-        <div className="scan-x" />
-        <div className="scan-y" />
-        <div className="cursor-ripple" />
+      <div className="radar-cursor">
+        <div className="radar-circle" />
+        <div className="radar-glow" />
+        <div className="radar-sweep" />
+        <div className="radar-crosshair-h" />
+        <div className="radar-crosshair-v" />
+        <div className="radar-dot" />
       </div>
     </div>
   );

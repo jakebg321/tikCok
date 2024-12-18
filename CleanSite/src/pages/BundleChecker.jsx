@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import HolderBubbleMap from '../components/BubbleMap/HolderBubbleMap';
 import cryptoData from '../data/processed_crypto_data.json';
 import AnimatedBackground from '../components/AnimatedBackground';
+import coinStateManager from '../server/CoinStateManager';
+
 const BundleChecker = () => {
   const [data, setData] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
@@ -33,12 +35,19 @@ const BundleChecker = () => {
     };
 
     loadData();
+
+    // Subscribe to coin state changes
+    const unsubscribe = coinStateManager.subscribe(({ currentCoin: newCoin, previousCoins: newPreviousCoins }) => {
+      setCurrentCoin(newCoin);
+      setPreviousCoins(newPreviousCoins);
+    });
+
+    return () => unsubscribe();
   }, []);
 
   const handleCoinChange = (coin, isNewCycle) => {
-    setCurrentCoin(coin);
     if (isNewCycle) {
-      setPreviousCoins(prev => [coin, ...prev].slice(0, 4));
+      setCurrentCoin(coin);
     }
   };
 

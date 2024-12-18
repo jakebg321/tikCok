@@ -44,18 +44,18 @@ const BundleChecker = () => {
   };
 
   return (
-    <div className="min-h-screen lg:ml-[240px]">
+    <div className="fixed inset-0 lg:ml-[240px] overflow-hidden">
       <AnimatedBackground />
-      <div className="relative z-20 h-screen flex flex-col">
-        {/* Header Section */}
-        <div className="p-8 pb-4">
-          <h1 className="text-4xl font-bold text-matrix-primary">Bundle Checker</h1>
-          <p className="text-matrix-primary-80 mt-2">Real-time token holder analysis</p>
-        </div>
+      <div className="absolute inset-0 z-20 flex">
+        {/* Main Content Area with Header */}
+        <div className="flex-1 flex flex-col">
+          {/* Header Section */}
+          <div className="p-8 pb-4">
+            <h1 className="text-4xl font-bold text-matrix-primary">Bundle Checker</h1>
+            <p className="text-matrix-primary-80 mt-2">Real-time token holder analysis</p>
+          </div>
 
-        {/* Main Content Area */}
-        <div className="flex flex-1 overflow-hidden">
-          {/* Main Visualization */}
+          {/* Visualization Area */}
           <div className="flex-1 relative">
             {isLoading ? (
               <div className="flex items-center justify-center h-full">
@@ -77,32 +77,32 @@ const BundleChecker = () => {
               </div>
             )}
           </div>
+        </div>
 
-          {/* Right Sidebar - Now extends full height */}
-          <div className="w-[300px] h-full border-l border-matrix-primary-30 backdrop-blur-sm overflow-y-hidden">
-            <div className="p-6 space-y-4">
-              {[currentCoin, ...previousCoins].map((coin, index) => (
-                coin && <div 
-                  key={`${coin.coin_info?.symbol}-${index}`}
-                  className={`flex flex-col p-4 border border-matrix-primary-30 rounded-lg bg-black/30 ${
-                    index === 0 ? 'border-matrix-primary' : ''
-                  }`}
-                >
-                  <div className="text-lg font-bold text-matrix-primary mb-2">
-                    {coin.coin_info?.name || 'Unknown'}
-                  </div>
-                  <div className="text-matrix-primary-80 mb-1">
-                    Symbol: {coin.coin_info?.symbol || 'N/A'}
-                  </div>
-                  <div className="text-matrix-primary-80 mb-1">
-                    Market Cap: ${coin.coin_info?.market_cap?.toLocaleString() || 'N/A'}
-                  </div>
-                  <div className="text-matrix-primary-80">
-                    Price: ${coin.coin_info?.price_usd?.toFixed(8) || 'N/A'}
-                  </div>
+        {/* Right Sidebar */}
+        <div className="w-[300px] border-l border-matrix-primary-30 backdrop-blur-sm">
+          <div className="h-full p-6 space-y-4">
+            {[currentCoin, ...previousCoins].map((coin, index) => (
+              coin && <div 
+                key={`${coin.coin_info?.symbol}-${index}`}
+                className={`flex flex-col p-4 border border-matrix-primary-30 rounded-lg bg-black/30 ${
+                  index === 0 ? 'border-matrix-primary' : ''
+                }`}
+              >
+                <div className="text-lg font-bold text-matrix-primary mb-2">
+                  {coin.coin_info?.name || 'Unknown'}
                 </div>
-              ))}
-            </div>
+                <div className="text-matrix-primary-80 mb-1">
+                  Symbol: {coin.coin_info?.symbol || 'N/A'}
+                </div>
+                <div className="text-matrix-primary-80 mb-1">
+                  Market Cap: ${coin.coin_info?.market_cap?.toLocaleString() || 'N/A'}
+                </div>
+                <div className="text-matrix-primary-80">
+                  Price: ${coin.coin_info?.price_usd?.toFixed(8) || 'N/A'}
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>

@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import BubbleVisualization from './BubbleVisualization';
+import RadarMapBackground from './radarBackground';
 import { 
     selectRandomCoin,
     processHolderData,
@@ -88,12 +89,15 @@ const HolderBubbleMap = ({ data, onCoinChange }) => {
 
     return (
         <div className="absolute inset-0 flex items-center justify-center overflow-hidden">
-            <BubbleVisualization 
-                visibleHolders={visibleHolders.slice(0, activeHolderCount)}
-                hoveredHolder={hoveredHolder}
-                setHoveredHolder={setHoveredHolder}
-                centerSymbol={currentCoin.coin_info?.symbol}
-            />
+            <RadarMapBackground />
+            <div className="absolute inset-0">
+                <BubbleVisualization 
+                    visibleHolders={visibleHolders.slice(0, activeHolderCount)}
+                    hoveredHolder={hoveredHolder}
+                    setHoveredHolder={setHoveredHolder}
+                    centerSymbol={currentCoin.coin_info?.symbol}
+                />
+            </div>
         </div>
     );
 };

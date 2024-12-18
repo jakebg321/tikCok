@@ -8,29 +8,27 @@ const BubbleVisualization = ({
     setHoveredHolder,
     centerSymbol 
 }) => {
-    // Add debug logging
+    // Add more detailed debug logging
     useEffect(() => {
-        console.log('BubbleVisualization rendered with:', {
+        console.log('BubbleVisualization props:', {
             holdersCount: visibleHolders.length,
-            centerSymbol,
-            sampleHolder: visibleHolders[0],
-            hasPercentages: visibleHolders.some(h => h.percentage > 0)
+            holders: visibleHolders,
+            firstHolder: visibleHolders[0],
+            hasValidCoordinates: visibleHolders.every(h => 
+                typeof h.x === 'number' && 
+                typeof h.y === 'number' &&
+                !isNaN(h.x) && 
+                !isNaN(h.y)
+            )
         });
-    }, [visibleHolders, centerSymbol]);
+    }, [visibleHolders]);
 
-    // Debug view for development
+    // Remove or modify these checks that might be preventing rendering
     if (visibleHolders.length === 0) {
+        console.log('No holders to display');
         return (
             <div className="w-full h-full flex items-center justify-center text-matrix-primary font-mono">
-                No holder data available
-            </div>
-        );
-    }
-
-    if (!visibleHolders.some(h => h.percentage > 0)) {
-        return (
-            <div className="w-full h-full flex items-center justify-center text-matrix-primary font-mono">
-                Invalid percentage data in holders
+                Waiting for holder data...
             </div>
         );
     }
@@ -148,10 +146,19 @@ const BubbleVisualization = ({
                 );
             })}
 
+            {/* Debug circle to verify SVG rendering */}
+            <circle
+                cx="400"
+                cy="300"
+                r="5"
+                fill="red"
+                opacity="0.5"
+            />
+
             {/* Holder Bubbles */}
             <AnimatePresence>
                 {validHolders.map((holder, index) => {
-                    const bubbleRadius = Math.max(30, Math.min(80, holder.percentage * 3));
+                    const bubbleRadius = Math.max(20, Math.min(80, holder.percentage * 3));
                     const isTopHolder = topHolders.includes(holder);
 
                     return (
@@ -197,13 +204,16 @@ const BubbleVisualization = ({
 
             {/* Center Hub */}
             <g filter="url(#glow)">
-                <circle
+                <motion.circle
                     cx={CONSTANTS.CENTER_X}
                     cy={CONSTANTS.CENTER_Y}
                     r={CONSTANTS.HUB_RADIUS}
                     fill="none"
                     stroke="var(--matrix-primary)"
                     strokeWidth="2"
+                    initial={{ scale: 0 }}
+                    animate={{ scale: 1 }}
+                    transition={{ duration: 0.5 }}
                 />
                 <text
                     x={CONSTANTS.CENTER_X}

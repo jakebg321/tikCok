@@ -72,8 +72,8 @@ export const processHolderData = (holders, maxBubbles = 40) => {
 };
 
 const isPositionValid = (x, y, radius, existingPositions, centerX, centerY) => {
-    const SAFETY_MARGIN = 1.2; // 20% extra space between bubbles
-    const CENTER_SAFETY_MARGIN = 1.3; // 30% extra space around center
+    const SAFETY_MARGIN = 1.12; // 20% extra space between bubbles
+    const CENTER_SAFETY_MARGIN = 1.13; // 30% extra space around center
     const HUB_RADIUS = 40;
     
     // Check distance from center with safety margin
@@ -97,34 +97,34 @@ const isPositionValid = (x, y, radius, existingPositions, centerX, centerY) => {
 export const calculateBubbleLayout = (holders, width, height) => {
     const CENTER_X = width / 2;
     const CENTER_Y = height / 2;
-    const padding = 100;
-    const MAX_ATTEMPTS = 50;
-    const layoutPositions = [];
-    
+    const SAFE_RADIUS = 100; // Minimum distance from center
+
     return holders.map(holder => {
-        let x, y;
+        let angle, radius, x, y;
+        let isTooClose = true;
         let attempts = 0;
-        const radius = Math.max(30, Math.min(80, holder.percentage * 3));
-        
-        // Keep trying positions until we find a valid one or run out of attempts
-        do {
-            x = padding + Math.random() * (width - 2 * padding);
-            y = padding + Math.random() * (height - 2 * padding);
+
+        // Keep trying until we find a position outside the safe area
+        while (isTooClose && attempts < 10) {
+            angle = Math.random() * 2 * Math.PI;
+            radius = SAFE_RADIUS + Math.random() * 200; // Start from safe radius
+            x = CENTER_X + radius * Math.cos(angle);
+            y = CENTER_Y + radius * Math.sin(angle);
+
+            // Check if the bubble (including its radius) would intersect with safe area
+            const bubbleRadius = Math.max(30, Math.min(80, holder.percentage * 3));
+            const distanceFromCenter = Math.sqrt(
+                Math.pow(x - CENTER_X, 2) + Math.pow(y - CENTER_Y, 2)
+            );
+            
+            isTooClose = distanceFromCenter - bubbleRadius < SAFE_RADIUS;
             attempts++;
-        } while (!isPositionValid(x, y, radius, layoutPositions, CENTER_X, CENTER_Y) && attempts < MAX_ATTEMPTS);
-        
-        // If we couldn't find a valid position, try to place it somewhere with minimal overlap
-        if (attempts >= MAX_ATTEMPTS) {
-            x = padding + Math.random() * (width - 2 * padding);
-            y = padding + Math.random() * (height - 2 * padding);
         }
-        
-        const position = { x, y, radius };
-        layoutPositions.push(position);
-        
+
         return {
             ...holder,
-            ...position
+            x: x,
+            y: y
         };
     });
 };

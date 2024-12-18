@@ -223,6 +223,24 @@ const BubbleVisualization = ({
 
             {/* Center Hub */}
             <g filter="url(#glow)">
+                {/* Pulsating radar ring */}
+                <motion.circle
+                    cx={CONSTANTS.CENTER_X}
+                    cy={CONSTANTS.CENTER_Y}
+                    r={CONSTANTS.HUB_RADIUS}
+                    className="fill-none stroke-matrix-primary"
+                    initial={{ r: CONSTANTS.HUB_RADIUS, opacity: 0.8 }}
+                    animate={{ 
+                        r: [CONSTANTS.HUB_RADIUS, 280],
+                        opacity: [0.8, 0],
+                        strokeWidth: [2, 0.5]
+                    }}
+                    transition={{ 
+                        duration: 4,
+                        ease: "linear",
+                        repeat: Infinity,
+                    }}
+                />
                 <motion.circle
                     cx={CONSTANTS.CENTER_X}
                     cy={CONSTANTS.CENTER_Y}

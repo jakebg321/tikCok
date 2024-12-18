@@ -13,8 +13,8 @@ body,
 }
 
 .radar-cursor {
-  width: 50px;
-  height: 50px;
+  width: 30px;  /* reduced from 50px */
+  height: 30px; /* reduced from 50px */
   position: relative;
   transition: all 0.3s ease;
 }
@@ -124,8 +124,8 @@ body,
 
 /* Hover state */
 .custom-cursor.hover .radar-cursor {
-  width: 70px;
-  height: 70px;
+  width: 40px;  /* reduced from 70px */
+  height: 40px; /* reduced from 70px */
 }
 
 .custom-cursor.hover .radar-sweep::after {

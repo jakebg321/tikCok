@@ -9,6 +9,7 @@ const BundleChecker = () => {
   const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 1024);
   const [hoveredHolder, setHoveredHolder] = useState(null); // Add hover state
   const [currentCoin, setCurrentCoin] = useState(null);
+  const [previousCoins, setPreviousCoins] = useState([]); // Add this state
 
   // Handle window resize and desktop detection
   useEffect(() => {
@@ -36,9 +37,13 @@ const BundleChecker = () => {
     loadData();
   }, []);
 
-  const handleCoinChange = (coin) => {
+  const handleCoinChange = (coin, isNewCycle) => {
     console.log('Coin changed:', coin); // Add debug logging
     setCurrentCoin(coin);
+    // Only update previous coins when radar completes a cycle
+    if (isNewCycle) {
+      setPreviousCoins(prev => [coin, ...prev].slice(0, 4));
+    }
   };
 
   return (
@@ -71,27 +76,28 @@ const BundleChecker = () => {
 
           {/* Right Sidebar */}
           <div className="w-[300px] h-full border-l border-matrix-primary-30 backdrop-blur-sm">
-            <div className="p-6">
-              <div className="flex flex-col p-4 border border-matrix-primary-30 rounded-lg bg-black/30">
-                {currentCoin ? (
-                  <>
-                    <div className="text-lg font-bold text-matrix-primary mb-2">
-                      {currentCoin.coin_info?.name || 'Unknown'}
-                    </div>
-                    <div className="text-matrix-primary-80 mb-1">
-                      Symbol: {currentCoin.coin_info?.symbol || 'N/A'}
-                    </div>
-                    <div className="text-matrix-primary-80 mb-1">
-                      Market Cap: ${currentCoin.coin_info?.market_cap?.toLocaleString() || 'N/A'}
-                    </div>
-                    <div className="text-matrix-primary-80">
-                      Price: ${currentCoin.coin_info?.price_usd?.toFixed(8) || 'N/A'}
-                    </div>
-                  </>
-                ) : (
-                  <div className="text-matrix-primary">Loading...</div>
-                )}
-              </div>
+            <div className="p-6 space-y-4">
+              {[currentCoin, ...previousCoins].map((coin, index) => (
+                coin && <div 
+                  key={`${coin.coin_info?.symbol}-${index}`}
+                  className={`flex flex-col p-4 border border-matrix-primary-30 rounded-lg bg-black/30 ${
+                    index === 0 ? 'border-matrix-primary' : ''
+                  }`}
+                >
+                  <div className="text-lg font-bold text-matrix-primary mb-2">
+                    {coin.coin_info?.name || 'Unknown'}
+                  </div>
+                  <div className="text-matrix-primary-80 mb-1">
+                    Symbol: {coin.coin_info?.symbol || 'N/A'}
+                  </div>
+                  <div className="text-matrix-primary-80 mb-1">
+                    Market Cap: ${coin.coin_info?.market_cap?.toLocaleString() || 'N/A'}
+                  </div>
+                  <div className="text-matrix-primary-80">
+                    Price: ${coin.coin_info?.price_usd?.toFixed(8) || 'N/A'}
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>

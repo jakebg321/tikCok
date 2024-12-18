@@ -10,7 +10,7 @@ import {
 const HolderBubbleMap = ({ data, onCoinChange }) => {
     const MAX_BUBBLES = 40;
     const BUBBLE_DELAY = 150; // Faster holder animation
-    const DISPLAY_DURATION = 5000; // How long to show complete visualization
+    const DISPLAY_DURATION = 4000; // Match radar animation duration (4 seconds)
     
     const [currentCoin, setCurrentCoin] = useState(null);
     const [displayedCoins, setDisplayedCoins] = useState([]);
@@ -36,7 +36,7 @@ const HolderBubbleMap = ({ data, onCoinChange }) => {
         const nextCoin = selectRandomCoin(data.coins_data, displayedCoins);
         if (nextCoin) {
             setCurrentCoin(nextCoin);
-            onCoinChange?.(nextCoin); // Notify parent
+            onCoinChange?.(nextCoin, true); // Add second parameter to indicate new cycle
             setActiveHolderCount(0);
             if (nextCoin.coin_info?.contract_address) {
                 setDisplayedCoins(prev => [...prev, nextCoin.coin_info.contract_address].slice(-10));

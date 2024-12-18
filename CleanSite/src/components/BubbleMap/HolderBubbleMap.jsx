@@ -1,129 +1,93 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import BubbleVisualization from './BubbleVisualization';
+import { 
+    selectRandomCoin,
+    processHolderData,
+    calculateBubbleLayout
+} from '../../utils/coinDisplayUtils';
 
 const HolderBubbleMap = ({ data, onCoinChange }) => {
     const MAX_BUBBLES = 40;
-    const ROTATION_INTERVAL = 30000;
-    const CENTER_BUFFER = 40; // minimum distance from center
+    const BUBBLE_DELAY = 150; // Faster holder animation
+    const DISPLAY_DURATION = 5000; // How long to show complete visualization
+    
     const [currentCoin, setCurrentCoin] = useState(null);
+    const [displayedCoins, setDisplayedCoins] = useState([]);
     const [visibleHolders, setVisibleHolders] = useState([]);
-    const [activeHolderCount, setActiveHolderCount] = useState(0);
     const [hoveredHolder, setHoveredHolder] = useState(null);
+    const [activeHolderCount, setActiveHolderCount] = useState(0);
 
-    const processHolderData = useCallback((holders) => {
-        if (!holders || !Array.isArray(holders)) {
-            console.warn('Invalid holders data:', holders);
-            return [];
-        }
-
-        const maxRadius = 212.5; // Reduced by 15% from original 250
-        const processedHolders = [];
-
-        const checkCollision = (newHolder, existingHolders) => {
-            for (const existing of existingHolders) {
-                const dx = newHolder.x - existing.x;
-                const dy = newHolder.y - existing.y;
-                const distance = Math.sqrt(dx * dx + dy * dy);
-                if (distance < (newHolder.radius + existing.radius)) {
-                    return true;
-                }
-            }
-            return false;
-        };
-
-        holders
-            .filter(holder => holder && holder.address)
-            .forEach((holder, index) => {
-                const percentage = parseFloat(holder.percentage) || 0;
-                // Reduce bubble size by 50%
-                const bubbleRadius = Math.max(7, Math.min(7.5, percentage * 0.7));
-
-                let validPosition = false;
-                let attempts = 0;
-                let holderData;
-
-                while (!validPosition && attempts < 50) {
-                    const angle = Math.random() * Math.PI * 2;
-                    const minRadius = CENTER_BUFFER + 50;
-                    const radius = minRadius + Math.random() * (maxRadius - minRadius);
-                    const centerX = 400;
-                    const centerY = 300;
-
-                    holderData = {
-                        address: holder.address,
-                        percentage: percentage,
-                        balance: parseFloat(holder.balance) || 0,
-                        x: centerX + (radius * Math.cos(angle)),
-                        y: centerY + (radius * Math.sin(angle)),
-                        radius: bubbleRadius,
-                        delay: index * 0.5
-                    };
-
-                    if (!checkCollision(holderData, processedHolders)) {
-                        validPosition = true;
-                    }
-                    attempts++;
-                }
-
-                if (holderData) {
-                    processedHolders.push(holderData);
-                }
-            });
-
-        return processedHolders;
+    const processCoin = useCallback((coin) => {
+        if (!coin?.holders) return [];
+        
+        const processedHolders = processHolderData(coin.holders, MAX_BUBBLES);
+        const bubblesWithLayout = calculateBubbleLayout(processedHolders, 800, 600);
+        
+        return bubblesWithLayout.map(holder => ({
+            ...holder,
+            radius: Math.max(30, Math.min(80, holder.percentage * 3))
+        }));
     }, []);
 
+    const moveToNextCoin = useCallback(() => {
+        if (!data?.coins_data?.length) return;
+        
+        const nextCoin = selectRandomCoin(data.coins_data, displayedCoins);
+        if (nextCoin) {
+            setCurrentCoin(nextCoin);
+            onCoinChange?.(nextCoin); // Notify parent
+            setActiveHolderCount(0);
+            if (nextCoin.coin_info?.contract_address) {
+                setDisplayedCoins(prev => [...prev, nextCoin.coin_info.contract_address].slice(-10));
+            }
+            const holders = processCoin(nextCoin);
+            setVisibleHolders(holders);
+        }
+    }, [data, displayedCoins, processCoin, onCoinChange]);
+
+    // Initial setup
     useEffect(() => {
         if (!data?.coins_data?.length) return;
         
-        setActiveHolderCount(0); // Reset counter when new data arrives
-        const coin = data.coins_data[0];
-        setCurrentCoin(coin);
-        onCoinChange?.(coin); // Send coin data to parent
-
-        if (coin?.holders) {
-            const processed = processHolderData(coin.holders);
-            setVisibleHolders(processed);
+        const initialCoin = selectRandomCoin(data.coins_data, []);
+        if (initialCoin) {
+            setCurrentCoin(initialCoin);
+            onCoinChange?.(initialCoin); // Notify parent
+            if (initialCoin.coin_info?.contract_address) {
+                setDisplayedCoins([initialCoin.coin_info.contract_address]);
+            }
+            const holders = processCoin(initialCoin);
+            setVisibleHolders(holders);
         }
-    }, [data, processHolderData, onCoinChange]);
+    }, [data, processCoin, onCoinChange]);
 
-    // Add effect for incrementing visible holders
+    // Handle holder animation and transition
     useEffect(() => {
+        if (!visibleHolders.length) return;
+
         if (activeHolderCount < visibleHolders.length) {
             const timer = setTimeout(() => {
                 setActiveHolderCount(prev => prev + 1);
-            }, 500); // Adjust timing as needed
+            }, BUBBLE_DELAY);
+            return () => clearTimeout(timer);
+        } 
+        
+        // When all holders are shown, schedule next coin
+        if (activeHolderCount === visibleHolders.length) {
+            const timer = setTimeout(() => {
+                moveToNextCoin();
+            }, DISPLAY_DURATION);
             return () => clearTimeout(timer);
         }
-    }, [activeHolderCount, visibleHolders]);
-
-    // Modify coin rotation effect
-    useEffect(() => {
-        const interval = setInterval(() => {
-            if (data?.coins_data?.length) {
-                setActiveHolderCount(0); // Reset counter
-                const randomIndex = Math.floor(Math.random() * data.coins_data.length);
-                const newCoin = data.coins_data[randomIndex];
-                setCurrentCoin(newCoin);
-                onCoinChange?.(newCoin); // Send coin data to parent
-                
-                if (newCoin?.holders) {
-                    const processed = processHolderData(newCoin.holders);
-                    setVisibleHolders(processed);
-                }
-            }
-        }, ROTATION_INTERVAL);
-
-        return () => clearInterval(interval);
-    }, [data, processHolderData, onCoinChange]);
+    }, [activeHolderCount, visibleHolders, moveToNextCoin]);
 
     if (!currentCoin) {
         return <div className="text-matrix-primary font-mono p-8">Loading...</div>;
     }
 
     return (
-        <div className="absolute inset-0 bg-black flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0 flex items-center justify-center overflow-hidden">
             <BubbleVisualization 
                 visibleHolders={visibleHolders.slice(0, activeHolderCount)}
                 hoveredHolder={hoveredHolder}

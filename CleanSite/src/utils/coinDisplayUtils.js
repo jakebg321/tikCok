@@ -71,52 +71,62 @@ export const processHolderData = (holders, maxBubbles = 40) => {
     return processedHolders;
 };
 
-export const calculateBubbleLayout = (processedHolders, width, height) => {
-    console.log('Calculating bubble layout for', processedHolders.length, 'holders');
-    const centerX = width / 2;
-    const centerY = height / 2;
-    const maxRadius = Math.min(width, height) * 0.4;
-    const HUB_RADIUS = 60;
+const isPositionValid = (x, y, radius, existingPositions, centerX, centerY) => {
+    const SAFETY_MARGIN = 1.2; // 20% extra space between bubbles
+    const CENTER_SAFETY_MARGIN = 1.3; // 30% extra space around center
+    const HUB_RADIUS = 40;
+    
+    // Check distance from center with safety margin
+    const distanceFromCenter = Math.sqrt(Math.pow(x - centerX, 2) + Math.pow(y - centerY, 2));
+    if (distanceFromCenter < (HUB_RADIUS + radius) * CENTER_SAFETY_MARGIN) {
+        return false;
+    }
+    
+    // Check overlap with existing bubbles including safety margin
+    for (const pos of existingPositions) {
+        const distance = Math.sqrt(Math.pow(x - pos.x, 2) + Math.pow(y - pos.y, 2));
+        const minDistance = (radius + pos.radius) * SAFETY_MARGIN;
+        if (distance < minDistance) {
+            return false;
+        }
+    }
+    
+    return true;
+};
 
-    console.log('Layout parameters:', { centerX, centerY, maxRadius, HUB_RADIUS });
-
-    const calculatedPositions = processedHolders.map((holder, index) => {
-        const angle = (index / processedHolders.length) * Math.PI * 2;
-        const radiusFactor = 0.3 + (0.7 * (1 - (holder.percentage / 100)));
-        const distance = HUB_RADIUS + (maxRadius - HUB_RADIUS) * radiusFactor;
+export const calculateBubbleLayout = (holders, width, height) => {
+    const CENTER_X = width / 2;
+    const CENTER_Y = height / 2;
+    const padding = 100;
+    const MAX_ATTEMPTS = 50;
+    const layoutPositions = [];
+    
+    return holders.map(holder => {
+        let x, y;
+        let attempts = 0;
+        const radius = Math.max(30, Math.min(80, holder.percentage * 3));
         
-        const jitter = 20;
-        const x = centerX + (Math.cos(angle) * distance) + (Math.random() - 0.5) * jitter;
-        const y = centerY + (Math.sin(angle) * distance) + (Math.random() - 0.5) * jitter;
+        // Keep trying positions until we find a valid one or run out of attempts
+        do {
+            x = padding + Math.random() * (width - 2 * padding);
+            y = padding + Math.random() * (height - 2 * padding);
+            attempts++;
+        } while (!isPositionValid(x, y, radius, layoutPositions, CENTER_X, CENTER_Y) && attempts < MAX_ATTEMPTS);
         
-        const minRadius = 20;
-        const maxBubbleRadius = 60;
-        const radius = minRadius + (maxBubbleRadius - minRadius) * (holder.percentage / 100);
-
-        const position = {
+        // If we couldn't find a valid position, try to place it somewhere with minimal overlap
+        if (attempts >= MAX_ATTEMPTS) {
+            x = padding + Math.random() * (width - 2 * padding);
+            y = padding + Math.random() * (height - 2 * padding);
+        }
+        
+        const position = { x, y, radius };
+        layoutPositions.push(position);
+        
+        return {
             ...holder,
-            x,
-            y,
-            radius: Math.max(minRadius, Math.min(maxBubbleRadius, radius)),
-            _debug: {
-                angle,
-                distance,
-                radiusFactor,
-                originalPercentage: holder.percentage
-            }
+            ...position
         };
-
-        console.log(`Holder ${index + 1}/${processedHolders.length}:`, {
-            percentage: holder.percentage.toFixed(2),
-            radius: position.radius.toFixed(2),
-            x: position.x.toFixed(2),
-            y: position.y.toFixed(2)
-        });
-
-        return position;
     });
-
-    return calculatedPositions;
 };
 
 export const validateHolderData = (holders) => {
@@ -136,26 +146,6 @@ export const validateHolderData = (holders) => {
         return false;
     }
 
-    return true;
-};
-
-const isPositionValid = (x, y, radius, existingPositions) => {
-    const HUB_RADIUS = 60;
-    
-    // Check distance from center
-    const distanceFromCenter = Math.sqrt(Math.pow(x - 400, 2) + Math.pow(y - 300, 2));
-    if (distanceFromCenter < HUB_RADIUS + radius) {
-        return false;
-    }
-    
-    // Check overlap with existing bubbles
-    for (const pos of existingPositions) {
-        const distance = Math.sqrt(Math.pow(x - pos.x, 2) + Math.pow(y - pos.y, 2));
-        if (distance < (radius + pos.radius)) {
-            return false;
-        }
-    }
-    
     return true;
 };
 

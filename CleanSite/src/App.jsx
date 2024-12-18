@@ -5,7 +5,7 @@ import Overview from './pages/Overview';
 import MemeScanner from './pages/MemeScanner';
 import BundleChecker from './pages/BundleChecker';
 import About from './pages/About';
-
+import CustomCursor from './components/CustomCursor';
 function App() {
   return (
     <Router>
@@ -17,6 +17,7 @@ function App() {
           <Route path="/about" element={<About />} />
         </Routes>
       </PageLayout>
+      <CustomCursor />
     </Router>
   );
 }

@@ -44,7 +44,6 @@ const Overview = () => {
         </div>
   
         <div className={`relative ${isDesktop ? 'ml-[15%]' : 'ml-0'}`}>
-          <AnimatedHeader />
           
           <div className="max-w-7xl mx-auto px-4">
             <div className="mt-4 grid grid-cols-1 lg:grid-cols-2 gap-4">

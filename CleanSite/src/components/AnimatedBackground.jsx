@@ -1,76 +1,58 @@
-import React from 'react';
+import { animate } from 'framer-motion';
+import React, { useEffect, useState, useCallback } from 'react';
 
-const AnimatedBackground = () => {
-  // Color constants from the provided scheme
-  const colors = {
-    slateGray: '#708090',
-    powderBlue: '#B0E0E6',
-    softWhite: '#F5F5F5',
-    lightCharcoal: '#3C4048' // Assuming this is a suitable light charcoal color
-  };
-
+const animatedBackground = () => {
   return (
-    <div className="fixed inset-0 bg-slate-900 overflow-hidden" style={{ backgroundColor: colors.lightCharcoal }}>
-      {/* City Grid Background */}
-      <div className="absolute inset-0 opacity-10">
+    <div className="fixed inset-0 overflow-hidden bg-gradient-to-br from-slate-950 to-slate-900">
+      {/* Subtle gradient overlay */}
+      <div 
+        className="absolute inset-0 opacity-30"
+        style={{
+          background: 'radial-gradient(circle at 50% 0%, rgba(59, 130, 246, 0.12), transparent 70%)'
+        }}
+      />
+
+      {/* Animated gradient lines */}
+      <div className="absolute inset-0">
+        {[...Array(3)].map((_, i) => (
+          <div
+            key={`line-${i}`}
+            className="absolute w-full h-px opacity-20"
+            style={{
+              background: 'linear-gradient(90deg, transparent 0%, rgba(59, 130, 246, 0.3) 50%, transparent 100%)',
+              top: `${30 + i * 20}%`,
+              animation: `float ${15 + i * 2}s ease-in-out infinite`,
+              animationDelay: `${-i * 3}s`,
+            }}
+          />
+        ))}
+      </div>
+
+      {/* Subtle dots matrix */}
+      <div className="absolute inset-0 opacity-20">
         <div 
           className="w-full h-full"
           style={{
-            backgroundImage: `
-              linear-gradient(to right, ${colors.powderBlue} 1px, transparent 1px),
-              linear-gradient(to bottom, ${colors.powderBlue} 1px, transparent 1px)
-            `,
-            backgroundSize: '40px 40px',
+            backgroundImage: 'radial-gradient(rgba(59, 130, 246, 0.2) 1px, transparent 1px)',
+            backgroundSize: '50px 50px',
           }}
         />
       </div>
 
-      {/* Floating dots */}
-      <div className="absolute inset-0">
-        {[...Array(20)].map((_, i) => (
-          <div
-            key={`dot-${i}`}
-            className="absolute rounded-full animate-float"
-            style={{
-              width: `${4 + (i % 4) * 3}px`,
-              height: `${4 + (i % 4) * 3}px`,
-              background: `rgba(176, 224, 230, ${0.3 + (i % 3) * 0.1})`, // powderBlue with varying opacity
-              boxShadow: `0 0 10px rgba(176, 224, 230, 0.5)`,
-              left: `${(i * 7) % 100}%`,
-              top: `${10 + ((i * 13) % 80)}%`,
-              animationDuration: `${4 + (i % 3)}s`,
-              animationDelay: `${-i * 0.2}s`,
-            }}
-          />
-        ))}
-      </div>
-
-      {/* Large glowing orbs */}
-      <div className="absolute inset-0">
-        {[...Array(3)].map((_, i) => (
-          <div
-            key={`orb-${i}`}
-            className="absolute rounded-full"
-            style={{
-              width: `${300 + i * 100}px`,
-              height: `${300 + i * 100}px`,
-              background: `radial-gradient(circle at center, rgba(176, 224, 230, 0.05) 0%, transparent 70%)`,
-              left: `${(i * 30) % 100}%`,
-              top: `${-50 + (i * 30)}%`,
-              animation: `float ${10 + i * 2}s ease-in-out infinite`,
-              animationDelay: `${-i * 2}s`,
-              filter: 'blur(1px)'
-            }}
-          />
-        ))}
-      </div>
-
-      {/* Content Container */}
+      {/* Content container */}
       <div className="relative z-10">
         {/* Your content goes here */}
       </div>
+
+      {/* Global animations */}
+      <style jsx global="true">{`
+        @keyframes float {
+          0%, 100% { transform: translateY(0) translateX(0); }
+          50% { transform: translateY(30px) translateX(30px); }
+        }
+      `}</style>
     </div>
   );
 };
 
-export default AnimatedBackground;
+export default animatedBackground;

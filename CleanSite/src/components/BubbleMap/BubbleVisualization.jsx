@@ -102,6 +102,25 @@ const BubbleVisualization = ({
                 />
             ))}
 
+            {/* Pulsating radar ring */}
+            <motion.circle
+                cx="400"
+                cy="300"
+                r="40"
+                className="fill-none stroke-matrix-primary"
+                initial={{ r: CONSTANTS.HUB_RADIUS, opacity: 0.8 }}
+                animate={{ 
+                    r: [CONSTANTS.HUB_RADIUS, 280],
+                    opacity: [0.8, 0],
+                    strokeWidth: [2, 0.5]
+                }}
+                transition={{ 
+                    duration: 4,
+                    ease: "linear",
+                    repeat: Infinity,
+                }}
+            />
+
             {/* Draw connections for top holders */}
             {topHolders.map((holder, index) => {
                 const points = calculateConnectionPoints(holder);

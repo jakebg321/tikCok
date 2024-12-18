@@ -194,13 +194,13 @@ const YouTubeActivity = ({ onVideoProcessed }) => {
 
   return (
     <div className="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-lg">
-      <h3 className="text-lg font-bold text-[#4A4A4A] mb-4">Live YouTube Activity</h3>
+      <h3 className="text-lg font-bold text-black mb-4">Live YouTube Activity</h3>
       
       {scanning && (
         <div className="mb-4 p-3 bg-white/80 backdrop-blur-sm rounded-lg border border-gray-200">
           <div className="flex items-center space-x-2 mb-2">
             <div className="animate-pulse w-2 h-2 bg-red-500 rounded-full" />
-            <span className="text-sm text-gray-600">Scanning HTML Structure</span>
+            <span className="text-sm text-black">Scanning HTML Structure</span>
           </div>
           
           {/* HTML Scanner */}
@@ -239,12 +239,12 @@ const YouTubeActivity = ({ onVideoProcessed }) => {
                 </div>
               )}
               {discoveredInfo.author && (
-                <p className="text-sm text-gray-700 animate-fade-in">
+                <p className="text-sm text-black animate-fade-in">
                   {discoveredInfo.author.nickname}
                 </p>
               )}
               {discoveredInfo.views && (
-                <div className="text-xs text-gray-600 animate-fade-in">
+                <div className="text-xs text-black animate-fade-in">
                   {formatNumber(discoveredInfo.views)} views
                 </div>
               )}
@@ -262,10 +262,10 @@ const YouTubeActivity = ({ onVideoProcessed }) => {
           >
             <div className="w-2 h-2 rounded-full bg-[#FF0000]" />
             <div className="flex-1">
-              <p className="text-sm font-medium text-[#4A4A4A]">
+              <p className="text-sm font-medium text-black">
                 <span className="font-bold">{video.author.nickname}</span>: {video.desc}
               </p>
-              <p className="text-xs text-[#4A4A4A]/60">{formatTimeAgo(video.timestamp)}</p>
+              <p className="text-xs text-black/60">{formatTimeAgo(video.timestamp)}</p>
               
               <div className="mt-1 flex flex-wrap gap-2">
                 {video.foundElements?.map(element => (
@@ -278,7 +278,7 @@ const YouTubeActivity = ({ onVideoProcessed }) => {
                 ))}
               </div>
             </div>
-            <span className="text-xs font-medium text-red-700 bg-red-100/20 px-2 py-1 rounded-full">
+            <span className="text-xs font-medium text-black bg-red-100/20 px-2 py-1 rounded-full">
               {formatNumber(video.stats.views)} views
             </span>
           </div>

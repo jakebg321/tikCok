@@ -160,32 +160,34 @@ const LoadingScreen = ({ onLoadingComplete }) => {
     <div className={`fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-black transition-opacity duration-1000 ${
       visible ? 'opacity-100' : 'opacity-0'
     }`}>
-      {/* Main container with no relative positioning */}
-      <div className="mb-6"> {/* Reduced margin */}
-        {/* Container for computer */}
-        <div className="relative inline-block">
-          {/* Computer image container */}
-          <div className="relative">
-            <img 
-              src="/load.png" 
-              alt="Retro Computer" 
-              className={`w-auto h-auto scale-[0.375] transition-opacity duration-1000 ${
-                imageVisible ? 'opacity-100' : 'opacity-0'
-              }`}
-            />
-            <div 
-              className={`absolute flex items-center justify-center transition-opacity duration-1000 ${
-                imageVisible ? 'opacity-100' : 'opacity-0'
-              }`}
-              style={{
-                top: '40%',
-                left: '50%',
-                transform: 'translate(-50%, -50%)',
-                width: '131px', // Reduced from 175px
-                height: '112px', // Reduced from 150px
-              }}
-            >
-              {shapes[currentShape]()}
+      {/* Main container - moved back up */}
+      <div className="mt-[10vh]">
+        <div className="mb-14"> {/* Increased margin from mb-12 to mb-14 for the larger image */}
+          {/* Container for computer */}
+          <div className="relative inline-block">
+            {/* Computer image container */}
+            <div className="relative">
+              <img 
+                src="/load.png" 
+                alt="Retro Computer" 
+                className={`h-48 w-48 transition-opacity duration-1000 drop-shadow-[0_0_15px_rgba(20,184,166,0.7)] animate-pulse ${
+                  imageVisible ? 'opacity-100' : 'opacity-0'
+                }`}
+              />
+              <div 
+                className={`absolute flex items-center justify-center transition-opacity duration-1000 ${
+                  imageVisible ? 'opacity-100' : 'opacity-0'
+                }`}
+                style={{
+                  top: '30%', // Moved shapes up by changing from 40% to 30%
+                  left: '50%',
+                  transform: 'translate(-50%, -50%)',
+                  width: '131px', // Reduced from 175px
+                  height: '112px', // Reduced from 150px
+                }}
+              >
+                {shapes[currentShape]()}
+              </div>
             </div>
           </div>
         </div>

@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import HolderBubbleMap from '../components/BubbleMap/HolderBubbleMap';
 import cryptoData from '../data/processed_crypto_data.json';
 import AnimatedBackground from '../components/AnimatedBackground';
-
 const BundleChecker = () => {
   const [data, setData] = useState(null);
   const [isLoading, setIsLoading] = useState(true);

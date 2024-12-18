@@ -14,7 +14,11 @@ const HolderBubbleMap = ({ data, onCoinChange }) => {
     const DISPLAY_DURATION = 4000; // Match radar animation duration (4 seconds)
     
     const [currentCoin, setCurrentCoin] = useState(null);
-    const [displayedCoins, setDisplayedCoins] = useState([]);
+    const [displayedCoins, setDisplayedCoins] = useState(() => {
+        // Initialize with some previous coins if they exist in localStorage
+        const savedCoins = localStorage.getItem('displayedCoins');
+        return savedCoins ? JSON.parse(savedCoins) : [];
+    });
     const [visibleHolders, setVisibleHolders] = useState([]);
     const [hoveredHolder, setHoveredHolder] = useState(null);
     const [activeHolderCount, setActiveHolderCount] = useState(0);
@@ -40,7 +44,10 @@ const HolderBubbleMap = ({ data, onCoinChange }) => {
             onCoinChange?.(nextCoin, true); // Add second parameter to indicate new cycle
             setActiveHolderCount(0);
             if (nextCoin.coin_info?.contract_address) {
-                setDisplayedCoins(prev => [...prev, nextCoin.coin_info.contract_address].slice(-10));
+                const newDisplayedCoins = [...displayedCoins, nextCoin.coin_info.contract_address].slice(-10);
+                setDisplayedCoins(newDisplayedCoins);
+                // Save to localStorage for persistence
+                localStorage.setItem('displayedCoins', JSON.stringify(newDisplayedCoins));
             }
             const holders = processCoin(nextCoin);
             setVisibleHolders(holders);
@@ -51,17 +58,36 @@ const HolderBubbleMap = ({ data, onCoinChange }) => {
     useEffect(() => {
         if (!data?.coins_data?.length) return;
         
-        const initialCoin = selectRandomCoin(data.coins_data, []);
-        if (initialCoin) {
-            setCurrentCoin(initialCoin);
-            onCoinChange?.(initialCoin); // Notify parent
-            if (initialCoin.coin_info?.contract_address) {
-                setDisplayedCoins([initialCoin.coin_info.contract_address]);
+        // Check if we already have displayed coins
+        if (displayedCoins.length === 0) {
+            const initialCoin = selectRandomCoin(data.coins_data, []);
+            if (initialCoin) {
+                setCurrentCoin(initialCoin);
+                onCoinChange?.(initialCoin);
+                if (initialCoin.coin_info?.contract_address) {
+                    setDisplayedCoins([initialCoin.coin_info.contract_address]);
+                    localStorage.setItem('displayedCoins', JSON.stringify([initialCoin.coin_info.contract_address]));
+                }
+                const holders = processCoin(initialCoin);
+                setVisibleHolders(holders);
             }
-            const holders = processCoin(initialCoin);
-            setVisibleHolders(holders);
+        } else {
+            // If we have displayed coins, start from the last one
+            const lastCoinAddress = displayedCoins[displayedCoins.length - 1];
+            const lastCoin = data.coins_data.find(coin => 
+                coin.coin_info?.contract_address === lastCoinAddress
+            );
+            if (lastCoin) {
+                setCurrentCoin(lastCoin);
+                onCoinChange?.(lastCoin);
+                const holders = processCoin(lastCoin);
+                setVisibleHolders(holders);
+            } else {
+                // If we can't find the last coin, start fresh
+                moveToNextCoin();
+            }
         }
-    }, [data, processCoin, onCoinChange]);
+    }, [data, processCoin, onCoinChange, moveToNextCoin, displayedCoins]);
 
     // Handle holder animation and transition
     useEffect(() => {

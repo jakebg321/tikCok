@@ -29,4 +29,9 @@ export default {
   plugins: [
     require('tailwind-scrollbar-hide')
   ],
+  extend: {
+    animation: {
+      'spin-slow': 'spin 3s linear infinite',
+    }
+  }
 }

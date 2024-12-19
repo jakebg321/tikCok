@@ -13,18 +13,6 @@ const MemeInfoCard = ({ meme }) => {
       <div className="text-sm text-[#708090]">
         <p>Latest Usage: {latestUsage.toLocaleString()} Variations</p>
         <p>Monthly Growth: {growth}%</p>
-        {meme.url && (
-          <p className="text-xs mt-2">
-            <a 
-              href={meme.url} 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="text-[#708090] hover:text-[#B0E0E6]"
-            >
-              View Source
-            </a>
-          </p>
-        )}
       </div>
     </div>
   );

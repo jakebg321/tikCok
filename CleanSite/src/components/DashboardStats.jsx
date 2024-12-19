@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { RiDashboardLine, RiBarChartLine, RiPieChartLine, RiTimeLine } from 'react-icons/ri';
+import { statsManager } from '../server/StatsStateManager';
 
-// Existing StatCard component remains unchanged
 const StatCard = ({ icon: Icon, title, value, trend, trendValue }) => {
   return (
     <div className="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
@@ -31,102 +31,97 @@ const StatCard = ({ icon: Icon, title, value, trend, trendValue }) => {
   );
 };
 
-const formatNumber = (num) => {
-  if (num >= 1000000) {
-    return (num / 1000000).toFixed(1) + 'M';
-  }
-  if (num >= 1000) {
-    return (num / 1000).toFixed(1) + 'K';
-  }
-  return num.toString();
-};
-
-// Constants for base rates (per second)
-const RATES = {
-  VIDEOS_PER_SECOND: 0.05,    // 1 video every 20 seconds
-  VIEWS_PER_SECOND: 1200,     // 1.2K views per second
-  LIKES_PER_SECOND: 8,        // 8 likes per second
-};
-
-// Base starting values (as of launch date)
-const BASE_VALUES = {
-  START_TIME: new Date('2024-01-01').getTime(),
-  INITIAL_VIDEOS: 421,
-  INITIAL_VIEWS: 43300000,
-  INITIAL_LIKES: 23100,
-};
-
-const DashboardStats = ({ processedVideos, latestVideo }) => {
-  const [currentStats, setCurrentStats] = useState({
-    totalVideos: BASE_VALUES.INITIAL_VIDEOS,
-    avgViews: BASE_VALUES.INITIAL_VIEWS,
-    avgLikes: BASE_VALUES.INITIAL_LIKES,
-    successRate: 85
-  });
+const DashboardStats = () => {
+  const [stats, setStats] = useState([]);
+  const statsRef = useRef(null);
 
   useEffect(() => {
-    // Calculate time elapsed since launch
-    const updateStats = () => {
-      const now = Date.now();
-      const elapsedSeconds = Math.floor((now - BASE_VALUES.START_TIME) / 1000);
+    // Get initial stats
+    if (!statsRef.current) {
+      console.log('[DashboardStats] Initial stats load');
+      statsRef.current = statsManager.getStats();
+      const trends = statsManager.getTrends();
       
-      // Calculate current values based on elapsed time
-      const newVideos = Math.floor(elapsedSeconds * RATES.VIDEOS_PER_SECOND) + BASE_VALUES.INITIAL_VIDEOS;
-      const newViews = Math.floor(elapsedSeconds * RATES.VIEWS_PER_SECOND) + BASE_VALUES.INITIAL_VIEWS;
-      const newLikes = Math.floor(elapsedSeconds * RATES.LIKES_PER_SECOND) + BASE_VALUES.INITIAL_LIKES;
+      const initialStats = [
+        {
+          icon: RiDashboardLine,
+          title: 'Processed Videos',
+          value: statsRef.current.formattedStats.videos,
+          trend: 'up',
+          trendValue: trends.videos
+        },
+        {
+          icon: RiBarChartLine,
+          title: 'Avg. Views',
+          value: statsRef.current.formattedStats.views,
+          trend: 'up',
+          trendValue: trends.views
+        },
+        {
+          icon: RiPieChartLine,
+          title: 'Avg. Likes',
+          value: statsRef.current.formattedStats.likes,
+          trend: 'up',
+          trendValue: trends.likes
+        },
+        {
+          icon: RiTimeLine,
+          title: 'Success Rate',
+          value: statsRef.current.formattedStats.successRate,
+          trend: 'up',
+          trendValue: trends.successRate
+        }
+      ];
+
+      setStats(initialStats);
+    }
+
+    const interval = setInterval(() => {
+      const currentStats = statsManager.getStats();
       
-      // Calculate success rate (caps at 98%)
-      const newSuccessRate = Math.min(98, 85 + (newVideos * 0.001));
-
-      setCurrentStats({
-        totalVideos: newVideos,
-        avgViews: newViews,
-        avgLikes: newLikes,
-        successRate: newSuccessRate
-      });
-    };
-
-    // Update stats immediately and set interval
-    updateStats();
-    const interval = setInterval(updateStats, 1000);
+      // Only update if values actually changed
+      if (JSON.stringify(currentStats) !== JSON.stringify(statsRef.current)) {
+        console.log('[DashboardStats] Stats changed, updating');
+        statsRef.current = currentStats;
+        const trends = statsManager.getTrends();
+        
+        setStats([
+          {
+            icon: RiDashboardLine,
+            title: 'Processed Videos',
+            value: currentStats.formattedStats.videos,
+            trend: 'up',
+            trendValue: trends.videos
+          },
+          {
+            icon: RiBarChartLine,
+            title: 'Avg. Views',
+            value: currentStats.formattedStats.views,
+            trend: 'up',
+            trendValue: trends.views
+          },
+          {
+            icon: RiPieChartLine,
+            title: 'Avg. Likes',
+            value: currentStats.formattedStats.likes,
+            trend: 'up',
+            trendValue: trends.likes
+          },
+          {
+            icon: RiTimeLine,
+            title: 'Success Rate',
+            value: currentStats.formattedStats.successRate,
+            trend: 'up',
+            trendValue: trends.successRate
+          }
+        ]);
+      }
+    }, 1000);
 
     return () => clearInterval(interval);
   }, []);
 
-  // Calculate trends (can be based on real-time rate of change)
-  const viewsTrend = 5.2;  // Consistent upward trend
-  const likesTrend = 4.8;  // Consistent upward trend
-
-  const stats = [
-    {
-      icon: RiDashboardLine,
-      title: 'Processed Videos',
-      value: formatNumber(currentStats.totalVideos),
-      trend: 'up',
-      trendValue: ((currentStats.totalVideos / 1000) * 0.1).toFixed(1)
-    },
-    {
-      icon: RiBarChartLine,
-      title: 'Avg. Views',
-      value: formatNumber(currentStats.avgViews),
-      trend: 'up',
-      trendValue: viewsTrend.toFixed(1)
-    },
-    {
-      icon: RiPieChartLine,
-      title: 'Avg. Likes',
-      value: formatNumber(currentStats.avgLikes),
-      trend: 'up',
-      trendValue: likesTrend.toFixed(1)
-    },
-    {
-      icon: RiTimeLine,
-      title: 'Success Rate',
-      value: currentStats.successRate.toFixed(1) + '%',
-      trend: 'up',
-      trendValue: (currentStats.successRate / 100).toFixed(1)
-    }
-  ];
+  console.log('[DashboardStats] Rendering with stats:', stats);
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
@@ -137,4 +132,4 @@ const DashboardStats = ({ processedVideos, latestVideo }) => {
   );
 };
 
-export default DashboardStats;
+export default React.memo(DashboardStats);

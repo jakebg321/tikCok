@@ -53,7 +53,7 @@ const Navbar = () => {
         {/* Header Area */}
         <div className="px-6 mb-8 space-y-1">
           <h1 className="text-base font-mono font-bold text-black">
-            LAUNCH TERMINAL
+            AROS
           </h1>
           <div className="text-sm text-black font-mono">
             UPDATED: {currentDate}

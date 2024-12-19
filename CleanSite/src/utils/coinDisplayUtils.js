@@ -1,6 +1,4 @@
 export const selectRandomCoin = (coinsData, displayedCoins = []) => {
-    console.log('Selecting random coin from', coinsData?.length, 'coins');
-    console.log('Previously displayed coins:', displayedCoins);
     
     if (!coinsData || coinsData.length === 0) {
         console.log('No coin data available');

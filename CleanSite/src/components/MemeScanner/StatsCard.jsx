@@ -50,35 +50,5 @@ const StatsCard = ({ icon: Icon, title, value, trend, subtitle }) => (
   </div>
 );
 
-// Demo component showing the updated stats cards
-const StatsOverview = ({ data }) => {
-  return (
-    <div className="max-w-7xl mx-auto px-4 py-8">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        <StatsCard
-          icon={Share2}
-          title="Total Memes Tracked"
-          value="36"
-          subtitle="Last updated: 12/16/2024, 5:32:36 PM"
-        />
-        <StatsCard
-          icon={AlertCircle}
-          title="Success Rate"
-          value="100.0%"
-        />
-        <StatsCard
-          icon={RotateCcw}
-          title="Pages Scraped"
-          value="15"
-        />
-        <StatsCard
-          icon={Clock}
-          title="Processing Time"
-          value="11284.4s"
-        />
-      </div>
-    </div>
-  );
-};
 
 export default StatsCard;

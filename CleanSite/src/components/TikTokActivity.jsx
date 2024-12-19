@@ -1,5 +1,5 @@
 import { useState, useCallback, useEffect, useRef } from 'react';
-import tiktokData from '../data/tiktok_data.json';
+import tiktokData from '../data/tiktok_data1.json';
 
 const SCAN_DURATION = 12000;
 const HTML_SCROLL_SPEED = 100;

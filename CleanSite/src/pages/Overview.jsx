@@ -45,19 +45,12 @@ const Overview = () => {
   
         <div className={`relative ${isDesktop ? 'ml-[15%]' : 'ml-0'}`}>
           <div className="max-w-7xl mx-auto px-4 pt-8">
-            <div className="mb-8 grid grid-cols-3 items-center">
-              <div>
-                <h1 className="text-4xl font-bold text-white mb-2">AROS Overview</h1>
-                <p className="text-teal-400 text-lg">Real-time content analysis system</p>
-              </div>
-              <div className="flex justify-center">
-                <img 
-                  src="/load.png" 
-                  alt="AROS Logo" 
-                  className="h-28 object-contain drop-shadow-[0_0_15px_rgba(20,184,166,0.7)] animate-pulse" 
-                />
-              </div>
-              <div></div>
+            <div className="mb-8 flex justify-center">
+              <img 
+                src="/load.png" 
+                alt="AROS Logo" 
+                className="h-28 object-contain drop-shadow-[0_0_15px_rgba(20,184,166,0.7)] animate-pulse" 
+              />
             </div>
             
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">

@@ -97,16 +97,16 @@ const BundleChecker = () => {
                   index === 0 ? 'border-matrix-primary' : ''
                 }`}
               >
-                <div className="text-lg font-bold text-matrix-primary mb-2">
+                <div className="text-sm font-bold text-white mb-2">
                   {coin.coin_info?.name || 'Unknown'}
                 </div>
-                <div className="text-matrix-primary-80 mb-1">
+                <div className="text-xs text-white mb-1">
                   Symbol: {coin.coin_info?.symbol || 'N/A'}
                 </div>
-                <div className="text-matrix-primary-80 mb-1">
+                <div className="text-xs text-white mb-1">
                   Market Cap: ${coin.coin_info?.market_cap?.toLocaleString() || 'N/A'}
                 </div>
-                <div className="text-matrix-primary-80">
+                <div className="text-xs text-white">
                   Price: ${coin.coin_info?.price_usd?.toFixed(8) || 'N/A'}
                 </div>
               </div>

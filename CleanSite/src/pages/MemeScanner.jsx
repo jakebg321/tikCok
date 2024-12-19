@@ -2,7 +2,7 @@ import React, { useState, useCallback, useEffect } from 'react';
 import { AlertCircle, Clock } from 'lucide-react';
 import { useMemeScanner } from '../hooks/useMemeScanner';
 import memeData from '../data/meme_data.json';
-import tiktokData from '../data/tiktok_data.json';
+import tiktokData from '../data/tiktok_data1.json';
 import youtubeData from '../data/youtube_data.json';
 import AnimatedBackground from '../components/AnimatedBackground';
 import StatsOverview from '../components/MemeScanner/StatsOverview';
@@ -189,7 +189,6 @@ const MemeScannerPage = () => {
 
         <footer className="bg-black/50 backdrop-blur-sm border-t border-emerald-900/30 p-4">
           <div className="max-w-[1600px] mx-auto text-center text-sm text-emerald-300/70">
-            <p>Monitoring {data.metadata.total_memes} memes across multiple platforms</p>
           </div>
         </footer>
       </div>

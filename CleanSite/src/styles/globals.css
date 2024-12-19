@@ -46,6 +46,17 @@ body {
   45% { opacity: 0.8; transform: scale(1.05); }
 }
 
+@keyframes collapse {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
 /* Animation Utilities */
 .animate-scroll {
   animation: scroll 20s linear infinite;

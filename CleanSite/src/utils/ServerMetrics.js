@@ -1,60 +1,83 @@
-// src/utils/serverMetrics.js
-export const createServerMetrics = (data) => ({
-  serverId: data.session_id || '',
-  location: {
-    city: data.geoip_location?.city || '',
-    country: data.geoip_location?.country || '',
-    coordinates: {
-      lat: 0, // To be mapped from serverLocations
-      lng: 0
-    }
-  },
-  status: getServerStatus(data),
-  lastUpdated: new Date().toISOString(),
-  security: {
-    tlsVersion: data.security?.tls_version || '',
-    encryption: data.security?.encryption || '',
-    dnsLeaksDetected: data.security?.dns_leaks_detected || false,
-    sslCertificateStatus: {
-      valid: !data.security?.ssl_certificate_mismatch_bypassed,
-      expiryDate: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString(),
-      mismatchBypassed: data.security?.ssl_certificate_mismatch_bypassed
-    },
-    webrtcLeakProtection: data.stealth?.webrtc_leak_protection || false,
-    headlessMode: data.stealth?.headless_mode || false,
-    canvasFingerprint: data.stealth?.canvas_fingerprint || ''
-  },
-  performance: {
-    latencyMs: data.latency_ms || 0,
-    requestsPerSecond: data.analytics?.requests_per_sec || 0,
-    dataSize: data.scraping?.data_size || '0KB',
-    rateLimit: data.scraping?.rate_limit || '0 req/min',
-    inferenceTimeMs: data.machine_learning?.inference_time_ms || 0,
-    trafficPatternAnomaly: data.analytics?.traffic_pattern_anomaly || 0,
-    uptimePercentage: 99.9, // Example default
-    loadAverage: [0.1, 0.2, 0.3] // Example defaults
-  },
-  botDetection: {
-    botScore: data.bot_detection?.bot_score || 0,
-    anomalyScore: data.bot_detection?.anomaly_score || 0,
-    fingerprintSpoofing: data.bot_detection?.fingerprint_spoofing || false,
-    headersInjected: data.bot_detection?.headers_injected || []
-  },
-  resources: {
-    cpuUsage: Math.random() * 100, // Example - replace with actual metrics
-    memoryUsage: Math.random() * 100,
-    diskUsage: Math.random() * 100,
-    networkBandwidth: {
-      incoming: Math.random() * 1048576, // Example bandwidth in bytes/sec
-      outgoing: Math.random() * 1048576
-    }
-  }
-});
+export const createServerMetrics = (data) => {
+  const getRandomHex = (length) => {
+    return Array.from({ length }, () => 
+      Math.floor(Math.random() * 16).toString(16)
+    ).join('');
+  };
 
-const getServerStatus = (data) => {
-  if (data.status_code >= 500) return 'critical';
-  if (data.status_code === 429) return 'degraded';
-  if (data.bot_detection?.bot_score > 0.7) return 'degraded';
-  if (data.analytics?.traffic_pattern_anomaly > 0.5) return 'degraded';
-  return 'healthy';
+  const getRandomHeaders = () => {
+    const headers = [
+      'X-Forwarded-For',
+      'X-Device-ID',
+      'X-Session-Key',
+      'X-Client-Version',
+      'X-Request-ID',
+      'X-Trace-ID'
+    ];
+    return headers.filter(() => Math.random() > 0.5);
+  };
+
+  const getModelVersion = () => {
+    const major = Math.floor(Math.random() * 4) + 1;
+    const minor = Math.floor(Math.random() * 10);
+    const patch = Math.floor(Math.random() * 10);
+    return `v${major}.${minor}.${patch}`;
+  };
+
+  // Calculate server status based on multiple factors
+  const calculateStatus = (metrics) => {
+    const { botScore, latencyMs, trafficPatternAnomaly } = metrics;
+    if (botScore > 0.8 || latencyMs > 500 || trafficPatternAnomaly > 0.8) return 'critical';
+    if (botScore > 0.5 || latencyMs > 200 || trafficPatternAnomaly > 0.4) return 'degraded';
+    return 'healthy';
+  };
+
+  // Enhanced mock data generation
+  const metrics = {
+    location: data.geoip_location,
+    lastUpdated: Date.now(),
+    botDetection: {
+      botScore: data.bot_detection?.bot_score || Math.random(),
+      anomalyScore: data.bot_detection?.anomaly_score || Math.random() * 0.5,
+      fingerprintSpoofing: Math.random() > 0.7,
+      headersInjected: getRandomHeaders()
+    },
+    security: {
+      tlsVersion: data.security?.tls_version || 'TLS 1.3',
+      encryption: data.security?.encryption || 'AES-256-GCM',
+      dnsLeaksDetected: Math.random() > 0.9
+    },
+    stealth: {
+      headlessMode: Math.random() > 0.7,
+      canvasFingerprint: getRandomHex(8),
+      webrtcLeakProtection: Math.random() > 0.5
+    },
+    performance: {
+      latencyMs: data.latency_ms || Math.floor(Math.random() * 500),
+      requestsPerSecond: data.analytics?.requests_per_sec || Math.floor(Math.random() * 100),
+      trafficPatternAnomaly: data.analytics?.traffic_pattern_anomaly || Math.random()
+    },
+    resources: {
+      cpuUsage: Math.random() * 100,
+      memoryUsage: Math.random() * 100,
+      networkBandwidth: {
+        incoming: Math.floor(Math.random() * 1048576), // Up to 1MB/s
+        outgoing: Math.floor(Math.random() * 1048576)
+      }
+    },
+    machine_learning: {
+      captchaSolved: Math.random() > 0.3,
+      modelVersion: getModelVersion(),
+      inferenceTimeMs: Math.floor(Math.random() * 50)
+    }
+  };
+
+  // Set the overall status based on all metrics
+  metrics.status = calculateStatus({
+    botScore: metrics.botDetection.botScore,
+    latencyMs: metrics.performance.latencyMs,
+    trafficPatternAnomaly: metrics.performance.trafficPatternAnomaly
+  });
+
+  return metrics;
 };

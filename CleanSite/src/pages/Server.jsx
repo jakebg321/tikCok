@@ -170,8 +170,8 @@ const WorldMap = () => {
 
   return (
     <div className="fixed lg:ml-[240px] top-0 right-0 bottom-0 left-0 bg-[#151923]">
-      <header className="backdrop-blur-sm border-b border-[#6aebfc]/30 p-4 mt-[40px] lg:mt-0">
-        <div className="max-w-[1600px] mx-auto">
+      <header className="backdrop-blur-sm border-b border-[#6aebfc]/30 p-0 mt-[40px] lg:mt-0">
+        <div className="max-w-[1600px] mx-auto text-center py-4">
           <h1 className="text-2xl font-bold text-white">AROS Status</h1>
           <p className="text-[#6aebfc]/70">Real-time server monitoring</p>
         </div>
@@ -269,15 +269,19 @@ const WorldMap = () => {
                       <div 
                         className={`
                           absolute 
-                          top-16
-                          left-1/2 
-                          transform 
-                          -translate-x-1/2 
-                          w-80
+                          w-64  // Reduced from w-80 to w-64 (20% reduction)
                           transition-all 
                           duration-500
                           ${isHovered ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4 pointer-events-none'}
                         `}
+                        style={{
+                          top: y > mapDimensions.height / 2 ? 'auto' : '16px',
+                          bottom: y > mapDimensions.height / 9 ? '16px' : 'auto',
+                          left: '50%',
+                          transform: 'translateX(-50%)',
+                          maxWidth: '40vw', // Reduced from 50vw
+                          zIndex: 1000
+                        }}
                       >
                         <div className="backdrop-blur-lg bg-[#151923]/90 rounded-lg border border-[#6aebfc]/20 shadow-xl shadow-black/50">
                           <ServerLive serverData={serverStatuses[serverId]} />

@@ -67,9 +67,6 @@ const YouTubeActivity = ({ onVideoProcessed }) => {
   }, [currentIndex, displayedVideos, saveState]);
 
   useEffect(() => {
-    console.log('Current Index:', currentIndex);
-    console.log('Total Videos:', youtubeData?.videos?.length);
-    console.log('Is Scanning:', scanning);
   }, [currentIndex, scanning]);
 
   const parseHtmlForDiscovery = useCallback((html) => {
@@ -79,11 +76,9 @@ const YouTubeActivity = ({ onVideoProcessed }) => {
 
   const simulateDiscovery = useCallback((video) => {
     if (!video) {
-      console.log('No video provided to simulateDiscovery');
       return;
     }
     
-    console.log('Starting discovery for video:', video.id);
     setScanning(true);
     setDiscoveredInfo({});
     setFoundElements(new Set());
@@ -91,12 +86,10 @@ const YouTubeActivity = ({ onVideoProcessed }) => {
     currentVideoRef.current = video;
     
     const htmlLines = parseHtmlForDiscovery(video.html_elements.view_count_element);
-    console.log('Total HTML lines to process:', htmlLines.length);
     let currentLine = 0;
     
     const scanInterval = setInterval(() => {
       if (currentLine >= htmlLines.length) {
-        console.log('Finished processing HTML for video:', video.id);
         clearInterval(scanInterval);
         
         const processedVideo = {
@@ -166,27 +159,21 @@ const YouTubeActivity = ({ onVideoProcessed }) => {
 
   useEffect(() => {
     if (!youtubeData?.videos?.length) {
-      console.log('No YouTube videos available');
       return;
     }
 
     const processNextVideo = () => {
-      console.log('Processing next video. Current index:', currentIndex);
       const video = youtubeData.videos[currentIndex];
-      console.log('Selected video:', video.id, video.desc.substring(0, 50) + '...');
       simulateDiscovery(video);
     };
 
     if (!scanning) {
-      console.log('Not currently scanning, starting next video process');
       processNextVideo();
     } else {
-      console.log('Scanning in progress, waiting...');
     }
 
     return () => {
       if (processTimeoutRef.current) {
-        console.log('Cleaning up timeout');
         clearTimeout(processTimeoutRef.current);
       }
     };

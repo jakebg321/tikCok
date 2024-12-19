@@ -87,7 +87,6 @@ const TikTokActivity = ({ onVideoProcessed }) => {
     
     const scanInterval = setInterval(() => {
       if (currentLine >= htmlLines.length) {
-        console.log('Finished processing HTML for video:', video.id);
         clearInterval(scanInterval);
         
         const processedVideo = {
@@ -158,19 +157,16 @@ const TikTokActivity = ({ onVideoProcessed }) => {
     }
 
     const processNextVideo = () => {
-      console.log('Processing next video. Current index:', currentIndex);
       const video = tiktokData.videos[currentIndex];
       simulateDiscovery(video);
     };
 
     if (!scanning) {
-      console.log('Not currently scanning, starting next video process');
       processNextVideo();
     }
 
     return () => {
       if (processTimeoutRef.current) {
-        console.log('Cleaning up timeout');
         clearTimeout(processTimeoutRef.current);
       }
     };

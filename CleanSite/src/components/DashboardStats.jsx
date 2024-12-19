@@ -38,7 +38,6 @@ const DashboardStats = () => {
   useEffect(() => {
     // Get initial stats
     if (!statsRef.current) {
-      console.log('[DashboardStats] Initial stats load');
       statsRef.current = statsManager.getStats();
       const trends = statsManager.getTrends();
       
@@ -81,7 +80,6 @@ const DashboardStats = () => {
       
       // Only update if values actually changed
       if (JSON.stringify(currentStats) !== JSON.stringify(statsRef.current)) {
-        console.log('[DashboardStats] Stats changed, updating');
         statsRef.current = currentStats;
         const trends = statsManager.getTrends();
         
@@ -121,7 +119,6 @@ const DashboardStats = () => {
     return () => clearInterval(interval);
   }, []);
 
-  console.log('[DashboardStats] Rendering with stats:', stats);
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">

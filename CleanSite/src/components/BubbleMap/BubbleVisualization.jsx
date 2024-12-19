@@ -10,22 +10,11 @@ const BubbleVisualization = ({
 }) => {
     // Add more detailed debug logging
     useEffect(() => {
-        console.log('BubbleVisualization props:', {
-            holdersCount: visibleHolders.length,
-            holders: visibleHolders,
-            firstHolder: visibleHolders[0],
-            hasValidCoordinates: visibleHolders.every(h => 
-                typeof h.x === 'number' && 
-                typeof h.y === 'number' &&
-                !isNaN(h.x) && 
-                !isNaN(h.y)
-            )
-        });
+
     }, [visibleHolders]);
 
     // Remove or modify these checks that might be preventing rendering
     if (visibleHolders.length === 0) {
-        console.log('No holders to display');
         return (
             <div className="w-full h-full flex items-center justify-center text-matrix-primary font-mono">
                 Waiting for holder data...

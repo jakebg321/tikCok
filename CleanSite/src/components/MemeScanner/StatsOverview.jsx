@@ -16,7 +16,6 @@ const StatsOverview = ({ data }) => {
   useEffect(() => {
     const updateStats = () => {
       const currentStats = statsManager.getStats();
-      console.log('[StatsOverview] Got new stats:', currentStats);
       
       // Add small random variation to success rate (between 88-92%)
       const successRateVariation = 0.88 + (Math.random() * 0.04);

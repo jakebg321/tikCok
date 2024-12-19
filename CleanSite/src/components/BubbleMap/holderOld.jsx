@@ -16,7 +16,6 @@ const HolderBubbleMap = ({ data }) => {
         }
 
         // Log the incoming data structure
-        console.log('Processing holders:', holders);
 
         const processedHolders = holders
             .filter(holder => holder && holder.address)

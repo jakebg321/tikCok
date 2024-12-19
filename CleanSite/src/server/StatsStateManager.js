@@ -4,7 +4,6 @@
 const getGlobalInstance = () => {
     if (typeof window !== 'undefined') {
         if (!window.__statsManagerInstance) {
-            console.log('[StatsManager] Creating new global instance');
             window.__statsManagerInstance = new StatsStateManager();
         }
         return window.__statsManagerInstance;

@@ -1,7 +1,6 @@
 export const selectRandomCoin = (coinsData, displayedCoins = []) => {
     
     if (!coinsData || coinsData.length === 0) {
-        console.log('No coin data available');
         return null;
     }
     
@@ -10,11 +9,9 @@ export const selectRandomCoin = (coinsData, displayedCoins = []) => {
         coin.coin_info.market_cap >= 300000 && // Market cap filter
         !displayedCoins.includes(coin.coin_info.contract_address)
     );
-    console.log('Available coins after market cap and display filtering:', availableCoins.length);
     
     // If we've shown all valid coins, reset but keep market cap filter
     if (availableCoins.length === 0) {
-        console.log('All coins shown, resetting selection pool with market cap filter');
         availableCoins = coinsData.filter(coin => 
             coin.coin_info.market_cap >= 300000
         );
@@ -22,21 +19,16 @@ export const selectRandomCoin = (coinsData, displayedCoins = []) => {
 
     const randomIndex = Math.floor(Math.random() * availableCoins.length);
     const selectedCoin = availableCoins[randomIndex];
-    
-    console.log('Selected coin:', selectedCoin?.coin_info?.name, 
-                'Market Cap:', selectedCoin?.coin_info?.market_cap);
     return selectedCoin;
 };
 
 export const processHolderData = (holders, maxBubbles = 40) => {
-    console.log('Processing holders:', holders?.length);
     
     if (!holders || !holders.length) {
         console.warn('No holders to process');
         return [];
     }
 
-    console.log('Sample holder data:', holders[0]);
 
     const sortedHolders = [...holders]
         .map(holder => ({
@@ -46,8 +38,6 @@ export const processHolderData = (holders, maxBubbles = 40) => {
         }))
         .sort((a, b) => b.percentage - a.percentage);
 
-    console.log('First holder after sorting:', sortedHolders[0]);
-    console.log('Last holder after sorting:', sortedHolders[sortedHolders.length - 1]);
 
     const processedHolders = sortedHolders.slice(0, maxBubbles).map(holder => ({
         address: holder.address,
@@ -59,12 +49,6 @@ export const processHolderData = (holders, maxBubbles = 40) => {
             originalPercentage: holder.percentage
         }
     }));
-
-    console.log('Processed holders sample:', processedHolders[0]);
-    console.log('Percentage range:', {
-        max: Math.max(...processedHolders.map(h => h.percentage)),
-        min: Math.min(...processedHolders.map(h => h.percentage))
-    });
 
     return processedHolders;
 };
@@ -134,7 +118,6 @@ export const validateHolderData = (holders) => {
     }
 
     const sampleHolder = holders[0];
-    console.log('Validating holder data structure:', sampleHolder);
 
     const requiredFields = ['address', 'balance', 'percentage'];
     const missingFields = requiredFields.filter(field => !sampleHolder?.hasOwnProperty(field));
@@ -148,7 +131,6 @@ export const validateHolderData = (holders) => {
 };
 
 export const formatNumberWithSuffix = (number) => {
-    console.log('Formatting number:', number);
     if (!number || isNaN(number)) {
         console.log('Invalid number provided');
         return '0';

@@ -207,7 +207,7 @@ const MemeScannerPage = () => {
       <AnimatedBackground />
       <div className="relative z-10 h-full flex flex-col">
         <header className="backdrop-blur-sm border-b border-[#6aebfc]/30 p-0 mt-[40px] lg:mt-0 flex-none">
-          <div className="max-w-[1600px] mx-auto">
+          <div className="max-w-[1600px] mx-auto text-center py-4">
             <h1 className="text-2xl font-bold text-white">Meme Scanner</h1>
             <p className="text-[#6aebfc]/70">Real-time meme trend analysis</p>
           </div>

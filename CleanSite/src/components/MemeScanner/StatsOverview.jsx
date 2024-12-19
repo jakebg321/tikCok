@@ -25,9 +25,9 @@ const StatsOverview = ({ data }) => {
       });
     };
 
-    // Update immediately and then every second
+    // Update immediately and then every 5 seconds
     updateStats();
-    const interval = setInterval(updateStats, 1000);
+    const interval = setInterval(updateStats, 5000);
 
     return () => clearInterval(interval);
   }, []);

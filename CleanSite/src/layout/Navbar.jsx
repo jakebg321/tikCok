@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { HiMenu } from 'react-icons/hi';
-import { RiDashboardLine, RiScanLine, RiBox3Line, RiInformationLine } from 'react-icons/ri';
+import { RiDashboardLine, RiScanLine, RiBox3Line, RiInformationLine, RiServerLine } from 'react-icons/ri';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,7 +31,8 @@ const Navbar = () => {
     { number: '01', path: '/', label: 'Overview', icon: RiDashboardLine },
     { number: '02', path: '/meme-scanner', label: 'Meme Scanner', icon: RiScanLine },
     { number: '03', path: '/bundle-checker', label: 'Bundle Checker', icon: RiBox3Line },
-    { number: '04', path: '/about', label: 'About', icon: RiInformationLine }
+    { number: '04', path: '/servers', label: 'Servers', icon: RiServerLine },
+    { number: '05', path: '/about', label: 'About', icon: RiInformationLine }
   ];
 
   return (

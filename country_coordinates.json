@@ -1,0 +1,2199 @@
+{
+  "AF": {
+    "name": "Afghanistan",
+    "coordinates": [
+      [
+        1383.0,
+        261.6
+      ]
+    ],
+    "centroid": [
+      1383.0,
+      261.6
+    ]
+  },
+  "AL": {
+    "name": "Albania",
+    "coordinates": [
+      [
+        1088.0,
+        228.0
+      ]
+    ],
+    "centroid": [
+      1088.0,
+      228.0
+    ]
+  },
+  "AE": {
+    "name": "United Arab Emirates",
+    "coordinates": [
+      [
+        1296.2,
+        336.7
+      ]
+    ],
+    "centroid": [
+      1296.2,
+      336.7
+    ]
+  },
+  "AM": {
+    "name": "Armenia",
+    "coordinates": [
+      [
+        1230.8,
+        253.0
+      ]
+    ],
+    "centroid": [
+      1230.8,
+      253.0
+    ]
+  },
+  "AT": {
+    "name": "Austria",
+    "coordinates": [
+      [
+        1070.6,
+        190.8
+      ]
+    ],
+    "centroid": [
+      1070.6,
+      190.8
+    ]
+  },
+  "BI": {
+    "name": "Burundi",
+    "coordinates": [
+      [
+        1154.9,
+        530.4
+      ]
+    ],
+    "centroid": [
+      1154.9,
+      530.4
+    ]
+  },
+  "BE": {
+    "name": "Belgium",
+    "coordinates": [
+      [
+        1016.5,
+        177.1
+      ]
+    ],
+    "centroid": [
+      1016.5,
+      177.1
+    ]
+  },
+  "BJ": {
+    "name": "Benin",
+    "coordinates": [
+      [
+        1006.7,
+        427.0
+      ]
+    ],
+    "centroid": [
+      1006.7,
+      427.0
+    ]
+  },
+  "BF": {
+    "name": "Burkina Faso",
+    "coordinates": [
+      [
+        988.5,
+        406.0
+      ]
+    ],
+    "centroid": [
+      988.5,
+      406.0
+    ]
+  },
+  "BD": {
+    "name": "Bangladesh",
+    "coordinates": [
+      [
+        1500.6,
+        360.3
+      ]
+    ],
+    "centroid": [
+      1500.6,
+      360.3
+    ]
+  },
+  "BG": {
+    "name": "Bulgaria",
+    "coordinates": [
+      [
+        1132.6,
+        221.6
+      ]
+    ],
+    "centroid": [
+      1132.6,
+      221.6
+    ]
+  },
+  "BA": {
+    "name": "Bosnia and Herzegovina",
+    "coordinates": [
+      [
+        1083.0,
+        214.3
+      ]
+    ],
+    "centroid": [
+      1083.0,
+      214.3
+    ]
+  },
+  "BY": {
+    "name": "Belarus",
+    "coordinates": [
+      [
+        1141.6,
+        162.7
+      ]
+    ],
+    "centroid": [
+      1141.6,
+      162.7
+    ]
+  },
+  "BZ": {
+    "name": "Belize",
+    "coordinates": [
+      [
+        487.8,
+        399.8
+      ]
+    ],
+    "centroid": [
+      487.8,
+      399.8
+    ]
+  },
+  "BO": {
+    "name": "Bolivia",
+    "coordinates": [
+      [
+        662.5,
+        631.4
+      ]
+    ],
+    "centroid": [
+      662.5,
+      631.4
+    ]
+  },
+  "BR": {
+    "name": "Brazil",
+    "coordinates": [
+      [
+        665.8,
+        489.6
+      ]
+    ],
+    "centroid": [
+      665.8,
+      489.6
+    ]
+  },
+  "BN": {
+    "name": "Brunei Darussalam",
+    "coordinates": [
+      [
+        1633.1,
+        472.8
+      ]
+    ],
+    "centroid": [
+      1633.1,
+      472.8
+    ]
+  },
+  "BT": {
+    "name": "Bhutan",
+    "coordinates": [
+      [
+        1488.8,
+        323.5
+      ]
+    ],
+    "centroid": [
+      1488.8,
+      323.5
+    ]
+  },
+  "BW": {
+    "name": "Botswana",
+    "coordinates": [
+      [
+        1127.6,
+        615.7
+      ]
+    ],
+    "centroid": [
+      1127.6,
+      615.7
+    ]
+  },
+  "CF": {
+    "name": "Central African Republic",
+    "coordinates": [
+      [
+        1121.3,
+        446.5
+      ]
+    ],
+    "centroid": [
+      1121.3,
+      446.5
+    ]
+  },
+  "CH": {
+    "name": "Switzerland",
+    "coordinates": [
+      [
+        1034.4,
+        197.5
+      ]
+    ],
+    "centroid": [
+      1034.4,
+      197.5
+    ]
+  },
+  "CI": {
+    "name": "C\u00c3\u00b4te d'Ivoire",
+    "coordinates": [
+      [
+        955.9,
+        435.2
+      ]
+    ],
+    "centroid": [
+      955.9,
+      435.2
+    ]
+  },
+  "CM": {
+    "name": "Cameroon",
+    "coordinates": [
+      [
+        1072.8,
+        454.2
+      ]
+    ],
+    "centroid": [
+      1072.8,
+      454.2
+    ]
+  },
+  "CD": {
+    "name": "Democratic Republic of the Congo",
+    "coordinates": [
+      [
+        1141.3,
+        468.2
+      ]
+    ],
+    "centroid": [
+      1141.3,
+      468.2
+    ]
+  },
+  "CG": {
+    "name": "Republic of Congo",
+    "coordinates": [
+      [
+        1090.9,
+        479.3
+      ]
+    ],
+    "centroid": [
+      1090.9,
+      479.3
+    ]
+  },
+  "CO": {
+    "name": "Colombia",
+    "coordinates": [
+      [
+        584.4,
+        426.2
+      ]
+    ],
+    "centroid": [
+      584.4,
+      426.2
+    ]
+  },
+  "CR": {
+    "name": "Costa Rica",
+    "coordinates": [
+      [
+        514.6,
+        431.6
+      ]
+    ],
+    "centroid": [
+      514.6,
+      431.6
+    ]
+  },
+  "CU": {
+    "name": "Cuba",
+    "coordinates": [
+      [
+        544.8,
+        355.7
+      ]
+    ],
+    "centroid": [
+      544.8,
+      355.7
+    ]
+  },
+  "CZ": {
+    "name": "Czech Republic",
+    "coordinates": [
+      [
+        1059.7,
+        175.2
+      ]
+    ],
+    "centroid": [
+      1059.7,
+      175.2
+    ]
+  },
+  "DE": {
+    "name": "Germany",
+    "coordinates": [
+      [
+        1053.9,
+        158.9
+      ]
+    ],
+    "centroid": [
+      1053.9,
+      158.9
+    ]
+  },
+  "DJ": {
+    "name": "Djibouti",
+    "coordinates": [
+      [
+        1229.5,
+        428.2
+      ]
+    ],
+    "centroid": [
+      1229.5,
+      428.2
+    ]
+  },
+  "DO": {
+    "name": "Dominican Republic",
+    "coordinates": [
+      [
+        585.7,
+        386.0
+      ]
+    ],
+    "centroid": [
+      585.7,
+      386.0
+    ]
+  },
+  "DZ": {
+    "name": "Algeria",
+    "coordinates": [
+      [
+        1031.0,
+        264.6
+      ]
+    ],
+    "centroid": [
+      1031.0,
+      264.6
+    ]
+  },
+  "EC": {
+    "name": "Ecuador",
+    "coordinates": [
+      [
+        559.0,
+        502.8
+      ]
+    ],
+    "centroid": [
+      559.0,
+      502.8
+    ]
+  },
+  "EG": {
+    "name": "Egypt",
+    "coordinates": [
+      [
+        1172.1,
+        301.4
+      ]
+    ],
+    "centroid": [
+      1172.1,
+      301.4
+    ]
+  },
+  "ER": {
+    "name": "Eritrea",
+    "coordinates": [
+      [
+        1228.9,
+        420.3
+      ]
+    ],
+    "centroid": [
+      1228.9,
+      420.3
+    ]
+  },
+  "EE": {
+    "name": "Estonia",
+    "coordinates": [
+      [
+        1113.7,
+        124.6
+      ]
+    ],
+    "centroid": [
+      1113.7,
+      124.6
+    ]
+  },
+  "ET": {
+    "name": "Ethiopia",
+    "coordinates": [
+      [
+        1207.3,
+        408.5
+      ]
+    ],
+    "centroid": [
+      1207.3,
+      408.5
+    ]
+  },
+  "FI": {
+    "name": "Finland",
+    "coordinates": [
+      [
+        1104.1,
+        70.1
+      ]
+    ],
+    "centroid": [
+      1104.1,
+      70.1
+    ]
+  },
+  "GA": {
+    "name": "Gabon",
+    "coordinates": [
+      [
+        1060.5,
+        487.3
+      ]
+    ],
+    "centroid": [
+      1060.5,
+      487.3
+    ]
+  },
+  "GE": {
+    "name": "Georgia",
+    "coordinates": [
+      [
+        1215.7,
+        227.9
+      ]
+    ],
+    "centroid": [
+      1215.7,
+      227.9
+    ]
+  },
+  "GH": {
+    "name": "Ghana",
+    "coordinates": [
+      [
+        986.5,
+        431.1
+      ]
+    ],
+    "centroid": [
+      986.5,
+      431.1
+    ]
+  },
+  "GN": {
+    "name": "Guinea",
+    "coordinates": [
+      [
+        921.5,
+        421.9
+      ]
+    ],
+    "centroid": [
+      921.5,
+      421.9
+    ]
+  },
+  "GM": {
+    "name": "The Gambia",
+    "coordinates": [
+      [
+        891.6,
+        417.4
+      ]
+    ],
+    "centroid": [
+      891.6,
+      417.4
+    ]
+  },
+  "GW": {
+    "name": "Guinea-Bissau",
+    "coordinates": [
+      [
+        909.2,
+        421.0
+      ]
+    ],
+    "centroid": [
+      909.2,
+      421.0
+    ]
+  },
+  "GQ": {
+    "name": "Equatorial Guinea",
+    "coordinates": [
+      [
+        1050.3,
+        487.3
+      ]
+    ],
+    "centroid": [
+      1050.3,
+      487.3
+    ]
+  },
+  "GL": {
+    "name": "Greenland",
+    "coordinates": [
+      [
+        896.3,
+        1.4
+      ]
+    ],
+    "centroid": [
+      896.3,
+      1.4
+    ]
+  },
+  "GT": {
+    "name": "Guatemala",
+    "coordinates": [
+      [
+        488.1,
+        387.5
+      ]
+    ],
+    "centroid": [
+      488.1,
+      387.5
+    ]
+  },
+  "GY": {
+    "name": "Guyana",
+    "coordinates": [
+      [
+        662.9,
+        463.5
+      ]
+    ],
+    "centroid": [
+      662.9,
+      463.5
+    ]
+  },
+  "HN": {
+    "name": "Honduras",
+    "coordinates": [
+      [
+        519.6,
+        405.5
+      ]
+    ],
+    "centroid": [
+      519.6,
+      405.5
+    ]
+  },
+  "HR": {
+    "name": "Croatia",
+    "coordinates": [
+      [
+        1081.5,
+        207.6
+      ]
+    ],
+    "centroid": [
+      1081.5,
+      207.6
+    ]
+  },
+  "HT": {
+    "name": "Haiti",
+    "coordinates": [
+      [
+        586.8,
+        375.3
+      ]
+    ],
+    "centroid": [
+      586.8,
+      375.3
+    ]
+  },
+  "HU": {
+    "name": "Hungary",
+    "coordinates": [
+      [
+        1096.2,
+        191.9
+      ]
+    ],
+    "centroid": [
+      1096.2,
+      191.9
+    ]
+  },
+  "IN": {
+    "name": "India",
+    "coordinates": [
+      [
+        1427.6,
+        308.0
+      ]
+    ],
+    "centroid": [
+      1427.6,
+      308.0
+    ]
+  },
+  "IE": {
+    "name": "Ireland",
+    "coordinates": [
+      [
+        956.7,
+        158.2
+      ]
+    ],
+    "centroid": [
+      956.7,
+      158.2
+    ]
+  },
+  "IR": {
+    "name": "Iran",
+    "coordinates": [
+      [
+        1229.0,
+        253.2
+      ]
+    ],
+    "centroid": [
+      1229.0,
+      253.2
+    ]
+  },
+  "IQ": {
+    "name": "Iraq",
+    "coordinates": [
+      [
+        1223.5,
+        263.2
+      ]
+    ],
+    "centroid": [
+      1223.5,
+      263.2
+    ]
+  },
+  "IS": {
+    "name": "Iceland",
+    "coordinates": [
+      [
+        924.8,
+        84.5
+      ]
+    ],
+    "centroid": [
+      924.8,
+      84.5
+    ]
+  },
+  "IL": {
+    "name": "Israel",
+    "coordinates": [
+      [
+        1179.1,
+        288.2
+      ]
+    ],
+    "centroid": [
+      1179.1,
+      288.2
+    ]
+  },
+  "JM": {
+    "name": "Jamaica",
+    "coordinates": [
+      [
+        556.5,
+        387.1
+      ]
+    ],
+    "centroid": [
+      556.5,
+      387.1
+    ]
+  },
+  "JO": {
+    "name": "Jordan",
+    "coordinates": [
+      [
+        1198.1,
+        295.3
+      ]
+    ],
+    "centroid": [
+      1198.1,
+      295.3
+    ]
+  },
+  "KZ": {
+    "name": "Kazakhstan",
+    "coordinates": [
+      [
+        1338.3,
+        160.5
+      ]
+    ],
+    "centroid": [
+      1338.3,
+      160.5
+    ]
+  },
+  "KE": {
+    "name": "Kenya",
+    "coordinates": [
+      [
+        1223.5,
+        476.7
+      ]
+    ],
+    "centroid": [
+      1223.5,
+      476.7
+    ]
+  },
+  "KG": {
+    "name": "Kyrgyzstan",
+    "coordinates": [
+      [
+        1400.5,
+        230.2
+      ]
+    ],
+    "centroid": [
+      1400.5,
+      230.2
+    ]
+  },
+  "KH": {
+    "name": "Cambodia",
+    "coordinates": [
+      [
+        1589.8,
+        410.6
+      ]
+    ],
+    "centroid": [
+      1589.8,
+      410.6
+    ]
+  },
+  "KR": {
+    "name": "Republic of Korea",
+    "coordinates": [
+      [
+        1652.9,
+        259.5
+      ]
+    ],
+    "centroid": [
+      1652.9,
+      259.5
+    ]
+  },
+  "KW": {
+    "name": "Kuwait",
+    "coordinates": [
+      [
+        1247.5,
+        309.4
+      ]
+    ],
+    "centroid": [
+      1247.5,
+      309.4
+    ]
+  },
+  "LA": {
+    "name": "Lao PDR",
+    "coordinates": [
+      [
+        1589.8,
+        410.6
+      ]
+    ],
+    "centroid": [
+      1589.8,
+      410.6
+    ]
+  },
+  "LB": {
+    "name": "Lebanon",
+    "coordinates": [
+      [
+        1179.1,
+        288.2
+      ]
+    ],
+    "centroid": [
+      1179.1,
+      288.2
+    ]
+  },
+  "LR": {
+    "name": "Liberia",
+    "coordinates": [
+      [
+        938.6,
+        452.5
+      ]
+    ],
+    "centroid": [
+      938.6,
+      452.5
+    ]
+  },
+  "LY": {
+    "name": "Libya",
+    "coordinates": [
+      [
+        1122.6,
+        299.1
+      ]
+    ],
+    "centroid": [
+      1122.6,
+      299.1
+    ]
+  },
+  "LK": {
+    "name": "Sri Lanka",
+    "coordinates": [
+      [
+        1445.9,
+        462.0
+      ]
+    ],
+    "centroid": [
+      1445.9,
+      462.0
+    ]
+  },
+  "LS": {
+    "name": "Lesotho",
+    "coordinates": [
+      [
+        1139.1,
+        697.9
+      ]
+    ],
+    "centroid": [
+      1139.1,
+      697.9
+    ]
+  },
+  "LT": {
+    "name": "Lithuania",
+    "coordinates": [
+      [
+        1111.1,
+        147.6
+      ]
+    ],
+    "centroid": [
+      1111.1,
+      147.6
+    ]
+  },
+  "LU": {
+    "name": "Luxembourg",
+    "coordinates": [
+      [
+        1016.9,
+        185.4
+      ]
+    ],
+    "centroid": [
+      1016.9,
+      185.4
+    ]
+  },
+  "LV": {
+    "name": "Latvia",
+    "coordinates": [
+      [
+        1112.8,
+        136.5
+      ]
+    ],
+    "centroid": [
+      1112.8,
+      136.5
+    ]
+  },
+  "MA": {
+    "name": "Morocco",
+    "coordinates": [
+      [
+        974.8,
+        276.0
+      ]
+    ],
+    "centroid": [
+      974.8,
+      276.0
+    ]
+  },
+  "MD": {
+    "name": "Moldova",
+    "coordinates": [
+      [
+        1129.4,
+        210.3
+      ]
+    ],
+    "centroid": [
+      1129.4,
+      210.3
+    ]
+  },
+  "MG": {
+    "name": "Madagascar",
+    "coordinates": [
+      [
+        1267.9,
+        588.9
+      ]
+    ],
+    "centroid": [
+      1267.9,
+      588.9
+    ]
+  },
+  "MX": {
+    "name": "Mexico",
+    "coordinates": [
+      [
+        449.3,
+        335.9
+      ]
+    ],
+    "centroid": [
+      449.3,
+      335.9
+    ]
+  },
+  "MK": {
+    "name": "Macedonia",
+    "coordinates": [
+      [
+        1105.5,
+        236.6
+      ]
+    ],
+    "centroid": [
+      1105.5,
+      236.6
+    ]
+  },
+  "ML": {
+    "name": "Mali",
+    "coordinates": [
+      [
+        1010.2,
+        378.8
+      ]
+    ],
+    "centroid": [
+      1010.2,
+      378.8
+    ]
+  },
+  "MM": {
+    "name": "Myanmar",
+    "coordinates": [
+      [
+        1548.4,
+        364.2
+      ]
+    ],
+    "centroid": [
+      1548.4,
+      364.2
+    ]
+  },
+  "ME": {
+    "name": "Montenegro",
+    "coordinates": [
+      [
+        1090.6,
+        227.2
+      ]
+    ],
+    "centroid": [
+      1090.6,
+      227.2
+    ]
+  },
+  "MN": {
+    "name": "Mongolia",
+    "coordinates": [
+      [
+        1496.2,
+        181.5
+      ]
+    ],
+    "centroid": [
+      1496.2,
+      181.5
+    ]
+  },
+  "MZ": {
+    "name": "Mozambique",
+    "coordinates": [
+      [
+        1166.7,
+        673.5
+      ]
+    ],
+    "centroid": [
+      1166.7,
+      673.5
+    ]
+  },
+  "MR": {
+    "name": "Mauritania",
+    "coordinates": [
+      [
+        959.2,
+        341.5
+      ]
+    ],
+    "centroid": [
+      959.2,
+      341.5
+    ]
+  },
+  "MW": {
+    "name": "Malawi",
+    "coordinates": [
+      [
+        1182.3,
+        588.9
+      ]
+    ],
+    "centroid": [
+      1182.3,
+      588.9
+    ]
+  },
+  "NA": {
+    "name": "Namibia",
+    "coordinates": [
+      [
+        1116.2,
+        614.3
+      ]
+    ],
+    "centroid": [
+      1116.2,
+      614.3
+    ]
+  },
+  "NE": {
+    "name": "Niger",
+    "coordinates": [
+      [
+        1068.6,
+        355.0
+      ]
+    ],
+    "centroid": [
+      1068.6,
+      355.0
+    ]
+  },
+  "NG": {
+    "name": "Nigeria",
+    "coordinates": [
+      [
+        1066.2,
+        421.7
+      ]
+    ],
+    "centroid": [
+      1066.2,
+      421.7
+    ]
+  },
+  "NI": {
+    "name": "Nicaragua",
+    "coordinates": [
+      [
+        519.6,
+        405.5
+      ]
+    ],
+    "centroid": [
+      519.6,
+      405.5
+    ]
+  },
+  "NP": {
+    "name": "Nepal",
+    "coordinates": [
+      [
+        1469.0,
+        322.9
+      ]
+    ],
+    "centroid": [
+      1469.0,
+      322.9
+    ]
+  },
+  "PK": {
+    "name": "Pakistan",
+    "coordinates": [
+      [
+        1401.6,
+        273.9
+      ]
+    ],
+    "centroid": [
+      1401.6,
+      273.9
+    ]
+  },
+  "PA": {
+    "name": "Panama",
+    "coordinates": [
+      [
+        549.3,
+        446.2
+      ]
+    ],
+    "centroid": [
+      549.3,
+      446.2
+    ]
+  },
+  "PE": {
+    "name": "Peru",
+    "coordinates": [
+      [
+        590.5,
+        529.4
+      ]
+    ],
+    "centroid": [
+      590.5,
+      529.4
+    ]
+  },
+  "PL": {
+    "name": "Poland",
+    "coordinates": [
+      [
+        1079.9,
+        154.8
+      ]
+    ],
+    "centroid": [
+      1079.9,
+      154.8
+    ]
+  },
+  "KP": {
+    "name": "Dem. Rep. Korea",
+    "coordinates": [
+      [
+        1660.3,
+        229.9
+      ]
+    ],
+    "centroid": [
+      1660.3,
+      229.9
+    ]
+  },
+  "PY": {
+    "name": "Paraguay",
+    "coordinates": [
+      [
+        662.5,
+        631.4
+      ]
+    ],
+    "centroid": [
+      662.5,
+      631.4
+    ]
+  },
+  "PS": {
+    "name": "Palestine",
+    "coordinates": [
+      [
+        1178.3,
+        293.8
+      ]
+    ],
+    "centroid": [
+      1178.3,
+      293.8
+    ]
+  },
+  "QA": {
+    "name": "Qatar",
+    "coordinates": [
+      [
+        1270.1,
+        343.7
+      ]
+    ],
+    "centroid": [
+      1270.1,
+      343.7
+    ]
+  },
+  "RO": {
+    "name": "Romania",
+    "coordinates": [
+      [
+        1118.9,
+        193.1
+      ]
+    ],
+    "centroid": [
+      1118.9,
+      193.1
+    ]
+  },
+  "RW": {
+    "name": "Rwanda",
+    "coordinates": [
+      [
+        1158.8,
+        509.1
+      ]
+    ],
+    "centroid": [
+      1158.8,
+      509.1
+    ]
+  },
+  "EH": {
+    "name": "Western Sahara",
+    "coordinates": [
+      [
+        938.9,
+        324.3
+      ]
+    ],
+    "centroid": [
+      938.9,
+      324.3
+    ]
+  },
+  "SA": {
+    "name": "Saudi Arabia",
+    "coordinates": [
+      [
+        1240.5,
+        315.0
+      ]
+    ],
+    "centroid": [
+      1240.5,
+      315.0
+    ]
+  },
+  "SD": {
+    "name": "Sudan",
+    "coordinates": [
+      [
+        1191.0,
+        409.2
+      ]
+    ],
+    "centroid": [
+      1191.0,
+      409.2
+    ]
+  },
+  "SS": {
+    "name": "South Sudan",
+    "coordinates": [
+      [
+        1178.1,
+        441.1
+      ]
+    ],
+    "centroid": [
+      1178.1,
+      441.1
+    ]
+  },
+  "SN": {
+    "name": "Senegal",
+    "coordinates": [
+      [
+        918.0,
+        408.0
+      ]
+    ],
+    "centroid": [
+      918.0,
+      408.0
+    ]
+  },
+  "SL": {
+    "name": "Sierra Leone",
+    "coordinates": [
+      [
+        928.5,
+        447.9
+      ]
+    ],
+    "centroid": [
+      928.5,
+      447.9
+    ]
+  },
+  "SV": {
+    "name": "El Salvador",
+    "coordinates": [
+      [
+        492.5,
+        415.9
+      ]
+    ],
+    "centroid": [
+      492.5,
+      415.9
+    ]
+  },
+  "RS": {
+    "name": "Serbia",
+    "coordinates": [
+      [
+        1102.0,
+        218.2
+      ]
+    ],
+    "centroid": [
+      1102.0,
+      218.2
+    ]
+  },
+  "SR": {
+    "name": "Suriname",
+    "coordinates": [
+      [
+        681.0,
+        464.9
+      ]
+    ],
+    "centroid": [
+      681.0,
+      464.9
+    ]
+  },
+  "SK": {
+    "name": "Slovakia",
+    "coordinates": [
+      [
+        1098.1,
+        187.7
+      ]
+    ],
+    "centroid": [
+      1098.1,
+      187.7
+    ]
+  },
+  "SI": {
+    "name": "Slovenia",
+    "coordinates": [
+      [
+        1069.8,
+        203.9
+      ]
+    ],
+    "centroid": [
+      1069.8,
+      203.9
+    ]
+  },
+  "SE": {
+    "name": "Sweden",
+    "coordinates": [
+      [
+        1088.2,
+        87.0
+      ]
+    ],
+    "centroid": [
+      1088.2,
+      87.0
+    ]
+  },
+  "SZ": {
+    "name": "Swaziland",
+    "coordinates": [
+      [
+        1161.7,
+        667.7
+      ]
+    ],
+    "centroid": [
+      1161.7,
+      667.7
+    ]
+  },
+  "SY": {
+    "name": "Syria",
+    "coordinates": [
+      [
+        1195.0,
+        287.5
+      ]
+    ],
+    "centroid": [
+      1195.0,
+      287.5
+    ]
+  },
+  "TD": {
+    "name": "Chad",
+    "coordinates": [
+      [
+        1119.2,
+        376.1
+      ]
+    ],
+    "centroid": [
+      1119.2,
+      376.1
+    ]
+  },
+  "TG": {
+    "name": "Togo",
+    "coordinates": [
+      [
+        991.4,
+        431.2
+      ]
+    ],
+    "centroid": [
+      991.4,
+      431.2
+    ]
+  },
+  "TH": {
+    "name": "Thailand",
+    "coordinates": [
+      [
+        1577.5,
+        410.2
+      ]
+    ],
+    "centroid": [
+      1577.5,
+      410.2
+    ]
+  },
+  "TJ": {
+    "name": "Tajikistan",
+    "coordinates": [
+      [
+        1357.0,
+        243.6
+      ]
+    ],
+    "centroid": [
+      1357.0,
+      243.6
+    ]
+  },
+  "TM": {
+    "name": "Turkmenistan",
+    "coordinates": [
+      [
+        1338.3,
+        262.0
+      ]
+    ],
+    "centroid": [
+      1338.3,
+      262.0
+    ]
+  },
+  "TL": {
+    "name": "Timor-Leste",
+    "coordinates": [
+      [
+        1692.7,
+        562.1
+      ]
+    ],
+    "centroid": [
+      1692.7,
+      562.1
+    ]
+  },
+  "TN": {
+    "name": "Tunisia",
+    "coordinates": [
+      [
+        1048.2,
+        289.1
+      ]
+    ],
+    "centroid": [
+      1048.2,
+      289.1
+    ]
+  },
+  "TW": {
+    "name": "Taiwan",
+    "coordinates": [
+      [
+        1657.9,
+        355.5
+      ]
+    ],
+    "centroid": [
+      1657.9,
+      355.5
+    ]
+  },
+  "TZ": {
+    "name": "Tanzania",
+    "coordinates": [
+      [
+        1167.0,
+        508.4
+      ]
+    ],
+    "centroid": [
+      1167.0,
+      508.4
+    ]
+  },
+  "UG": {
+    "name": "Uganda",
+    "coordinates": [
+      [
+        1179.0,
+        474.5
+      ]
+    ],
+    "centroid": [
+      1179.0,
+      474.5
+    ]
+  },
+  "UA": {
+    "name": "Ukraine",
+    "coordinates": [
+      [
+        1157.2,
+        174.6
+      ]
+    ],
+    "centroid": [
+      1157.2,
+      174.6
+    ]
+  },
+  "UY": {
+    "name": "Uruguay",
+    "coordinates": [
+      [
+        699.7,
+        718.6
+      ]
+    ],
+    "centroid": [
+      699.7,
+      718.6
+    ]
+  },
+  "UZ": {
+    "name": "Uzbekistan",
+    "coordinates": [
+      [
+        1352.7,
+        230.7
+      ]
+    ],
+    "centroid": [
+      1352.7,
+      230.7
+    ]
+  },
+  "VE": {
+    "name": "Venezuela",
+    "coordinates": [
+      [
+        648.7,
+        448.1
+      ]
+    ],
+    "centroid": [
+      648.7,
+      448.1
+    ]
+  },
+  "VN": {
+    "name": "Vietnam",
+    "coordinates": [
+      [
+        1586.5,
+        363.5
+      ]
+    ],
+    "centroid": [
+      1586.5,
+      363.5
+    ]
+  },
+  "YE": {
+    "name": "Yemen",
+    "coordinates": [
+      [
+        1283.8,
+        394.9
+      ]
+    ],
+    "centroid": [
+      1283.8,
+      394.9
+    ]
+  },
+  "ZM": {
+    "name": "Zambia",
+    "coordinates": [
+      [
+        1162.1,
+        556.8
+      ]
+    ],
+    "centroid": [
+      1162.1,
+      556.8
+    ]
+  },
+  "ZW": {
+    "name": "Zimbabwe",
+    "coordinates": [
+      [
+        1159.4,
+        644.7
+      ]
+    ],
+    "centroid": [
+      1159.4,
+      644.7
+    ]
+  },
+  "SO": {
+    "name": "Somalia",
+    "coordinates": [
+      [
+        1222.1,
+        512.6
+      ]
+    ],
+    "centroid": [
+      1222.1,
+      512.6
+    ]
+  },
+  "XK": {
+    "name": "Kosovo",
+    "coordinates": [
+      [
+        1097.8,
+        230.8
+      ]
+    ],
+    "centroid": [
+      1097.8,
+      230.8
+    ]
+  },
+  "ZA": {
+    "name": "South Africa",
+    "coordinates": [
+      [
+        1159.4,
+        644.7
+      ]
+    ],
+    "centroid": [
+      1159.4,
+      644.7
+    ]
+  },
+  "NL": {
+    "name": "Netherlands",
+    "coordinates": [
+      [
+        1016.5,
+        177.1
+      ]
+    ],
+    "centroid": [
+      1016.5,
+      177.1
+    ]
+  },
+  "PT": {
+    "name": "Portugal",
+    "coordinates": [
+      [
+        946.9,
+        263.7
+      ]
+    ],
+    "centroid": [
+      946.9,
+      263.7
+    ]
+  },
+  "ES": {
+    "name": "Spain",
+    "coordinates": [
+      [
+        976.6,
+        223.4
+      ]
+    ],
+    "centroid": [
+      976.6,
+      223.4
+    ]
+  },
+  "GF": {
+    "name": "French Guiana",
+    "coordinates": [
+      [
+        677.3,
+        487.0
+      ]
+    ],
+    "centroid": [
+      677.3,
+      487.0
+    ]
+  },
+  "AW": {
+    "name": "Aruba",
+    "coordinates": [
+      [
+        592.9,
+        422.0
+      ]
+    ],
+    "centroid": [
+      592.9,
+      422.0
+    ]
+  },
+  "AI": {
+    "name": "Anguilla",
+    "coordinates": [
+      [
+        634.2,
+        384.9
+      ]
+    ],
+    "centroid": [
+      634.2,
+      384.9
+    ]
+  },
+  "BH": {
+    "name": "Bahrain",
+    "coordinates": [
+      [
+        1264.1,
+        333.3
+      ]
+    ],
+    "centroid": [
+      1264.1,
+      333.3
+    ]
+  },
+  "BL": {
+    "name": "Saint-Barth\u00c3\u00a9lemy",
+    "coordinates": [
+      [
+        635.2,
+        387.0
+      ]
+    ],
+    "centroid": [
+      635.2,
+      387.0
+    ]
+  },
+  "BM": {
+    "name": "Bermuda",
+    "coordinates": [
+      [
+        637.3,
+        294.0
+      ]
+    ],
+    "centroid": [
+      637.3,
+      294.0
+    ]
+  },
+  "BB": {
+    "name": "Barbados",
+    "coordinates": [
+      [
+        651.5,
+        418.0
+      ]
+    ],
+    "centroid": [
+      651.5,
+      418.0
+    ]
+  },
+  "CW": {
+    "name": "Cura\u00c3\u00a7ao",
+    "coordinates": [
+      [
+        599.0,
+        424.5
+      ]
+    ],
+    "centroid": [
+      599.0,
+      424.5
+    ]
+  },
+  "DM": {
+    "name": "Dominica",
+    "coordinates": [
+      [
+        642.0,
+        401.7
+      ]
+    ],
+    "centroid": [
+      642.0,
+      401.7
+    ]
+  },
+  "GD": {
+    "name": "Grenada",
+    "coordinates": [
+      [
+        639.2,
+        424.5
+      ]
+    ],
+    "centroid": [
+      639.2,
+      424.5
+    ]
+  },
+  "GU": {
+    "name": "Guam",
+    "coordinates": [
+      [
+        1800.8,
+        415.5
+      ]
+    ],
+    "centroid": [
+      1800.8,
+      415.5
+    ]
+  },
+  "LC": {
+    "name": "Saint Lucia",
+    "coordinates": [
+      [
+        643.7,
+        413.8
+      ]
+    ],
+    "centroid": [
+      643.7,
+      413.8
+    ]
+  },
+  "MF": {
+    "name": "Saint-Martin",
+    "coordinates": [
+      [
+        634.2,
+        386.0
+      ]
+    ],
+    "centroid": [
+      634.2,
+      386.0
+    ]
+  },
+  "MV": {
+    "name": "Maldives",
+    "coordinates": [
+      [
+        1402.9,
+        474.8
+      ]
+    ],
+    "centroid": [
+      1402.9,
+      474.8
+    ]
+  },
+  "MH": {
+    "name": "Marshall Islands",
+    "coordinates": [
+      [
+        1953.8,
+        456.0
+      ]
+    ],
+    "centroid": [
+      1953.8,
+      456.0
+    ]
+  },
+  "MS": {
+    "name": "Montserrat",
+    "coordinates": [
+      [
+        638.2,
+        393.9
+      ]
+    ],
+    "centroid": [
+      638.2,
+      393.9
+    ]
+  },
+  "NR": {
+    "name": "Nauru",
+    "coordinates": [
+      [
+        1933.0,
+        505.3
+      ]
+    ],
+    "centroid": [
+      1933.0,
+      505.3
+    ]
+  },
+  "PW": {
+    "name": "Palau",
+    "coordinates": [
+      [
+        1747.7,
+        453.1
+      ]
+    ],
+    "centroid": [
+      1747.7,
+      453.1
+    ]
+  },
+  "SX": {
+    "name": "Sint Maarten",
+    "coordinates": [
+      [
+        634.2,
+        386.0
+      ]
+    ],
+    "centroid": [
+      634.2,
+      386.0
+    ]
+  },
+  "TV": {
+    "name": "Tuvalu",
+    "coordinates": [
+      [
+        1998.9,
+        556.6
+      ]
+    ],
+    "centroid": [
+      1998.9,
+      556.6
+    ]
+  },
+  "VC": {
+    "name": "Saint Vincent and the Grenadines",
+    "coordinates": [
+      [
+        642.2,
+        417.4
+      ]
+    ],
+    "centroid": [
+      642.2,
+      417.4
+    ]
+  },
+  "VG": {
+    "name": "British Virgin Islands",
+    "coordinates": [
+      [
+        626.1,
+        383.4
+      ]
+    ],
+    "centroid": [
+      626.1,
+      383.4
+    ]
+  },
+  "BQBO": {
+    "name": "Netherlands",
+    "coordinates": [
+      [
+        602.0,
+        424.6
+      ]
+    ],
+    "centroid": [
+      602.0,
+      424.6
+    ]
+  },
+  "BQSE": {
+    "name": "St. Eustatius (Netherlands)",
+    "coordinates": [
+      [
+        634.3,
+        389.6
+      ]
+    ],
+    "centroid": [
+      634.3,
+      389.6
+    ]
+  },
+  "BQSA": {
+    "name": "Saba (Netherlands)",
+    "coordinates": [
+      [
+        632.8,
+        388.7
+      ]
+    ],
+    "centroid": [
+      632.8,
+      388.7
+    ]
+  },
+  "MQ": {
+    "name": "Martinique",
+    "coordinates": [
+      [
+        644.0,
+        406.9
+      ]
+    ],
+    "centroid": [
+      644.0,
+      406.9
+    ]
+  },
+  "YT": {
+    "name": "Mayotte",
+    "coordinates": [
+      [
+        1240.2,
+        583.1
+      ]
+    ],
+    "centroid": [
+      1240.2,
+      583.1
+    ]
+  },
+  "RE": {
+    "name": "Reunion",
+    "coordinates": [
+      [
+        1295.0,
+        635.8
+      ]
+    ],
+    "centroid": [
+      1295.0,
+      635.8
+    ]
+  }
+}

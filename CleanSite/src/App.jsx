@@ -8,6 +8,7 @@ import BundleChecker from './pages/BundleChecker';
 import About from './pages/About';
 import CustomCursor from './components/CustomCursor';
 import LoadingScreen from './components/LoadingScreen';
+import WorldMap from './pages/Server';  // Add this import
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -21,6 +22,7 @@ function App() {
           <Route path="/meme-scanner" element={<MemeScanner />} />
           <Route path="/bundle-checker" element={<BundleChecker />} />
           <Route path="/about" element={<About />} />
+          <Route path="/servers" element={<WorldMap />} />  {/* Add this new route */}
         </Routes>
       </PageLayout>
       <CustomCursor />

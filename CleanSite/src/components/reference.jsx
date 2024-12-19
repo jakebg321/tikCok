@@ -1,9 +1,8 @@
 import { useState, useCallback, useEffect } from 'react';
 import tiktokData from '../data/tiktok_data1.json';
 
-// Increased timing for better visibility
-const SCAN_DURATION = 12000; // 12 seconds per video
-const HTML_SCROLL_SPEED = 100; // 100ms between html lines
+const SCAN_DURATION = 12000;
+const HTML_SCROLL_SPEED = 100; 
 
 const formatTimeAgo = (dateString) => {
   const date = new Date(dateString);

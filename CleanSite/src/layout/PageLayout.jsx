@@ -1,4 +1,3 @@
-// src/components/layout/PageLayout.jsx
 import Navbar from './Navbar';
 
 const PageLayout = ({ children }) => {

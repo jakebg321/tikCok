@@ -36,7 +36,6 @@ const BundleChecker = () => {
 
     loadData();
 
-    // Subscribe to coin state changes
     const unsubscribe = coinStateManager.subscribe(({ currentCoin: newCoin, previousCoins: newPreviousCoins }) => {
       setCurrentCoin(newCoin);
       setPreviousCoins(newPreviousCoins);
@@ -55,15 +54,12 @@ const BundleChecker = () => {
     <div className="fixed inset-0 lg:ml-[240px] overflow-hidden">
       <AnimatedBackground />
       <div className="absolute inset-0 z-20 flex">
-        {/* Main Content Area with Header */}
         <div className="flex-1 flex flex-col">
-          {/* Header Section */}
           <div className="p-8 pb-4">
             <h1 className="text-4xl font-bold text-white text-matrix-primary">Bundle Checker</h1>
             <p className="text-matrix-primary-80 text-white  mt-2">Real-time token holder analysis</p>
           </div>
 
-          {/* Visualization Area */}
           <div className="flex-1 relative">
             {isLoading ? (
               <div className="flex items-center justify-center h-full">
@@ -87,7 +83,6 @@ const BundleChecker = () => {
           </div>
         </div>
 
-        {/* Right Sidebar */}
         <div className="w-[300px] border-l border-matrix-primary-30 backdrop-blur-sm">
           <div className="h-full p-6 space-y-4">
             {[currentCoin, ...previousCoins].map((coin, index) => (

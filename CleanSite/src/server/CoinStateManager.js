@@ -12,18 +12,15 @@ class CoinStateManager {
         this.previousCoins = [];
         this.subscribers = new Set();
         
-        // Start the continuous update process
         this.startUpdateProcess();
         
         CoinStateManager.instance = this;
-        return this; // Make sure we return the instance
+        return this; 
     }
 
     startUpdateProcess() {
-        // Initial selection
         this.selectNextCoin();
         
-        // Set up continuous updates
         setInterval(() => {
             this.selectNextCoin();
         }, 4000);
@@ -33,20 +30,16 @@ class CoinStateManager {
         const nextCoin = selectRandomCoin(cryptoData.coins_data, this.displayedCoins);
         
         if (nextCoin) {
-            // Update previous coins first
             if (this.currentCoin) {
                 this.previousCoins = [this.currentCoin, ...this.previousCoins].slice(0, 4);
             }
             
-            // Then update current coin
             this.currentCoin = nextCoin;
             
-            // Update displayed coins list
             if (nextCoin.coin_info?.contract_address) {
                 this.displayedCoins = [...this.displayedCoins, nextCoin.coin_info.contract_address].slice(-10);
             }
             
-            // Notify subscribers
             this.notifySubscribers();
         }
     }
@@ -73,6 +66,5 @@ class CoinStateManager {
     }
 }
 
-// Create and export a singleton instance
 const coinStateManagerInstance = new CoinStateManager();
-export default coinStateManagerInstance; // Export the instance, not the class
+export default coinStateManagerInstance; 

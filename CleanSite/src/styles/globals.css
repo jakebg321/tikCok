@@ -8,13 +8,11 @@
   font-weight: 400;
   --matrix-primary: #00ff00;
   --matrix-primary-30: rgba(0, 255, 0, 0.3);
-  /* Color scheme */
   --slate-gray: #708090;
   --powder-blue: #6aebfc;
   --soft-white: #F5F5F5;
   --light-charcoal: #4A4A4A;
 
-  /* New gradient variables */
   --primary-gradient: linear-gradient(135deg, #B0E0E6 0%, #708090 100%);
   --hover-gradient: linear-gradient(135deg, #708090 0%, #B0E0E6 100%);
 }
@@ -24,7 +22,6 @@ body {
   color: var(--light-charcoal);
 }
 
-/* Animation Keyframes */
 @keyframes scroll {
   0% { transform: translateY(0); }
   100% { transform: translateY(-50%); }
@@ -57,7 +54,6 @@ body {
   }
 }
 
-/* Animation Utilities */
 .animate-scroll {
   animation: scroll 20s linear infinite;
 }

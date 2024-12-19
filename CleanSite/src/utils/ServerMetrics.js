@@ -24,7 +24,6 @@ export const createServerMetrics = (data) => {
     return `v${major}.${minor}.${patch}`;
   };
 
-  // Calculate server status based on multiple factors
   const calculateStatus = (metrics) => {
     const { botScore, latencyMs, trafficPatternAnomaly } = metrics;
     if (botScore > 0.8 || latencyMs > 500 || trafficPatternAnomaly > 0.8) return 'critical';
@@ -32,7 +31,6 @@ export const createServerMetrics = (data) => {
     return 'healthy';
   };
 
-  // Enhanced mock data generation
   const metrics = {
     location: data.geoip_location,
     lastUpdated: Date.now(),

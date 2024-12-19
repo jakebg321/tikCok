@@ -16,11 +16,9 @@ class StatsStateManager {
     constructor() {
         // Check if we already have an instance in the global scope
         if (typeof window !== 'undefined' && window.__statsManagerInstance) {
-            console.log('[StatsManager] Returning existing global instance');
             return window.__statsManagerInstance;
         }
 
-        console.log('[StatsManager] Initializing new instance');
         
         this.DEBUG = true;
         this.initialized = false;
@@ -30,7 +28,6 @@ class StatsStateManager {
     initializeStats() {
         if (this.initialized) return;
         
-        console.log('[StatsManager] Setting up initial stats');
         
         this.baseTimestamp = new Date('2024-12-01').getTime();
         this.baseStats = {
@@ -49,18 +46,15 @@ class StatsStateManager {
         this.currentStats = this.calculateCurrentStats();
         this.initialized = true;
         
-        console.log('[StatsManager] Initial stats:', this.currentStats);
     }
 
     debug(message, data) {
         if (this.DEBUG) {
-            console.log(`%c[DEBUG:StatsManager] ${message}`, 'color: #00ff00');
             if (data) console.log(data);
         }
     }
 
     calculateCurrentStats() {
-        console.log('[StatsManager] Calculating stats...');
         const now = Date.now();
         const elapsedSeconds = Math.floor((now - this.baseTimestamp) / 1000);
 
@@ -71,12 +65,10 @@ class StatsStateManager {
             successRate: Math.min(98, this.baseStats.successRate + (elapsedSeconds * 0.0001))
         };
 
-        console.log('[StatsManager] Calculated stats:', stats);
         return stats;
     }
 
     getStats() {
-        console.log('[StatsManager] getStats called');
         if (!this.initialized) {
             this.initializeStats();
         }
@@ -85,7 +77,6 @@ class StatsStateManager {
             ...this.currentStats,
             formattedStats: this.getFormattedStats()
         };
-        console.log('[StatsManager] Returning stats:', result);
         return result;
     }
 

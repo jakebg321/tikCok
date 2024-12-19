@@ -59,13 +59,13 @@ const Navbar = () => {
             UPDATED: {currentDate}
           </div>
           <div className="text-sm text-black font-mono flex items-center gap-2">
-            <a href="https://twitter.com/your_handle" target="_blank" rel="noopener noreferrer">
+            <a href="https://x.com/Aros_World" target="_blank" rel="noopener noreferrer">
               <img src="/x.png" alt="X" className="h-4 w-4" />
             </a>
             <a href="https://dexscreener.com/your_link" target="_blank" rel="noopener noreferrer">
               <img src="/dex.png" alt="Dexscreener" className="h-4 w-4" />
             </a>
-            <a href="https://github.com/your_profile" target="_blank" rel="noopener noreferrer" className="text-sm">
+            <a href="https://github.com/AROSAI/AROS" target="_blank" rel="noopener noreferrer" className="text-sm">
               GitHub
             </a>
           </div>

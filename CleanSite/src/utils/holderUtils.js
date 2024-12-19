@@ -1,13 +1,6 @@
-/**
- * Processes raw holder data into a format suitable for visualization
- * @param {Object[]} holders - Raw holder data array
- * @param {number} maxBubbles - Maximum number of bubbles to display
- * @returns {Object[]} Processed holder data
- */
 export const processHolderData = (holders, maxBubbles = 40) => {
     if (!holders || !holders.length) return [];
     
-    // First, filter out any invalid holders
     const validHolders = holders.filter(holder => 
         holder && 
         holder.address && 
@@ -20,17 +13,13 @@ export const processHolderData = (holders, maxBubbles = 40) => {
 
     if (validHolders.length === 0) return [];
     
-    // Sort holders by percentage in descending order
     const sortedHolders = [...validHolders].sort((a, b) => 
         parseFloat(b.percentage) - parseFloat(a.percentage)
     );
     
-    // Calculate max balance once for normalization
     const maxBalance = Math.max(...sortedHolders.map(h => parseFloat(h.balance)));
     
-    // Take top N holders and normalize their data
     return sortedHolders.slice(0, maxBubbles).map(holder => {
-        // Even though we filtered, add a safety check for each property
         const balance = parseFloat(holder.balance) || 0;
         const percentage = parseFloat(holder.percentage) || 0;
         
@@ -45,13 +34,7 @@ export const processHolderData = (holders, maxBubbles = 40) => {
         };
     });
 };
-/**
- * Calculates positions for holder bubbles in a force-directed layout
- * @param {Object[]} processedHolders - Processed holder data
- * @param {number} width - SVG width
- * @param {number} height - SVG height
- * @returns {Object[]} Holder data with calculated positions
- */
+
 export const calculateBubbleLayout = (processedHolders, width, height) => {
     const centerX = width / 2;
     const centerY = height / 2;
@@ -79,11 +62,6 @@ export const calculateBubbleLayout = (processedHolders, width, height) => {
     });
 };
 
-/**
- * Calculates summary statistics for holder distribution
- * @param {Object[]} holders - Raw holder data array
- * @returns {Object} Summary statistics
- */
 export const calculateHolderStats = (holders) => {
     if (!holders || !holders.length) {
         return {
@@ -97,11 +75,8 @@ export const calculateHolderStats = (holders) => {
 
     const totalHolders = holders.length;
     const totalSupply = holders.reduce((sum, h) => sum + parseFloat(h.balance), 0);
-    
-    // Calculate average holding
     const averageHolding = totalSupply / totalHolders;
     
-    // Calculate median percentage
     const sortedPercentages = [...holders]
         .map(h => parseFloat(h.percentage))
         .sort((a, b) => a - b);
@@ -110,11 +85,10 @@ export const calculateHolderStats = (holders) => {
         ? (sortedPercentages[midPoint - 1] + sortedPercentages[midPoint]) / 2
         : sortedPercentages[midPoint];
     
-    // Calculate concentration index (Herfindahl-Hirschman Index)
     const concentrationIndex = holders.reduce((sum, holder) => {
         const percentage = parseFloat(holder.percentage);
         return sum + (percentage * percentage);
-    }, 0) / 10000; // Normalize to 0-1 scale
+    }, 0) / 10000;
     
     return {
         totalHolders,
@@ -125,17 +99,12 @@ export const calculateHolderStats = (holders) => {
     };
 };
 
-/**
- * Groups holders by percentage ranges
- * @param {Object[]} holders - Raw holder data array
- * @returns {Object} Grouped holder data
- */
 export const groupHoldersByPercentage = (holders) => {
     const groups = {
-        major: [], // > 5%
-        significant: [], // 1-5%
-        medium: [], // 0.1-1%
-        small: [] // < 0.1%
+        major: [],
+        significant: [],
+        medium: [],
+        small: []
     };
     
     holders.forEach(holder => {

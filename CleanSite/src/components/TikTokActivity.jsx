@@ -73,11 +73,9 @@ const TikTokActivity = ({ onVideoProcessed }) => {
 
   const simulateDiscovery = useCallback((video) => {
     if (!video) {
-      console.log('No video provided to simulateDiscovery');
       return;
     }
     
-    console.log('Starting discovery for video:', video.id);
     setScanning(true);
     setDiscoveredInfo({});
     setFoundElements(new Set());
@@ -156,14 +154,12 @@ const TikTokActivity = ({ onVideoProcessed }) => {
 
   useEffect(() => {
     if (!tiktokData?.videos?.length) {
-      console.log('No TikTok videos available');
       return;
     }
 
     const processNextVideo = () => {
       console.log('Processing next video. Current index:', currentIndex);
       const video = tiktokData.videos[currentIndex];
-      console.log('Selected video:', video.id);
       simulateDiscovery(video);
     };
 
@@ -211,7 +207,7 @@ const TikTokActivity = ({ onVideoProcessed }) => {
             )}
           </div>
 
-          {/* Discovered Information */}
+          {/* Discovered  */}
           {discoveredInfo && (
             <div className="mt-4 space-y-2">
               {foundElements.size > 0 && (

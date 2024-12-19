@@ -10,6 +10,9 @@ const Navbar = () => {
   const [copied, setCopied] = useState(false);
   const location = useLocation();
 
+  const fullAddress = 'JCL8cXaLwW4XEV3SmAHr15Jckep9GstejpE6ZYX4pump';
+  const displayAddress = `${fullAddress.substring(0, 6)}...${fullAddress.slice(-4)}`;
+
   useEffect(() => {
     const date = new Date();
     const month = date.toLocaleString('en-US', { month: 'short' }).toUpperCase();
@@ -29,7 +32,7 @@ const Navbar = () => {
   }, []);
 
   const handleCopy = () => {
-    navigator.clipboard.writeText('Coming Soon');
+    navigator.clipboard.writeText(fullAddress);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
@@ -68,8 +71,7 @@ const Navbar = () => {
             </a>
           </div>
           <div className="flex items-center gap-2 text-sm text-black font-mono">
-            <span>JCL8cXaLwW4XEV3SmAHr15Jckep9GstejpE6ZYX4pump
-            </span>
+            <span>{displayAddress}</span>
             <button 
               onClick={handleCopy}
               className="hover:bg-gray-100 p-1 rounded"

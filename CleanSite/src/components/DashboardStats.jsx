@@ -1,5 +1,7 @@
+import React, { useState, useEffect } from 'react';
 import { RiDashboardLine, RiBarChartLine, RiPieChartLine, RiTimeLine } from 'react-icons/ri';
 
+// Existing StatCard component remains unchanged
 const StatCard = ({ icon: Icon, title, value, trend, trendValue }) => {
   return (
     <div className="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
@@ -39,56 +41,90 @@ const formatNumber = (num) => {
   return num.toString();
 };
 
+// Constants for base rates (per second)
+const RATES = {
+  VIDEOS_PER_SECOND: 0.05,    // 1 video every 20 seconds
+  VIEWS_PER_SECOND: 1200,     // 1.2K views per second
+  LIKES_PER_SECOND: 8,        // 8 likes per second
+};
+
+// Base starting values (as of launch date)
+const BASE_VALUES = {
+  START_TIME: new Date('2024-01-01').getTime(),
+  INITIAL_VIDEOS: 421,
+  INITIAL_VIEWS: 43300000,
+  INITIAL_LIKES: 23100,
+};
+
 const DashboardStats = ({ processedVideos, latestVideo }) => {
-  // Calculate stats based on processed videos
-  const totalVideos = processedVideos.length + 421; // Start with 421 processed videos
-  const baseAvgViews = 43300000; // 43.3M base views
-  const baseAvgLikes = 23100; // 23.1K base likes
-  
-  const avgViews = Math.floor(
-    (processedVideos.reduce((sum, video) => sum + video.stats.views, 0) / (processedVideos.length || 1)) + baseAvgViews
-  );
-  const avgLikes = Math.floor(
-    (processedVideos.reduce((sum, video) => sum + video.stats.likes, 0) / (totalVideos || 1)) + baseAvgLikes
-  );
-  
-  // Calculate success rate (simulated)
-  const successRate = Math.min(98, 85 + (totalVideos * 2));
-  
-  // Calculate trends based on the latest video
-  const viewsTrend = latestVideo ? 
-    ((latestVideo.stats.views / avgViews) - 1) * 100 : 0;
-  const likesTrend = latestVideo ?
-    ((latestVideo.stats.likes / avgLikes) - 1) * 100 : 0;
+  const [currentStats, setCurrentStats] = useState({
+    totalVideos: BASE_VALUES.INITIAL_VIDEOS,
+    avgViews: BASE_VALUES.INITIAL_VIEWS,
+    avgLikes: BASE_VALUES.INITIAL_LIKES,
+    successRate: 85
+  });
+
+  useEffect(() => {
+    // Calculate time elapsed since launch
+    const updateStats = () => {
+      const now = Date.now();
+      const elapsedSeconds = Math.floor((now - BASE_VALUES.START_TIME) / 1000);
+      
+      // Calculate current values based on elapsed time
+      const newVideos = Math.floor(elapsedSeconds * RATES.VIDEOS_PER_SECOND) + BASE_VALUES.INITIAL_VIDEOS;
+      const newViews = Math.floor(elapsedSeconds * RATES.VIEWS_PER_SECOND) + BASE_VALUES.INITIAL_VIEWS;
+      const newLikes = Math.floor(elapsedSeconds * RATES.LIKES_PER_SECOND) + BASE_VALUES.INITIAL_LIKES;
+      
+      // Calculate success rate (caps at 98%)
+      const newSuccessRate = Math.min(98, 85 + (newVideos * 0.001));
+
+      setCurrentStats({
+        totalVideos: newVideos,
+        avgViews: newViews,
+        avgLikes: newLikes,
+        successRate: newSuccessRate
+      });
+    };
+
+    // Update stats immediately and set interval
+    updateStats();
+    const interval = setInterval(updateStats, 1000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  // Calculate trends (can be based on real-time rate of change)
+  const viewsTrend = 5.2;  // Consistent upward trend
+  const likesTrend = 4.8;  // Consistent upward trend
 
   const stats = [
     {
       icon: RiDashboardLine,
       title: 'Processed Videos',
-      value: totalVideos.toString(),
+      value: formatNumber(currentStats.totalVideos),
       trend: 'up',
-      trendValue: ((totalVideos / 5) * 100).toFixed(1)
+      trendValue: ((currentStats.totalVideos / 1000) * 0.1).toFixed(1)
     },
     {
       icon: RiBarChartLine,
       title: 'Avg. Views',
-      value: formatNumber(avgViews),
-      trend: viewsTrend >= 0 ? 'up' : 'down',
-      trendValue: Math.abs(viewsTrend).toFixed(1)
+      value: formatNumber(currentStats.avgViews),
+      trend: 'up',
+      trendValue: viewsTrend.toFixed(1)
     },
     {
       icon: RiPieChartLine,
       title: 'Avg. Likes',
-      value: formatNumber(avgLikes),
-      trend: likesTrend >= 0 ? 'up' : 'down',
-      trendValue: Math.abs(likesTrend).toFixed(1)
+      value: formatNumber(currentStats.avgLikes),
+      trend: 'up',
+      trendValue: likesTrend.toFixed(1)
     },
     {
       icon: RiTimeLine,
       title: 'Success Rate',
-      value: successRate.toFixed(1) + '%',
+      value: currentStats.successRate.toFixed(1) + '%',
       trend: 'up',
-      trendValue: (successRate / 100).toFixed(1)
+      trendValue: (currentStats.successRate / 100).toFixed(1)
     }
   ];
 

@@ -1,0 +1,3122 @@
+[
+  {
+    "session_id": "d94bacec83cdb5c5",
+    "proxy_ip": "***.86.***.***",
+    "geoip_location": {
+      "country": "Canada",
+      "city": "Toronto"
+    },
+    "latency_ms": 188,
+    "action": "Headless Chrome: Puppeteer stealth plugin enabled",
+    "status_code": 301,
+    "bot_detection": {
+      "bot_score": 0.97,
+      "anomaly_score": 0.2,
+      "fingerprint_spoofing": true,
+      "headers_injected": [
+        "X-Forwarded-For",
+        "X-Device-ID",
+        "X-Session-Key"
+      ]
+    },
+    "scraping": {
+      "target_url_hash": "0a8fad5edac7",
+      "data_size": "39KB",
+      "rate_limit": "74 req/min"
+    },
+    "security": {
+      "tls_version": "TLS 1.3",
+      "encryption": "AES-256",
+      "dns_leaks_detected": false,
+      "ssl_certificate_mismatch_bypassed": false
+    },
+    "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)",
+    "machine_learning": {
+      "captcha_solved": true,
+      "model_version": "v3.7",
+      "inference_time_ms": 17
+    },
+    "stealth": {
+      "headless_mode": true,
+      "canvas_fingerprint": "c7a5deb6",
+      "webrtc_leak_protection": true
+    },
+    "analytics": {
+      "traffic_pattern_anomaly": 0.34,
+      "latency_threshold_pass": true,
+      "requests_per_sec": 17
+    }
+  },
+  {
+    "session_id": "0df465e0751ccaca",
+    "proxy_ip": "***.52.***.***",
+    "geoip_location": {
+      "country": "Canada",
+      "city": "Montreal"
+    },
+    "latency_ms": 202,
+    "action": "Headless Chrome: Puppeteer stealth plugin enabled",
+    "status_code": 500,
+    "bot_detection": {
+      "bot_score": 0.49,
+      "anomaly_score": 0.42,
+      "fingerprint_spoofing": true,
+      "headers_injected": [
+        "X-Forwarded-For",
+        "X-Device-ID",
+        "X-Session-Key"
+      ]
+    },
+    "scraping": {
+      "target_url_hash": "f701c3ae57eb",
+      "data_size": "16KB",
+      "rate_limit": "48 req/min"
+    },
+    "security": {
+      "tls_version": "TLS 1.2",
+      "encryption": "AES-256",
+      "dns_leaks_detected": false,
+      "ssl_certificate_mismatch_bypassed": false
+    },
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+    "machine_learning": {
+      "captcha_solved": true,
+      "model_version": "v2.3",
+      "inference_time_ms": 27
+    },
+    "stealth": {
+      "headless_mode": true,
+      "canvas_fingerprint": "b377eb97",
+      "webrtc_leak_protection": true
+    },
+    "analytics": {
+      "traffic_pattern_anomaly": 0.06,
+      "latency_threshold_pass": false,
+      "requests_per_sec": 19
+    }
+  },
+  {
+    "session_id": "97c382aadfcc1e43",
+    "proxy_ip": "***.133.***.***",
+    "geoip_location": {
+      "country": "Brazil",
+      "city": "S\u00e3o Paulo"
+    },
+    "latency_ms": 149,
+    "action": "Switching to new proxy node",
+    "status_code": 500,
+    "bot_detection": {
+      "bot_score": 0.89,
+      "anomaly_score": 0.08,
+      "fingerprint_spoofing": false,
+      "headers_injected": [
+        "X-Forwarded-For",
+        "X-Device-ID",
+        "X-Session-Key"
+      ]
+    },
+    "scraping": {
+      "target_url_hash": "f9bcde8eb7df",
+      "data_size": "22KB",
+      "rate_limit": "16 req/min"
+    },
+    "security": {
+      "tls_version": "TLS 1.2",
+      "encryption": "AES-256",
+      "dns_leaks_detected": false,
+      "ssl_certificate_mismatch_bypassed": false
+    },
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+    "machine_learning": {
+      "captcha_solved": true,
+      "model_version": "v1.8",
+      "inference_time_ms": 21
+    },
+    "stealth": {
+      "headless_mode": true,
+      "canvas_fingerprint": "3e210fd1",
+      "webrtc_leak_protection": true
+    },
+    "analytics": {
+      "traffic_pattern_anomaly": 0.4,
+      "latency_threshold_pass": true,
+      "requests_per_sec": 12
+    }
+  },
+  {
+    "session_id": "4fe20476af05ea11",
+    "proxy_ip": "***.82.***.***",
+    "geoip_location": {
+      "country": "Brazil",
+      "city": "Salvador"
+    },
+    "latency_ms": 188,
+    "action": "Fingerprint obfuscation enabled",
+    "status_code": 301,
+    "bot_detection": {
+      "bot_score": 0.99,
+      "anomaly_score": 0.32,
+      "fingerprint_spoofing": true,
+      "headers_injected": [
+        "X-Forwarded-For",
+        "X-Device-ID",
+        "X-Session-Key"
+      ]
+    },
+    "scraping": {
+      "target_url_hash": "3b0269aed1cf",
+      "data_size": "15KB",
+      "rate_limit": "37 req/min"
+    },
+    "security": {
+      "tls_version": "TLS 1.2",
+      "encryption": "AES-256",
+      "dns_leaks_detected": false,
+      "ssl_certificate_mismatch_bypassed": false
+    },
+    "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)",
+    "machine_learning": {
+      "captcha_solved": true,
+      "model_version": "v5.5",
+      "inference_time_ms": 14
+    },
+    "stealth": {
+      "headless_mode": true,
+      "canvas_fingerprint": "e0bdefb5",
+      "webrtc_leak_protection": true
+    },
+    "analytics": {
+      "traffic_pattern_anomaly": 0.32,
+      "latency_threshold_pass": true,
+      "requests_per_sec": 17
+    }
+  },
+  {
+    "session_id": "47f4b4da1419ddde",
+    "proxy_ip": "***.218.***.***",
+    "geoip_location": {
+      "country": "Japan",
+      "city": "Kyoto"
+    },
+    "latency_ms": 116,
+    "action": "Dynamic XPath selection active",
+    "status_code": 200,
+    "bot_detection": {
+      "bot_score": 0.19,
+      "anomaly_score": 0.02,
+      "fingerprint_spoofing": false,
+      "headers_injected": [
+        "X-Forwarded-For",
+        "X-Device-ID",
+        "X-Session-Key"
+      ]
+    },
+    "scraping": {
+      "target_url_hash": "f96e4ccebc30",
+      "data_size": "39KB",
+      "rate_limit": "31 req/min"
+    },
+    "security": {
+      "tls_version": "TLS 1.2",
+      "encryption": "AES-256",
+      "dns_leaks_detected": false,
+      "ssl_certificate_mismatch_bypassed": true
+    },
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64)",
+    "machine_learning": {
+      "captcha_solved": true,
+      "model_version": "v5.4",
+      "inference_time_ms": 43
+    },
+    "stealth": {
+      "headless_mode": true,
+      "canvas_fingerprint": "b7d25e2c",
+      "webrtc_leak_protection": true
+    },
+    "analytics": {
+      "traffic_pattern_anomaly": 0.41,
+      "latency_threshold_pass": true,
+      "requests_per_sec": 31
+    }
+  },
+  {
+    "session_id": "bb21800abde8b6bf",
+    "proxy_ip": "***.221.***.***",
+    "geoip_location": {
+      "country": "United States",
+      "city": "Chicago"
+    },
+    "latency_ms": 257,
+    "action": "Fingerprint obfuscation enabled",
+    "status_code": 429,
+    "bot_detection": {
+      "bot_score": 0.84,
+      "anomaly_score": 0.15,
+      "fingerprint_spoofing": false,
+      "headers_injected": [
+        "X-Forwarded-For",
+        "X-Device-ID",
+        "X-Session-Key"
+      ]
+    },
+    "scraping": {
+      "target_url_hash": "edeedd8f33c4",
+      "data_size": "25KB",
+      "rate_limit": "72 req/min"
+    },
+    "security": {
+      "tls_version": "TLS 1.3",
+      "encryption": "AES-256",
+      "dns_leaks_detected": false,
+      "ssl_certificate_mismatch_bypassed": true
+    },
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X)",
+    "machine_learning": {
+      "captcha_solved": true,
+      "model_version": "v2.8",
+      "inference_time_ms": 44
+    },
+    "stealth": {
+      "headless_mode": true,
+      "canvas_fingerprint": "adbf79eb",
+      "webrtc_leak_protection": true
+    },
+    "analytics": {
+      "traffic_pattern_anomaly": 0.41,
+      "latency_threshold_pass": false,
+      "requests_per_sec": 8
+    }
+  },
+  {
+    "session_id": "8cdc1042a6b2cb6a",
+    "proxy_ip": "***.172.***.***",
+    "geoip_location": {
+      "country": "Brazil",
+      "city": "Salvador"
+    },
+    "latency_ms": 262,
+    "action": "Injecting stealth headers",
+    "status_code": 429,
+    "bot_detection": {
+      "bot_score": 0.45,
+      "anomaly_score": 0.43,
+      "fingerprint_spoofing": false,
+      "headers_injected": [
+        "X-Forwarded-For",
+        "X-Device-ID",
+        "X-Session-Key"
+      ]
+    },
+    "scraping": {
+      "target_url_hash": "61f2141ff16f",
+      "data_size": "15KB",
+      "rate_limit": "95 req/min"
+    },
+    "security": {
+      "tls_version": "TLS 1.3",
+      "encryption": "AES-256",
+      "dns_leaks_detected": false,
+      "ssl_certificate_mismatch_bypassed": true
+    },
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X)",
+    "machine_learning": {
+      "captcha_solved": false,
+      "model_version": "v4.5",
+      "inference_time_ms": 29
+    },
+    "stealth": {
+      "headless_mode": true,
+      "canvas_fingerprint": "067aa0ad",
+      "webrtc_leak_protection": true
+    },
+    "analytics": {
+      "traffic_pattern_anomaly": 0.26,
+      "latency_threshold_pass": false,
+      "requests_per_sec": 40
+    }
+  },
+  {
+    "session_id": "af05bf3df15e9901",
+    "proxy_ip": "***.230.***.***",
+    "geoip_location": {
+      "country": "Netherlands",
+      "city": "Eindhoven"
+    },
+    "latency_ms": 14,
+    "action": "Fingerprint obfuscation enabled",
+    "status_code": 500,
+    "bot_detection": {
+      "bot_score": 0.34,
+      "anomaly_score": 0.42,
+      "fingerprint_spoofing": false,
+      "headers_injected": [
+        "X-Forwarded-For",
+        "X-Device-ID",
+        "X-Session-Key"
+      ]
+    },
+    "scraping": {
+      "target_url_hash": "db4939deb6ea",
+      "data_size": "48KB",
+      "rate_limit": "37 req/min"
+    },
+    "security": {
+      "tls_version": "TLS 1.2",
+      "encryption": "AES-256",
+      "dns_leaks_detected": false,
+      "ssl_certificate_mismatch_bypassed": true
+    },
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+    "machine_learning": {
+      "captcha_solved": true,
+      "model_version": "v4.2",
+      "inference_time_ms": 34
+    },
+    "stealth": {
+      "headless_mode": true,
+      "canvas_fingerprint": "e58ec291",
+      "webrtc_leak_protection": true
+    },
+    "analytics": {
+      "traffic_pattern_anomaly": 0.26,
+      "latency_threshold_pass": true,
+      "requests_per_sec": 19
+    }
+  },
+  {
+    "session_id": "41cf4ea7ebc75dab",
+    "proxy_ip": "***.204.***.***",
+    "geoip_location": {
+      "country": "Singapore",
+      "city": "Singapore City"
+    },
+    "latency_ms": 290,
+    "action": "Dynamic XPath selection active",
+    "status_code": 301,
+    "bot_detection": {
+      "bot_score": 0.52,
+      "anomaly_score": 0.47,
+      "fingerprint_spoofing": false,
+      "headers_injected": [
+        "X-Forwarded-For",
+        "X-Device-ID",
+        "X-Session-Key"
+      ]
+    },
+    "scraping": {
+      "target_url_hash": "f1bbb0afe5be",
+      "data_size": "3KB",
+      "rate_limit": "24 req/min"
+    },
+    "security": {
+      "tls_version": "TLS 1.2",
+      "encryption": "AES-256",
+      "dns_leaks_detected": false,
+      "ssl_certificate_mismatch_bypassed": false
+    },
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X)",
+    "machine_learning": {
+      "captcha_solved": false,
+      "model_version": "v1.3",
+      "inference_time_ms": 15
+    },
+    "stealth": {
+      "headless_mode": true,
+      "canvas_fingerprint": "1fcef540",
+      "webrtc_leak_protection": true
+    },
+    "analytics": {
+      "traffic_pattern_anomaly": 0.14,
+      "latency_threshold_pass": false,
+      "requests_per_sec": 15
+    }
+  },
+  {
+    "session_id": "e7b7fa8bad7daec2",
+    "proxy_ip": "***.87.***.***",
+    "geoip_location": {
+      "country": "Brazil",
+      "city": "Rio de Janeiro"
+    },
+    "latency_ms": 110,
+    "action": "Dynamic XPath selection active",
+    "status_code": 500,
+    "bot_detection": {
+      "bot_score": 0.64,
+      "anomaly_score": 0.49,
+      "fingerprint_spoofing": true,
+      "headers_injected": [
+        "X-Forwarded-For",
+        "X-Device-ID",
+        "X-Session-Key"
+      ]
+    },
+    "scraping": {
+      "target_url_hash": "abaeebcb9df0",
+      "data_size": "7KB",
+      "rate_limit": "50 req/min"
+    },
+    "security": {
+      "tls_version": "TLS 1.3",
+      "encryption": "AES-256",
+      "dns_leaks_detected": false,
+      "ssl_certificate_mismatch_bypassed": false
+    },
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64)",
+    "machine_learning": {
+      "captcha_solved": false,
+      "model_version": "v4.8",
+      "inference_time_ms": 46
+    },
+    "stealth": {
+      "headless_mode": true,
+      "canvas_fingerprint": "8b5bbc1a",
+      "webrtc_leak_protection": true
+    },
+    "analytics": {
+      "traffic_pattern_anomaly": 0.21,
+      "latency_threshold_pass": true,
+      "requests_per_sec": 2
+    }
+  },
+  {
+    "session_id": "6c7b5a6be9f93adb",
+    "proxy_ip": "***.110.***.***",
+    "geoip_location": {
+      "country": "Japan",
+      "city": "Sapporo"
+    },
+    "latency_ms": 48,
+    "action": "AES-256 encryption applied to payload",
+    "status_code": 404,
+    "bot_detection": {
+      "bot_score": 0.36,
+      "anomaly_score": 0.02,
+      "fingerprint_spoofing": true,
+      "headers_injected": [
+        "X-Forwarded-For",
+        "X-Device-ID",
+        "X-Session-Key"
+      ]
+    },
+    "scraping": {
+      "target_url_hash": "4375e648cff6",
+      "data_size": "2KB",
+      "rate_limit": "20 req/min"
+    },
+    "security": {
+      "tls_version": "TLS 1.3",
+      "encryption": "AES-256",
+      "dns_leaks_detected": false,
+      "ssl_certificate_mismatch_bypassed": true
+    },
+    "user_agent": "Mozilla/5.0 (Android 11; Mobile; rv:68.0)",
+    "machine_learning": {
+      "captcha_solved": false,
+      "model_version": "v2.5",
+      "inference_time_ms": 23
+    },
+    "stealth": {
+      "headless_mode": true,
+      "canvas_fingerprint": "bb1c8706",
+      "webrtc_leak_protection": true
+    },
+    "analytics": {
+      "traffic_pattern_anomaly": 0.22,
+      "latency_threshold_pass": true,
+      "requests_per_sec": 47
+    }
+  },
+  {
+    "session_id": "0333addc2fde3b4f",
+    "proxy_ip": "***.175.***.***",
+    "geoip_location": {
+      "country": "Brazil",
+      "city": "Salvador"
+    },
+    "latency_ms": 269,
+    "action": "Dynamic XPath selection active",
+    "status_code": 301,
+    "bot_detection": {
+      "bot_score": 0.29,
+      "anomaly_score": 0.32,
+      "fingerprint_spoofing": false,
+      "headers_injected": [
+        "X-Forwarded-For",
+        "X-Device-ID",
+        "X-Session-Key"
+      ]
+    },
+    "scraping": {
+      "target_url_hash": "fabbeeb9fa14",
+      "data_size": "43KB",
+      "rate_limit": "44 req/min"
+    },
+    "security": {
+      "tls_version": "TLS 1.3",
+      "encryption": "AES-256",
+      "dns_leaks_detected": false,
+      "ssl_certificate_mismatch_bypassed": false
+    },
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X)",
+    "machine_learning": {
+      "captcha_solved": true,
+      "model_version": "v3.0",
+      "inference_time_ms": 9
+    },
+    "stealth": {
+      "headless_mode": true,
+      "canvas_fingerprint": "32f9ed1a",
+      "webrtc_leak_protection": true
+    },
+    "analytics": {
+      "traffic_pattern_anomaly": 0.2,
+      "latency_threshold_pass": false,
+      "requests_per_sec": 17
+    }
+  },
+  {
+    "session_id": "eab2b0dcaf1a110c",
+    "proxy_ip": "***.209.***.***",
+    "geoip_location": {
+      "country": "Germany",
+      "city": "Dresden"
+    },
+    "latency_ms": 220,
+    "action": "Dynamic XPath selection active",
+    "status_code": 403,
+    "bot_detection": {
+      "bot_score": 0.25,
+      "anomaly_score": 0.37,
+      "fingerprint_spoofing": true,
+      "headers_injected": [
+        "X-Forwarded-For",
+        "X-Device-ID",
+        "X-Session-Key"
+      ]
+    },
+    "scraping": {
+      "target_url_hash": "6bce2b9ba8dd",
+      "data_size": "42KB",
+      "rate_limit": "11 req/min"
+    },
+    "security": {
+      "tls_version": "TLS 1.2",
+      "encryption": "AES-256",
+      "dns_leaks_detected": false,
+      "ssl_certificate_mismatch_bypassed": true
+    },
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X)",
+    "machine_learning": {
+      "captcha_solved": true,
+      "model_version": "v5.5",
+      "inference_time_ms": 32
+    },
+    "stealth": {
+      "headless_mode": true,
+      "canvas_fingerprint": "bc9680d5",
+      "webrtc_leak_protection": true
+    },
+    "analytics": {
+      "traffic_pattern_anomaly": 0.42,
+      "latency_threshold_pass": false,
+      "requests_per_sec": 37
+    }
+  },
+  {
+    "session_id": "cd35bfbfbf1dbfbc",
+    "proxy_ip": "***.110.***.***",
+    "geoip_location": {
+      "country": "Australia",
+      "city": "Brisbane"
+    },
+    "latency_ms": 294,
+    "action": "Completed captcha bypass (hCaptcha solver)",
+    "status_code": 500,
+    "bot_detection": {
+      "bot_score": 0.14,
+      "anomaly_score": 0.46,
+      "fingerprint_spoofing": false,
+      "headers_injected": [
+        "X-Forwarded-For",
+        "X-Device-ID",
+        "X-Session-Key"
+      ]
+    },
+    "scraping": {
+      "target_url_hash": "6aebfbed3cd7",
+      "data_size": "35KB",
+      "rate_limit": "51 req/min"
+    },
+    "security": {
+      "tls_version": "TLS 1.3",
+      "encryption": "AES-256",
+      "dns_leaks_detected": false,
+      "ssl_certificate_mismatch_bypassed": false
+    },
+    "user_agent": "Mozilla/5.0 (Android 11; Mobile; rv:68.0)",
+    "machine_learning": {
+      "captcha_solved": true,
+      "model_version": "v3.6",
+      "inference_time_ms": 33
+    },
+    "stealth": {
+      "headless_mode": true,
+      "canvas_fingerprint": "08c63adc",
+      "webrtc_leak_protection": true
+    },
+    "analytics": {
+      "traffic_pattern_anomaly": 0.09,
+      "latency_threshold_pass": false,
+      "requests_per_sec": 12
+    }
+  },
+  {
+    "session_id": "1fa2ce84bcf6bfac",
+    "proxy_ip": "***.186.***.***",
+    "geoip_location": {
+      "country": "France",
+      "city": "Nice"
+    },
+    "latency_ms": 93,
+    "action": "Injecting stealth headers",
+    "status_code": 301,
+    "bot_detection": {
+      "bot_score": 0.62,
+      "anomaly_score": 0.17,
+      "fingerprint_spoofing": false,
+      "headers_injected": [
+        "X-Forwarded-For",
+        "X-Device-ID",
+        "X-Session-Key"
+      ]
+    },
+    "scraping": {
+      "target_url_hash": "c6e6ecd2b76a",
+      "data_size": "16KB",
+      "rate_limit": "18 req/min"
+    },
+    "security": {
+      "tls_version": "TLS 1.2",
+      "encryption": "AES-256",
+      "dns_leaks_detected": false,
+      "ssl_certificate_mismatch_bypassed": true
+    },
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+    "machine_learning": {
+      "captcha_solved": false,
+      "model_version": "v3.7",
+      "inference_time_ms": 43
+    },
+    "stealth": {
+      "headless_mode": true,
+      "canvas_fingerprint": "1ab3e64e",
+      "webrtc_leak_protection": true
+    },
+    "analytics": {
+      "traffic_pattern_anomaly": 0.08,
+      "latency_threshold_pass": true,
+      "requests_per_sec": 36
+    }
+  },
+  {
+    "session_id": "70b2b284ac3ebad7",
+    "proxy_ip": "***.42.***.***",
+    "geoip_location": {
+      "country": "Japan",
+      "city": "Tokyo"
+    },
+    "latency_ms": 268,
+    "action": "Dynamic XPath selection active",
+    "status_code": 404,
+    "bot_detection": {
+      "bot_score": 0.52,
+      "anomaly_score": 0.24,
+      "fingerprint_spoofing": false,
+      "headers_injected": [
+        "X-Forwarded-For",
+        "X-Device-ID",
+        "X-Session-Key"
+      ]
+    },
+    "scraping": {
+      "target_url_hash": "93c0b207f7b0",
+      "data_size": "31KB",
+      "rate_limit": "19 req/min"
+    },
+    "security": {
+      "tls_version": "TLS 1.2",
+      "encryption": "AES-256",
+      "dns_leaks_detected": false,
+      "ssl_certificate_mismatch_bypassed": false
+    },
+    "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)",
+    "machine_learning": {
+      "captcha_solved": false,
+      "model_version": "v4.5",
+      "inference_time_ms": 48
+    },
+    "stealth": {
+      "headless_mode": true,
+      "canvas_fingerprint": "5c4a61ea",
+      "webrtc_leak_protection": true
+    },
+    "analytics": {
+      "traffic_pattern_anomaly": 0.19,
+      "latency_threshold_pass": false,
+      "requests_per_sec": 12
+    }
+  },
+  {
+    "session_id": "860cf0cfa111795f",
+    "proxy_ip": "***.82.***.***",
+    "geoip_location": {
+      "country": "Japan",
+      "city": "Nagoya"
+    },
+    "latency_ms": 20,
+    "action": "Dynamic XPath selection active",
+    "status_code": 500,
+    "bot_detection": {
+      "bot_score": 0.98,
+      "anomaly_score": 0.13,
+      "fingerprint_spoofing": false,
+      "headers_injected": [
+        "X-Forwarded-For",
+        "X-Device-ID",
+        "X-Session-Key"
+      ]
+    },
+    "scraping": {
+      "target_url_hash": "401e9d2c6aa3",
+      "data_size": "27KB",
+      "rate_limit": "85 req/min"
+    },
+    "security": {
+      "tls_version": "TLS 1.2",
+      "encryption": "AES-256",
+      "dns_leaks_detected": false,
+      "ssl_certificate_mismatch_bypassed": false
+    },
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+    "machine_learning": {
+      "captcha_solved": true,
+      "model_version": "v5.7",
+      "inference_time_ms": 48
+    },
+    "stealth": {
+      "headless_mode": true,
+      "canvas_fingerprint": "cc0db1fc",
+      "webrtc_leak_protection": true
+    },
+    "analytics": {
+      "traffic_pattern_anomaly": 0.24,
+      "latency_threshold_pass": true,
+      "requests_per_sec": 28
+    }
+  },
+  {
+    "session_id": "e9c491b6e39cd2da",
+    "proxy_ip": "***.142.***.***",
+    "geoip_location": {
+      "country": "United States",
+      "city": "Chicago"
+    },
+    "latency_ms": 212,
+    "action": "Machine learning model updated",
+    "status_code": 429,
+    "bot_detection": {
+      "bot_score": 0.9,
+      "anomaly_score": 0.38,
+      "fingerprint_spoofing": true,
+      "headers_injected": [
+        "X-Forwarded-For",
+        "X-Device-ID",
+        "X-Session-Key"
+      ]
+    },
+    "scraping": {
+      "target_url_hash": "915c2eebf6fd",
+      "data_size": "20KB",
+      "rate_limit": "90 req/min"
+    },
+    "security": {
+      "tls_version": "TLS 1.2",
+      "encryption": "AES-256",
+      "dns_leaks_detected": false,
+      "ssl_certificate_mismatch_bypassed": true
+    },
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+    "machine_learning": {
+      "captcha_solved": true,
+      "model_version": "v2.7",
+      "inference_time_ms": 41
+    },
+    "stealth": {
+      "headless_mode": true,
+      "canvas_fingerprint": "071e76d2",
+      "webrtc_leak_protection": true
+    },
+    "analytics": {
+      "traffic_pattern_anomaly": 0.48,
+      "latency_threshold_pass": false,
+      "requests_per_sec": 26
+    }
+  },
+  {
+    "session_id": "dfbfffccfc73f9e1",
+    "proxy_ip": "***.147.***.***",
+    "geoip_location": {
+      "country": "Netherlands",
+      "city": "Rotterdam"
+    },
+    "latency_ms": 260,
+    "action": "TLS handshake signature randomized",
+    "status_code": 200,
+    "bot_detection": {
+      "bot_score": 0.92,
+      "anomaly_score": 0.36,
+      "fingerprint_spoofing": true,
+      "headers_injected": [
+        "X-Forwarded-For",
+        "X-Device-ID",
+        "X-Session-Key"
+      ]
+    },
+    "scraping": {
+      "target_url_hash": "8c9eb2adc8be",
+      "data_size": "1KB",
+      "rate_limit": "62 req/min"
+    },
+    "security": {
+      "tls_version": "TLS 1.2",
+      "encryption": "AES-256",
+      "dns_leaks_detected": false,
+      "ssl_certificate_mismatch_bypassed": true
+    },
+    "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)",
+    "machine_learning": {
+      "captcha_solved": true,
+      "model_version": "v2.6",
+      "inference_time_ms": 39
+    },
+    "stealth": {
+      "headless_mode": true,
+      "canvas_fingerprint": "afaea7af",
+      "webrtc_leak_protection": true
+    },
+    "analytics": {
+      "traffic_pattern_anomaly": 0.5,
+      "latency_threshold_pass": false,
+      "requests_per_sec": 5
+    }
+  },
+  {
+    "session_id": "ccb89e22d34fa18d",
+    "proxy_ip": "***.11.***.***",
+    "geoip_location": {
+      "country": "Netherlands",
+      "city": "Amsterdam"
+    },
+    "latency_ms": 204,
+    "action": "TLS handshake signature randomized",
+    "status_code": 200,
+    "bot_detection": {
+      "bot_score": 0.47,
+      "anomaly_score": 0.36,
+      "fingerprint_spoofing": false,
+      "headers_injected": [
+        "X-Forwarded-For",
+        "X-Device-ID",
+        "X-Session-Key"
+      ]
+    },
+    "scraping": {
+      "target_url_hash": "5bd9fe2ebdae",
+      "data_size": "32KB",
+      "rate_limit": "31 req/min"
+    },
+    "security": {
+      "tls_version": "TLS 1.2",
+      "encryption": "AES-256",
+      "dns_leaks_detected": false,
+      "ssl_certificate_mismatch_bypassed": false
+    },
+    "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)",
+    "machine_learning": {
+      "captcha_solved": true,
+      "model_version": "v5.5",
+      "inference_time_ms": 40
+    },
+    "stealth": {
+      "headless_mode": true,
+      "canvas_fingerprint": "0ddc4a2f",
+      "webrtc_leak_protection": true
+    },
+    "analytics": {
+      "traffic_pattern_anomaly": 0.44,
+      "latency_threshold_pass": false,
+      "requests_per_sec": 20
+    }
+  },
+  {
+    "session_id": "64ad52fdefe2be91",
+    "proxy_ip": "***.202.***.***",
+    "geoip_location": {
+      "country": "Singapore",
+      "city": "Singapore City"
+    },
+    "latency_ms": 216,
+    "action": "Switching to new proxy node",
+    "status_code": 500,
+    "bot_detection": {
+      "bot_score": 0.15,
+      "anomaly_score": 0.4,
+      "fingerprint_spoofing": false,
+      "headers_injected": [
+        "X-Forwarded-For",
+        "X-Device-ID",
+        "X-Session-Key"
+      ]
+    },
+    "scraping": {
+      "target_url_hash": "c28e6fde851a",
+      "data_size": "31KB",
+      "rate_limit": "44 req/min"
+    },
+    "security": {
+      "tls_version": "TLS 1.2",
+      "encryption": "AES-256",
+      "dns_leaks_detected": false,
+      "ssl_certificate_mismatch_bypassed": true
+    },
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X)",
+    "machine_learning": {
+      "captcha_solved": true,
+      "model_version": "v1.7",
+      "inference_time_ms": 50
+    },
+    "stealth": {
+      "headless_mode": true,
+      "canvas_fingerprint": "e068c1bf",
+      "webrtc_leak_protection": true
+    },
+    "analytics": {
+      "traffic_pattern_anomaly": 0.35,
+      "latency_threshold_pass": false,
+      "requests_per_sec": 17
+    }
+  },
+  {
+    "session_id": "1adb99d30f94db24",
+    "proxy_ip": "***.214.***.***",
+    "geoip_location": {
+      "country": "France",
+      "city": "Marseille"
+    },
+    "latency_ms": 192,
+    "action": "Injecting stealth headers",
+    "status_code": 301,
+    "bot_detection": {
+      "bot_score": 0.49,
+      "anomaly_score": 0.26,
+      "fingerprint_spoofing": false,
+      "headers_injected": [
+        "X-Forwarded-For",
+        "X-Device-ID",
+        "X-Session-Key"
+      ]
+    },
+    "scraping": {
+      "target_url_hash": "f0ce17c7b112",
+      "data_size": "30KB",
+      "rate_limit": "38 req/min"
+    },
+    "security": {
+      "tls_version": "TLS 1.3",
+      "encryption": "AES-256",
+      "dns_leaks_detected": false,
+      "ssl_certificate_mismatch_bypassed": true
+    },
+    "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)",
+    "machine_learning": {
+      "captcha_solved": false,
+      "model_version": "v4.6",
+      "inference_time_ms": 7
+    },
+    "stealth": {
+      "headless_mode": true,
+      "canvas_fingerprint": "a405bf13",
+      "webrtc_leak_protection": true
+    },
+    "analytics": {
+      "traffic_pattern_anomaly": 0.33,
+      "latency_threshold_pass": true,
+      "requests_per_sec": 16
+    }
+  },
+  {
+    "session_id": "3bbd8f6a38f7eea8",
+    "proxy_ip": "***.110.***.***",
+    "geoip_location": {
+      "country": "Singapore",
+      "city": "Singapore City"
+    },
+    "latency_ms": 243,
+    "action": "Machine learning model updated",
+    "status_code": 301,
+    "bot_detection": {
+      "bot_score": 0.37,
+      "anomaly_score": 0.07,
+      "fingerprint_spoofing": false,
+      "headers_injected": [
+        "X-Forwarded-For",
+        "X-Device-ID",
+        "X-Session-Key"
+      ]
+    },
+    "scraping": {
+      "target_url_hash": "0a09ceafb9fb",
+      "data_size": "9KB",
+      "rate_limit": "36 req/min"
+    },
+    "security": {
+      "tls_version": "TLS 1.3",
+      "encryption": "AES-256",
+      "dns_leaks_detected": false,
+      "ssl_certificate_mismatch_bypassed": false
+    },
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+    "machine_learning": {
+      "captcha_solved": true,
+      "model_version": "v4.9",
+      "inference_time_ms": 24
+    },
+    "stealth": {
+      "headless_mode": true,
+      "canvas_fingerprint": "3daa4c66",
+      "webrtc_leak_protection": true
+    },
+    "analytics": {
+      "traffic_pattern_anomaly": 0.28,
+      "latency_threshold_pass": false,
+      "requests_per_sec": 39
+    }
+  },
+  {
+    "session_id": "3f77b40aa5ffb39b",
+    "proxy_ip": "***.10.***.***",
+    "geoip_location": {
+      "country": "Australia",
+      "city": "Melbourne"
+    },
+    "latency_ms": 173,
+    "action": "Injecting stealth headers",
+    "status_code": 301,
+    "bot_detection": {
+      "bot_score": 0.09,
+      "anomaly_score": 0.46,
+      "fingerprint_spoofing": false,
+      "headers_injected": [
+        "X-Forwarded-For",
+        "X-Device-ID",
+        "X-Session-Key"
+      ]
+    },
+    "scraping": {
+      "target_url_hash": "7c4d8e080fe5",
+      "data_size": "49KB",
+      "rate_limit": "76 req/min"
+    },
+    "security": {
+      "tls_version": "TLS 1.2",
+      "encryption": "AES-256",
+      "dns_leaks_detected": false,
+      "ssl_certificate_mismatch_bypassed": true
+    },
+    "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)",
+    "machine_learning": {
+      "captcha_solved": true,
+      "model_version": "v5.3",
+      "inference_time_ms": 9
+    },
+    "stealth": {
+      "headless_mode": true,
+      "canvas_fingerprint": "a0af109a",
+      "webrtc_leak_protection": true
+    },
+    "analytics": {
+      "traffic_pattern_anomaly": 0.42,
+      "latency_threshold_pass": true,
+      "requests_per_sec": 14
+    }
+  },
+  {
+    "session_id": "a58572123a7d3bbf",
+    "proxy_ip": "***.36.***.***",
+    "geoip_location": {
+      "country": "France",
+      "city": "Marseille"
+    },
+    "latency_ms": 180,
+    "action": "Completed captcha bypass (hCaptcha solver)",
+    "status_code": 403,
+    "bot_detection": {
+      "bot_score": 0.03,
+      "anomaly_score": 0.25,
+      "fingerprint_spoofing": false,
+      "headers_injected": [
+        "X-Forwarded-For",
+        "X-Device-ID",
+        "X-Session-Key"
+      ]
+    },
+    "scraping": {
+      "target_url_hash": "9f6cdd7b970c",
+      "data_size": "16KB",
+      "rate_limit": "13 req/min"
+    },
+    "security": {
+      "tls_version": "TLS 1.3",
+      "encryption": "AES-256",
+      "dns_leaks_detected": false,
+      "ssl_certificate_mismatch_bypassed": false
+    },
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X)",
+    "machine_learning": {
+      "captcha_solved": false,
+      "model_version": "v4.7",
+      "inference_time_ms": 6
+    },
+    "stealth": {
+      "headless_mode": true,
+      "canvas_fingerprint": "cbbe36da",
+      "webrtc_leak_protection": true
+    },
+    "analytics": {
+      "traffic_pattern_anomaly": 0.04,
+      "latency_threshold_pass": true,
+      "requests_per_sec": 4
+    }
+  },
+  {
+    "session_id": "88aba9bb1c47eed5",
+    "proxy_ip": "***.193.***.***",
+    "geoip_location": {
+      "country": "France",
+      "city": "Marseille"
+    },
+    "latency_ms": 123,
+    "action": "AES-256 encryption applied to payload",
+    "status_code": 301,
+    "bot_detection": {
+      "bot_score": 0.15,
+      "anomaly_score": 0.21,
+      "fingerprint_spoofing": true,
+      "headers_injected": [
+        "X-Forwarded-For",
+        "X-Device-ID",
+        "X-Session-Key"
+      ]
+    },
+    "scraping": {
+      "target_url_hash": "d7242797fcd8",
+      "data_size": "20KB",
+      "rate_limit": "45 req/min"
+    },
+    "security": {
+      "tls_version": "TLS 1.2",
+      "encryption": "AES-256",
+      "dns_leaks_detected": false,
+      "ssl_certificate_mismatch_bypassed": true
+    },
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X)",
+    "machine_learning": {
+      "captcha_solved": false,
+      "model_version": "v1.4",
+      "inference_time_ms": 12
+    },
+    "stealth": {
+      "headless_mode": true,
+      "canvas_fingerprint": "5355b9ed",
+      "webrtc_leak_protection": true
+    },
+    "analytics": {
+      "traffic_pattern_anomaly": 0.48,
+      "latency_threshold_pass": true,
+      "requests_per_sec": 26
+    }
+  },
+  {
+    "session_id": "c3b3d7651d06a1df",
+    "proxy_ip": "***.252.***.***",
+    "geoip_location": {
+      "country": "France",
+      "city": "Paris"
+    },
+    "latency_ms": 60,
+    "action": "Completed captcha bypass (hCaptcha solver)",
+    "status_code": 500,
+    "bot_detection": {
+      "bot_score": 0.69,
+      "anomaly_score": 0.26,
+      "fingerprint_spoofing": false,
+      "headers_injected": [
+        "X-Forwarded-For",
+        "X-Device-ID",
+        "X-Session-Key"
+      ]
+    },
+    "scraping": {
+      "target_url_hash": "4fc10dfd5d02",
+      "data_size": "49KB",
+      "rate_limit": "20 req/min"
+    },
+    "security": {
+      "tls_version": "TLS 1.2",
+      "encryption": "AES-256",
+      "dns_leaks_detected": false,
+      "ssl_certificate_mismatch_bypassed": true
+    },
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X)",
+    "machine_learning": {
+      "captcha_solved": true,
+      "model_version": "v3.6",
+      "inference_time_ms": 26
+    },
+    "stealth": {
+      "headless_mode": true,
+      "canvas_fingerprint": "baae5efd",
+      "webrtc_leak_protection": true
+    },
+    "analytics": {
+      "traffic_pattern_anomaly": 0.19,
+      "latency_threshold_pass": true,
+      "requests_per_sec": 47
+    }
+  },
+  {
+    "session_id": "e2407df2b898bf83",
+    "proxy_ip": "***.92.***.***",
+    "geoip_location": {
+      "country": "Brazil",
+      "city": "S\u00e3o Paulo"
+    },
+    "latency_ms": 154,
+    "action": "AES-256 encryption applied to payload",
+    "status_code": 500,
+    "bot_detection": {
+      "bot_score": 0.57,
+      "anomaly_score": 0.31,
+      "fingerprint_spoofing": true,
+      "headers_injected": [
+        "X-Forwarded-For",
+        "X-Device-ID",
+        "X-Session-Key"
+      ]
+    },
+    "scraping": {
+      "target_url_hash": "e11fc4ce8a8c",
+      "data_size": "27KB",
+      "rate_limit": "52 req/min"
+    },
+    "security": {
+      "tls_version": "TLS 1.3",
+      "encryption": "AES-256",
+      "dns_leaks_detected": false,
+      "ssl_certificate_mismatch_bypassed": true
+    },
+    "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)",
+    "machine_learning": {
+      "captcha_solved": true,
+      "model_version": "v5.9",
+      "inference_time_ms": 50
+    },
+    "stealth": {
+      "headless_mode": true,
+      "canvas_fingerprint": "1beaa276",
+      "webrtc_leak_protection": true
+    },
+    "analytics": {
+      "traffic_pattern_anomaly": 0.21,
+      "latency_threshold_pass": true,
+      "requests_per_sec": 15
+    }
+  },
+  {
+    "session_id": "fca5a32f82b8bfff",
+    "proxy_ip": "***.254.***.***",
+    "geoip_location": {
+      "country": "United States",
+      "city": "Seattle"
+    },
+    "latency_ms": 187,
+    "action": "Scraping initiated",
+    "status_code": 404,
+    "bot_detection": {
+      "bot_score": 0.29,
+      "anomaly_score": 0.14,
+      "fingerprint_spoofing": true,
+      "headers_injected": [
+        "X-Forwarded-For",
+        "X-Device-ID",
+        "X-Session-Key"
+      ]
+    },
+    "scraping": {
+      "target_url_hash": "dbae1a2e35ef",
+      "data_size": "20KB",
+      "rate_limit": "87 req/min"
+    },
+    "security": {
+      "tls_version": "TLS 1.3",
+      "encryption": "AES-256",
+      "dns_leaks_detected": false,
+      "ssl_certificate_mismatch_bypassed": false
+    },
+    "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)",
+    "machine_learning": {
+      "captcha_solved": false,
+      "model_version": "v1.5",
+      "inference_time_ms": 33
+    },
+    "stealth": {
+      "headless_mode": true,
+      "canvas_fingerprint": "1e4fa141",
+      "webrtc_leak_protection": true
+    },
+    "analytics": {
+      "traffic_pattern_anomaly": 0.13,
+      "latency_threshold_pass": true,
+      "requests_per_sec": 44
+    }
+  },
+  {
+    "session_id": "dcccfb1ed61dbaba",
+    "proxy_ip": "***.166.***.***",
+    "geoip_location": {
+      "country": "Canada",
+      "city": "Montreal"
+    },
+    "latency_ms": 181,
+    "action": "Injecting stealth headers",
+    "status_code": 403,
+    "bot_detection": {
+      "bot_score": 0.99,
+      "anomaly_score": 0.18,
+      "fingerprint_spoofing": false,
+      "headers_injected": [
+        "X-Forwarded-For",
+        "X-Device-ID",
+        "X-Session-Key"
+      ]
+    },
+    "scraping": {
+      "target_url_hash": "8a8b4b1d2dab",
+      "data_size": "19KB",
+      "rate_limit": "97 req/min"
+    },
+    "security": {
+      "tls_version": "TLS 1.2",
+      "encryption": "AES-256",
+      "dns_leaks_detected": false,
+      "ssl_certificate_mismatch_bypassed": false
+    },
+    "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)",
+    "machine_learning": {
+      "captcha_solved": true,
+      "model_version": "v2.7",
+      "inference_time_ms": 11
+    },
+    "stealth": {
+      "headless_mode": true,
+      "canvas_fingerprint": "406ff6fd",
+      "webrtc_leak_protection": true
+    },
+    "analytics": {
+      "traffic_pattern_anomaly": 0.5,
+      "latency_threshold_pass": true,
+      "requests_per_sec": 15
+    }
+  },
+  {
+    "session_id": "440afbaccd2e8f8d",
+    "proxy_ip": "***.3.***.***",
+    "geoip_location": {
+      "country": "Canada",
+      "city": "Ottawa"
+    },
+    "latency_ms": 112,
+    "action": "Scraping initiated",
+    "status_code": 200,
+    "bot_detection": {
+      "bot_score": 0.38,
+      "anomaly_score": 0.11,
+      "fingerprint_spoofing": true,
+      "headers_injected": [
+        "X-Forwarded-For",
+        "X-Device-ID",
+        "X-Session-Key"
+      ]
+    },
+    "scraping": {
+      "target_url_hash": "abd102a383b7",
+      "data_size": "17KB",
+      "rate_limit": "75 req/min"
+    },
+    "security": {
+      "tls_version": "TLS 1.2",
+      "encryption": "AES-256",
+      "dns_leaks_detected": false,
+      "ssl_certificate_mismatch_bypassed": false
+    },
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+    "machine_learning": {
+      "captcha_solved": true,
+      "model_version": "v4.5",
+      "inference_time_ms": 17
+    },
+    "stealth": {
+      "headless_mode": true,
+      "canvas_fingerprint": "b869387a",
+      "webrtc_leak_protection": true
+    },
+    "analytics": {
+      "traffic_pattern_anomaly": 0.34,
+      "latency_threshold_pass": true,
+      "requests_per_sec": 22
+    }
+  },
+  {
+    "session_id": "dcaafa0bcd2bd00c",
+    "proxy_ip": "***.218.***.***",
+    "geoip_location": {
+      "country": "Netherlands",
+      "city": "Utrecht"
+    },
+    "latency_ms": 101,
+    "action": "Machine learning model updated",
+    "status_code": 500,
+    "bot_detection": {
+      "bot_score": 0.77,
+      "anomaly_score": 0.21,
+      "fingerprint_spoofing": false,
+      "headers_injected": [
+        "X-Forwarded-For",
+        "X-Device-ID",
+        "X-Session-Key"
+      ]
+    },
+    "scraping": {
+      "target_url_hash": "7a9daf9e0be3",
+      "data_size": "35KB",
+      "rate_limit": "95 req/min"
+    },
+    "security": {
+      "tls_version": "TLS 1.3",
+      "encryption": "AES-256",
+      "dns_leaks_detected": false,
+      "ssl_certificate_mismatch_bypassed": false
+    },
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+    "machine_learning": {
+      "captcha_solved": true,
+      "model_version": "v1.3",
+      "inference_time_ms": 11
+    },
+    "stealth": {
+      "headless_mode": true,
+      "canvas_fingerprint": "7ffae9ed",
+      "webrtc_leak_protection": true
+    },
+    "analytics": {
+      "traffic_pattern_anomaly": 0.19,
+      "latency_threshold_pass": true,
+      "requests_per_sec": 5
+    }
+  },
+  {
+    "session_id": "1fccb7e7ed9c8f69",
+    "proxy_ip": "***.219.***.***",
+    "geoip_location": {
+      "country": "United States",
+      "city": "Los Angeles"
+    },
+    "latency_ms": 155,
+    "action": "Scraping initiated",
+    "status_code": 301,
+    "bot_detection": {
+      "bot_score": 0.14,
+      "anomaly_score": 0.34,
+      "fingerprint_spoofing": true,
+      "headers_injected": [
+        "X-Forwarded-For",
+        "X-Device-ID",
+        "X-Session-Key"
+      ]
+    },
+    "scraping": {
+      "target_url_hash": "1f9ce80deae1",
+      "data_size": "12KB",
+      "rate_limit": "25 req/min"
+    },
+    "security": {
+      "tls_version": "TLS 1.2",
+      "encryption": "AES-256",
+      "dns_leaks_detected": false,
+      "ssl_certificate_mismatch_bypassed": true
+    },
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+    "machine_learning": {
+      "captcha_solved": false,
+      "model_version": "v3.6",
+      "inference_time_ms": 33
+    },
+    "stealth": {
+      "headless_mode": true,
+      "canvas_fingerprint": "6ac5cf07",
+      "webrtc_leak_protection": true
+    },
+    "analytics": {
+      "traffic_pattern_anomaly": 0.46,
+      "latency_threshold_pass": true,
+      "requests_per_sec": 20
+    }
+  },
+  {
+    "session_id": "084ba6e9616bb212",
+    "proxy_ip": "***.179.***.***",
+    "geoip_location": {
+      "country": "South Korea",
+      "city": "Busan"
+    },
+    "latency_ms": 208,
+    "action": "Headless Chrome: Puppeteer stealth plugin enabled",
+    "status_code": 500,
+    "bot_detection": {
+      "bot_score": 0.83,
+      "anomaly_score": 0.03,
+      "fingerprint_spoofing": false,
+      "headers_injected": [
+        "X-Forwarded-For",
+        "X-Device-ID",
+        "X-Session-Key"
+      ]
+    },
+    "scraping": {
+      "target_url_hash": "9fcccdb017be",
+      "data_size": "23KB",
+      "rate_limit": "40 req/min"
+    },
+    "security": {
+      "tls_version": "TLS 1.2",
+      "encryption": "AES-256",
+      "dns_leaks_detected": false,
+      "ssl_certificate_mismatch_bypassed": false
+    },
+    "user_agent": "Mozilla/5.0 (Android 11; Mobile; rv:68.0)",
+    "machine_learning": {
+      "captcha_solved": false,
+      "model_version": "v5.1",
+      "inference_time_ms": 50
+    },
+    "stealth": {
+      "headless_mode": true,
+      "canvas_fingerprint": "b2e74653",
+      "webrtc_leak_protection": true
+    },
+    "analytics": {
+      "traffic_pattern_anomaly": 0.23,
+      "latency_threshold_pass": false,
+      "requests_per_sec": 10
+    }
+  },
+  {
+    "session_id": "3ccacbd9c35c53fa",
+    "proxy_ip": "***.229.***.***",
+    "geoip_location": {
+      "country": "France",
+      "city": "Bordeaux"
+    },
+    "latency_ms": 111,
+    "action": "Fingerprint obfuscation enabled",
+    "status_code": 403,
+    "bot_detection": {
+      "bot_score": 0.69,
+      "anomaly_score": 0.06,
+      "fingerprint_spoofing": true,
+      "headers_injected": [
+        "X-Forwarded-For",
+        "X-Device-ID",
+        "X-Session-Key"
+      ]
+    },
+    "scraping": {
+      "target_url_hash": "5cf307ea3ee1",
+      "data_size": "35KB",
+      "rate_limit": "25 req/min"
+    },
+    "security": {
+      "tls_version": "TLS 1.3",
+      "encryption": "AES-256",
+      "dns_leaks_detected": false,
+      "ssl_certificate_mismatch_bypassed": false
+    },
+    "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)",
+    "machine_learning": {
+      "captcha_solved": false,
+      "model_version": "v4.2",
+      "inference_time_ms": 12
+    },
+    "stealth": {
+      "headless_mode": true,
+      "canvas_fingerprint": "ba3b0f6a",
+      "webrtc_leak_protection": true
+    },
+    "analytics": {
+      "traffic_pattern_anomaly": 0.17,
+      "latency_threshold_pass": true,
+      "requests_per_sec": 21
+    }
+  },
+  {
+    "session_id": "d853ece43ef18b45",
+    "proxy_ip": "***.223.***.***",
+    "geoip_location": {
+      "country": "France",
+      "city": "Paris"
+    },
+    "latency_ms": 81,
+    "action": "Dynamic XPath selection active",
+    "status_code": 500,
+    "bot_detection": {
+      "bot_score": 0.71,
+      "anomaly_score": 0.19,
+      "fingerprint_spoofing": true,
+      "headers_injected": [
+        "X-Forwarded-For",
+        "X-Device-ID",
+        "X-Session-Key"
+      ]
+    },
+    "scraping": {
+      "target_url_hash": "d4eec24441ce",
+      "data_size": "49KB",
+      "rate_limit": "65 req/min"
+    },
+    "security": {
+      "tls_version": "TLS 1.3",
+      "encryption": "AES-256",
+      "dns_leaks_detected": false,
+      "ssl_certificate_mismatch_bypassed": true
+    },
+    "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)",
+    "machine_learning": {
+      "captcha_solved": true,
+      "model_version": "v1.9",
+      "inference_time_ms": 38
+    },
+    "stealth": {
+      "headless_mode": true,
+      "canvas_fingerprint": "aebeb6ce",
+      "webrtc_leak_protection": true
+    },
+    "analytics": {
+      "traffic_pattern_anomaly": 0.34,
+      "latency_threshold_pass": true,
+      "requests_per_sec": 40
+    }
+  },
+  {
+    "session_id": "1f0273be003d2cea",
+    "proxy_ip": "***.177.***.***",
+    "geoip_location": {
+      "country": "Netherlands",
+      "city": "Rotterdam"
+    },
+    "latency_ms": 210,
+    "action": "AES-256 encryption applied to payload",
+    "status_code": 403,
+    "bot_detection": {
+      "bot_score": 0.86,
+      "anomaly_score": 0.16,
+      "fingerprint_spoofing": false,
+      "headers_injected": [
+        "X-Forwarded-For",
+        "X-Device-ID",
+        "X-Session-Key"
+      ]
+    },
+    "scraping": {
+      "target_url_hash": "684c6fd7badc",
+      "data_size": "19KB",
+      "rate_limit": "14 req/min"
+    },
+    "security": {
+      "tls_version": "TLS 1.2",
+      "encryption": "AES-256",
+      "dns_leaks_detected": false,
+      "ssl_certificate_mismatch_bypassed": true
+    },
+    "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)",
+    "machine_learning": {
+      "captcha_solved": false,
+      "model_version": "v3.5",
+      "inference_time_ms": 32
+    },
+    "stealth": {
+      "headless_mode": true,
+      "canvas_fingerprint": "55d2a0b6",
+      "webrtc_leak_protection": true
+    },
+    "analytics": {
+      "traffic_pattern_anomaly": 0.03,
+      "latency_threshold_pass": false,
+      "requests_per_sec": 7
+    }
+  },
+  {
+    "session_id": "8f31efdc47afe4e8",
+    "proxy_ip": "***.41.***.***",
+    "geoip_location": {
+      "country": "Netherlands",
+      "city": "Rotterdam"
+    },
+    "latency_ms": 258,
+    "action": "Fingerprint obfuscation enabled",
+    "status_code": 200,
+    "bot_detection": {
+      "bot_score": 0.82,
+      "anomaly_score": 0.28,
+      "fingerprint_spoofing": false,
+      "headers_injected": [
+        "X-Forwarded-For",
+        "X-Device-ID",
+        "X-Session-Key"
+      ]
+    },
+    "scraping": {
+      "target_url_hash": "fd2ddfecca0b",
+      "data_size": "1KB",
+      "rate_limit": "66 req/min"
+    },
+    "security": {
+      "tls_version": "TLS 1.2",
+      "encryption": "AES-256",
+      "dns_leaks_detected": false,
+      "ssl_certificate_mismatch_bypassed": true
+    },
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64)",
+    "machine_learning": {
+      "captcha_solved": true,
+      "model_version": "v1.8",
+      "inference_time_ms": 12
+    },
+    "stealth": {
+      "headless_mode": true,
+      "canvas_fingerprint": "b8abcb59",
+      "webrtc_leak_protection": true
+    },
+    "analytics": {
+      "traffic_pattern_anomaly": 0.11,
+      "latency_threshold_pass": false,
+      "requests_per_sec": 3
+    }
+  },
+  {
+    "session_id": "9deafa127be9cfcc",
+    "proxy_ip": "***.76.***.***",
+    "geoip_location": {
+      "country": "Germany",
+      "city": "Munich"
+    },
+    "latency_ms": 17,
+    "action": "TLS handshake signature randomized",
+    "status_code": 200,
+    "bot_detection": {
+      "bot_score": 0.53,
+      "anomaly_score": 0.26,
+      "fingerprint_spoofing": true,
+      "headers_injected": [
+        "X-Forwarded-For",
+        "X-Device-ID",
+        "X-Session-Key"
+      ]
+    },
+    "scraping": {
+      "target_url_hash": "dc00727aa8c9",
+      "data_size": "16KB",
+      "rate_limit": "32 req/min"
+    },
+    "security": {
+      "tls_version": "TLS 1.2",
+      "encryption": "AES-256",
+      "dns_leaks_detected": false,
+      "ssl_certificate_mismatch_bypassed": true
+    },
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64)",
+    "machine_learning": {
+      "captcha_solved": true,
+      "model_version": "v5.4",
+      "inference_time_ms": 11
+    },
+    "stealth": {
+      "headless_mode": true,
+      "canvas_fingerprint": "2fb56cb8",
+      "webrtc_leak_protection": true
+    },
+    "analytics": {
+      "traffic_pattern_anomaly": 0.38,
+      "latency_threshold_pass": true,
+      "requests_per_sec": 23
+    }
+  },
+  {
+    "session_id": "3e1edddfbcb23612",
+    "proxy_ip": "***.53.***.***",
+    "geoip_location": {
+      "country": "France",
+      "city": "Bordeaux"
+    },
+    "latency_ms": 274,
+    "action": "Completed captcha bypass (hCaptcha solver)",
+    "status_code": 200,
+    "bot_detection": {
+      "bot_score": 0.32,
+      "anomaly_score": 0.06,
+      "fingerprint_spoofing": false,
+      "headers_injected": [
+        "X-Forwarded-For",
+        "X-Device-ID",
+        "X-Session-Key"
+      ]
+    },
+    "scraping": {
+      "target_url_hash": "bac4babfe0cd",
+      "data_size": "39KB",
+      "rate_limit": "44 req/min"
+    },
+    "security": {
+      "tls_version": "TLS 1.3",
+      "encryption": "AES-256",
+      "dns_leaks_detected": false,
+      "ssl_certificate_mismatch_bypassed": true
+    },
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X)",
+    "machine_learning": {
+      "captcha_solved": true,
+      "model_version": "v2.2",
+      "inference_time_ms": 10
+    },
+    "stealth": {
+      "headless_mode": true,
+      "canvas_fingerprint": "bba0c1a7",
+      "webrtc_leak_protection": true
+    },
+    "analytics": {
+      "traffic_pattern_anomaly": 0.03,
+      "latency_threshold_pass": false,
+      "requests_per_sec": 30
+    }
+  },
+  {
+    "session_id": "d35bad01947cf0ca",
+    "proxy_ip": "***.108.***.***",
+    "geoip_location": {
+      "country": "Netherlands",
+      "city": "Amsterdam"
+    },
+    "latency_ms": 241,
+    "action": "Completed captcha bypass (hCaptcha solver)",
+    "status_code": 301,
+    "bot_detection": {
+      "bot_score": 0.38,
+      "anomaly_score": 0.26,
+      "fingerprint_spoofing": false,
+      "headers_injected": [
+        "X-Forwarded-For",
+        "X-Device-ID",
+        "X-Session-Key"
+      ]
+    },
+    "scraping": {
+      "target_url_hash": "cf6cf4aabdfe",
+      "data_size": "30KB",
+      "rate_limit": "53 req/min"
+    },
+    "security": {
+      "tls_version": "TLS 1.3",
+      "encryption": "AES-256",
+      "dns_leaks_detected": false,
+      "ssl_certificate_mismatch_bypassed": true
+    },
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X)",
+    "machine_learning": {
+      "captcha_solved": false,
+      "model_version": "v4.0",
+      "inference_time_ms": 22
+    },
+    "stealth": {
+      "headless_mode": true,
+      "canvas_fingerprint": "dbfa1654",
+      "webrtc_leak_protection": true
+    },
+    "analytics": {
+      "traffic_pattern_anomaly": 0.36,
+      "latency_threshold_pass": false,
+      "requests_per_sec": 22
+    }
+  },
+  {
+    "session_id": "d026ec372adb3c6d",
+    "proxy_ip": "***.180.***.***",
+    "geoip_location": {
+      "country": "Canada",
+      "city": "Calgary"
+    },
+    "latency_ms": 233,
+    "action": "Scraping initiated",
+    "status_code": 404,
+    "bot_detection": {
+      "bot_score": 0.56,
+      "anomaly_score": 0.49,
+      "fingerprint_spoofing": false,
+      "headers_injected": [
+        "X-Forwarded-For",
+        "X-Device-ID",
+        "X-Session-Key"
+      ]
+    },
+    "scraping": {
+      "target_url_hash": "e1fdda3f2d7c",
+      "data_size": "31KB",
+      "rate_limit": "94 req/min"
+    },
+    "security": {
+      "tls_version": "TLS 1.3",
+      "encryption": "AES-256",
+      "dns_leaks_detected": false,
+      "ssl_certificate_mismatch_bypassed": true
+    },
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64)",
+    "machine_learning": {
+      "captcha_solved": false,
+      "model_version": "v5.2",
+      "inference_time_ms": 10
+    },
+    "stealth": {
+      "headless_mode": true,
+      "canvas_fingerprint": "edac40ba",
+      "webrtc_leak_protection": true
+    },
+    "analytics": {
+      "traffic_pattern_anomaly": 0.41,
+      "latency_threshold_pass": false,
+      "requests_per_sec": 37
+    }
+  },
+  {
+    "session_id": "772a352ae8be588a",
+    "proxy_ip": "***.69.***.***",
+    "geoip_location": {
+      "country": "United States",
+      "city": "Chicago"
+    },
+    "latency_ms": 146,
+    "action": "Machine learning model updated",
+    "status_code": 200,
+    "bot_detection": {
+      "bot_score": 0.27,
+      "anomaly_score": 0.19,
+      "fingerprint_spoofing": false,
+      "headers_injected": [
+        "X-Forwarded-For",
+        "X-Device-ID",
+        "X-Session-Key"
+      ]
+    },
+    "scraping": {
+      "target_url_hash": "b1709d015f38",
+      "data_size": "39KB",
+      "rate_limit": "34 req/min"
+    },
+    "security": {
+      "tls_version": "TLS 1.3",
+      "encryption": "AES-256",
+      "dns_leaks_detected": false,
+      "ssl_certificate_mismatch_bypassed": true
+    },
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64)",
+    "machine_learning": {
+      "captcha_solved": false,
+      "model_version": "v2.2",
+      "inference_time_ms": 28
+    },
+    "stealth": {
+      "headless_mode": true,
+      "canvas_fingerprint": "cae0bae1",
+      "webrtc_leak_protection": true
+    },
+    "analytics": {
+      "traffic_pattern_anomaly": 0.18,
+      "latency_threshold_pass": true,
+      "requests_per_sec": 12
+    }
+  },
+  {
+    "session_id": "6d277f9bfe2ecb71",
+    "proxy_ip": "***.50.***.***",
+    "geoip_location": {
+      "country": "Netherlands",
+      "city": "Eindhoven"
+    },
+    "latency_ms": 39,
+    "action": "AES-256 encryption applied to payload",
+    "status_code": 301,
+    "bot_detection": {
+      "bot_score": 0.49,
+      "anomaly_score": 0.14,
+      "fingerprint_spoofing": false,
+      "headers_injected": [
+        "X-Forwarded-For",
+        "X-Device-ID",
+        "X-Session-Key"
+      ]
+    },
+    "scraping": {
+      "target_url_hash": "8aced1e88f80",
+      "data_size": "34KB",
+      "rate_limit": "33 req/min"
+    },
+    "security": {
+      "tls_version": "TLS 1.2",
+      "encryption": "AES-256",
+      "dns_leaks_detected": false,
+      "ssl_certificate_mismatch_bypassed": false
+    },
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+    "machine_learning": {
+      "captcha_solved": true,
+      "model_version": "v1.6",
+      "inference_time_ms": 28
+    },
+    "stealth": {
+      "headless_mode": true,
+      "canvas_fingerprint": "ccaf0aec",
+      "webrtc_leak_protection": true
+    },
+    "analytics": {
+      "traffic_pattern_anomaly": 0.09,
+      "latency_threshold_pass": true,
+      "requests_per_sec": 12
+    }
+  },
+  {
+    "session_id": "e947f47c24bc5b3a",
+    "proxy_ip": "***.206.***.***",
+    "geoip_location": {
+      "country": "South Korea",
+      "city": "Busan"
+    },
+    "latency_ms": 185,
+    "action": "Machine learning model updated",
+    "status_code": 200,
+    "bot_detection": {
+      "bot_score": 0.98,
+      "anomaly_score": 0.13,
+      "fingerprint_spoofing": false,
+      "headers_injected": [
+        "X-Forwarded-For",
+        "X-Device-ID",
+        "X-Session-Key"
+      ]
+    },
+    "scraping": {
+      "target_url_hash": "4debe2cabd95",
+      "data_size": "34KB",
+      "rate_limit": "37 req/min"
+    },
+    "security": {
+      "tls_version": "TLS 1.3",
+      "encryption": "AES-256",
+      "dns_leaks_detected": false,
+      "ssl_certificate_mismatch_bypassed": false
+    },
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+    "machine_learning": {
+      "captcha_solved": true,
+      "model_version": "v5.3",
+      "inference_time_ms": 27
+    },
+    "stealth": {
+      "headless_mode": true,
+      "canvas_fingerprint": "ddc421d9",
+      "webrtc_leak_protection": true
+    },
+    "analytics": {
+      "traffic_pattern_anomaly": 0.35,
+      "latency_threshold_pass": true,
+      "requests_per_sec": 35
+    }
+  },
+  {
+    "session_id": "2ee31c34f4df1434",
+    "proxy_ip": "***.141.***.***",
+    "geoip_location": {
+      "country": "Germany",
+      "city": "Frankfurt"
+    },
+    "latency_ms": 159,
+    "action": "TLS handshake signature randomized",
+    "status_code": 301,
+    "bot_detection": {
+      "bot_score": 0.21,
+      "anomaly_score": 0.04,
+      "fingerprint_spoofing": true,
+      "headers_injected": [
+        "X-Forwarded-For",
+        "X-Device-ID",
+        "X-Session-Key"
+      ]
+    },
+    "scraping": {
+      "target_url_hash": "db299ed90faf",
+      "data_size": "24KB",
+      "rate_limit": "58 req/min"
+    },
+    "security": {
+      "tls_version": "TLS 1.2",
+      "encryption": "AES-256",
+      "dns_leaks_detected": false,
+      "ssl_certificate_mismatch_bypassed": false
+    },
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+    "machine_learning": {
+      "captcha_solved": true,
+      "model_version": "v2.4",
+      "inference_time_ms": 42
+    },
+    "stealth": {
+      "headless_mode": true,
+      "canvas_fingerprint": "2c28aa39",
+      "webrtc_leak_protection": true
+    },
+    "analytics": {
+      "traffic_pattern_anomaly": 0.33,
+      "latency_threshold_pass": true,
+      "requests_per_sec": 12
+    }
+  },
+  {
+    "session_id": "85ac8ea73f5dbc6b",
+    "proxy_ip": "***.129.***.***",
+    "geoip_location": {
+      "country": "Canada",
+      "city": "Vancouver"
+    },
+    "latency_ms": 146,
+    "action": "Fingerprint obfuscation enabled",
+    "status_code": 429,
+    "bot_detection": {
+      "bot_score": 0.83,
+      "anomaly_score": 0.1,
+      "fingerprint_spoofing": true,
+      "headers_injected": [
+        "X-Forwarded-For",
+        "X-Device-ID",
+        "X-Session-Key"
+      ]
+    },
+    "scraping": {
+      "target_url_hash": "9c4eaad6cd99",
+      "data_size": "4KB",
+      "rate_limit": "48 req/min"
+    },
+    "security": {
+      "tls_version": "TLS 1.2",
+      "encryption": "AES-256",
+      "dns_leaks_detected": false,
+      "ssl_certificate_mismatch_bypassed": false
+    },
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64)",
+    "machine_learning": {
+      "captcha_solved": false,
+      "model_version": "v2.4",
+      "inference_time_ms": 10
+    },
+    "stealth": {
+      "headless_mode": true,
+      "canvas_fingerprint": "24cad9e3",
+      "webrtc_leak_protection": true
+    },
+    "analytics": {
+      "traffic_pattern_anomaly": 0.12,
+      "latency_threshold_pass": true,
+      "requests_per_sec": 8
+    }
+  },
+  {
+    "session_id": "9dd1a6ec5ebbef3c",
+    "proxy_ip": "***.170.***.***",
+    "geoip_location": {
+      "country": "United States",
+      "city": "Miami"
+    },
+    "latency_ms": 132,
+    "action": "Fingerprint obfuscation enabled",
+    "status_code": 200,
+    "bot_detection": {
+      "bot_score": 0.23,
+      "anomaly_score": 0.4,
+      "fingerprint_spoofing": true,
+      "headers_injected": [
+        "X-Forwarded-For",
+        "X-Device-ID",
+        "X-Session-Key"
+      ]
+    },
+    "scraping": {
+      "target_url_hash": "8eaecc8fc01c",
+      "data_size": "44KB",
+      "rate_limit": "80 req/min"
+    },
+    "security": {
+      "tls_version": "TLS 1.3",
+      "encryption": "AES-256",
+      "dns_leaks_detected": false,
+      "ssl_certificate_mismatch_bypassed": false
+    },
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64)",
+    "machine_learning": {
+      "captcha_solved": false,
+      "model_version": "v3.5",
+      "inference_time_ms": 30
+    },
+    "stealth": {
+      "headless_mode": true,
+      "canvas_fingerprint": "160e17a9",
+      "webrtc_leak_protection": true
+    },
+    "analytics": {
+      "traffic_pattern_anomaly": 0.06,
+      "latency_threshold_pass": true,
+      "requests_per_sec": 11
+    }
+  },
+  {
+    "session_id": "1ab42cc96bd25f2d",
+    "proxy_ip": "***.187.***.***",
+    "geoip_location": {
+      "country": "Netherlands",
+      "city": "Eindhoven"
+    },
+    "latency_ms": 116,
+    "action": "Completed captcha bypass (hCaptcha solver)",
+    "status_code": 429,
+    "bot_detection": {
+      "bot_score": 0.8,
+      "anomaly_score": 0.2,
+      "fingerprint_spoofing": false,
+      "headers_injected": [
+        "X-Forwarded-For",
+        "X-Device-ID",
+        "X-Session-Key"
+      ]
+    },
+    "scraping": {
+      "target_url_hash": "3830f1e81b0e",
+      "data_size": "32KB",
+      "rate_limit": "85 req/min"
+    },
+    "security": {
+      "tls_version": "TLS 1.3",
+      "encryption": "AES-256",
+      "dns_leaks_detected": false,
+      "ssl_certificate_mismatch_bypassed": true
+    },
+    "user_agent": "Mozilla/5.0 (Android 11; Mobile; rv:68.0)",
+    "machine_learning": {
+      "captcha_solved": true,
+      "model_version": "v3.0",
+      "inference_time_ms": 36
+    },
+    "stealth": {
+      "headless_mode": true,
+      "canvas_fingerprint": "c30207a7",
+      "webrtc_leak_protection": true
+    },
+    "analytics": {
+      "traffic_pattern_anomaly": 0.45,
+      "latency_threshold_pass": true,
+      "requests_per_sec": 31
+    }
+  },
+  {
+    "session_id": "2ea3d4498a92952b",
+    "proxy_ip": "***.32.***.***",
+    "geoip_location": {
+      "country": "South Korea",
+      "city": "Daegu"
+    },
+    "latency_ms": 67,
+    "action": "Fingerprint obfuscation enabled",
+    "status_code": 429,
+    "bot_detection": {
+      "bot_score": 0.78,
+      "anomaly_score": 0.01,
+      "fingerprint_spoofing": false,
+      "headers_injected": [
+        "X-Forwarded-For",
+        "X-Device-ID",
+        "X-Session-Key"
+      ]
+    },
+    "scraping": {
+      "target_url_hash": "fd8e6b2b823e",
+      "data_size": "46KB",
+      "rate_limit": "96 req/min"
+    },
+    "security": {
+      "tls_version": "TLS 1.2",
+      "encryption": "AES-256",
+      "dns_leaks_detected": false,
+      "ssl_certificate_mismatch_bypassed": true
+    },
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+    "machine_learning": {
+      "captcha_solved": true,
+      "model_version": "v5.0",
+      "inference_time_ms": 13
+    },
+    "stealth": {
+      "headless_mode": true,
+      "canvas_fingerprint": "d303f8b7",
+      "webrtc_leak_protection": true
+    },
+    "analytics": {
+      "traffic_pattern_anomaly": 0.09,
+      "latency_threshold_pass": true,
+      "requests_per_sec": 3
+    }
+  },
+  {
+    "session_id": "2570a94d012ab472",
+    "proxy_ip": "***.91.***.***",
+    "geoip_location": {
+      "country": "Netherlands",
+      "city": "Amsterdam"
+    },
+    "latency_ms": 203,
+    "action": "Switching to new proxy node",
+    "status_code": 403,
+    "bot_detection": {
+      "bot_score": 0.49,
+      "anomaly_score": 0.01,
+      "fingerprint_spoofing": false,
+      "headers_injected": [
+        "X-Forwarded-For",
+        "X-Device-ID",
+        "X-Session-Key"
+      ]
+    },
+    "scraping": {
+      "target_url_hash": "4fe10fbdad5b",
+      "data_size": "2KB",
+      "rate_limit": "90 req/min"
+    },
+    "security": {
+      "tls_version": "TLS 1.2",
+      "encryption": "AES-256",
+      "dns_leaks_detected": false,
+      "ssl_certificate_mismatch_bypassed": false
+    },
+    "user_agent": "Mozilla/5.0 (Android 11; Mobile; rv:68.0)",
+    "machine_learning": {
+      "captcha_solved": false,
+      "model_version": "v2.3",
+      "inference_time_ms": 41
+    },
+    "stealth": {
+      "headless_mode": true,
+      "canvas_fingerprint": "babf1a8e",
+      "webrtc_leak_protection": true
+    },
+    "analytics": {
+      "traffic_pattern_anomaly": 0.5,
+      "latency_threshold_pass": false,
+      "requests_per_sec": 48
+    }
+  },
+  {
+    "session_id": "0adcd1c71a4bd5ca",
+    "proxy_ip": "***.175.***.***",
+    "geoip_location": {
+      "country": "Canada",
+      "city": "Ottawa"
+    },
+    "latency_ms": 202,
+    "action": "AES-256 encryption applied to payload",
+    "status_code": 500,
+    "bot_detection": {
+      "bot_score": 0.43,
+      "anomaly_score": 0.24,
+      "fingerprint_spoofing": false,
+      "headers_injected": [
+        "X-Forwarded-For",
+        "X-Device-ID",
+        "X-Session-Key"
+      ]
+    },
+    "scraping": {
+      "target_url_hash": "8367bcedf0ce",
+      "data_size": "36KB",
+      "rate_limit": "90 req/min"
+    },
+    "security": {
+      "tls_version": "TLS 1.2",
+      "encryption": "AES-256",
+      "dns_leaks_detected": false,
+      "ssl_certificate_mismatch_bypassed": true
+    },
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+    "machine_learning": {
+      "captcha_solved": false,
+      "model_version": "v4.6",
+      "inference_time_ms": 40
+    },
+    "stealth": {
+      "headless_mode": true,
+      "canvas_fingerprint": "2eb82878",
+      "webrtc_leak_protection": true
+    },
+    "analytics": {
+      "traffic_pattern_anomaly": 0.03,
+      "latency_threshold_pass": false,
+      "requests_per_sec": 2
+    }
+  },
+  {
+    "session_id": "e32caa2ce898cea1",
+    "proxy_ip": "***.12.***.***",
+    "geoip_location": {
+      "country": "Brazil",
+      "city": "Bras\u00edlia"
+    },
+    "latency_ms": 289,
+    "action": "Injecting stealth headers",
+    "status_code": 403,
+    "bot_detection": {
+      "bot_score": 0.61,
+      "anomaly_score": 0.46,
+      "fingerprint_spoofing": true,
+      "headers_injected": [
+        "X-Forwarded-For",
+        "X-Device-ID",
+        "X-Session-Key"
+      ]
+    },
+    "scraping": {
+      "target_url_hash": "f17ed253059d",
+      "data_size": "2KB",
+      "rate_limit": "58 req/min"
+    },
+    "security": {
+      "tls_version": "TLS 1.3",
+      "encryption": "AES-256",
+      "dns_leaks_detected": false,
+      "ssl_certificate_mismatch_bypassed": true
+    },
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64)",
+    "machine_learning": {
+      "captcha_solved": false,
+      "model_version": "v5.4",
+      "inference_time_ms": 7
+    },
+    "stealth": {
+      "headless_mode": true,
+      "canvas_fingerprint": "fffdbb7b",
+      "webrtc_leak_protection": true
+    },
+    "analytics": {
+      "traffic_pattern_anomaly": 0.42,
+      "latency_threshold_pass": false,
+      "requests_per_sec": 11
+    }
+  },
+  {
+    "session_id": "bcfc8f7bffccbe93",
+    "proxy_ip": "***.178.***.***",
+    "geoip_location": {
+      "country": "Germany",
+      "city": "Frankfurt"
+    },
+    "latency_ms": 227,
+    "action": "TLS handshake signature randomized",
+    "status_code": 500,
+    "bot_detection": {
+      "bot_score": 0.19,
+      "anomaly_score": 0.21,
+      "fingerprint_spoofing": true,
+      "headers_injected": [
+        "X-Forwarded-For",
+        "X-Device-ID",
+        "X-Session-Key"
+      ]
+    },
+    "scraping": {
+      "target_url_hash": "ae070b1b86f3",
+      "data_size": "41KB",
+      "rate_limit": "51 req/min"
+    },
+    "security": {
+      "tls_version": "TLS 1.2",
+      "encryption": "AES-256",
+      "dns_leaks_detected": false,
+      "ssl_certificate_mismatch_bypassed": true
+    },
+    "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)",
+    "machine_learning": {
+      "captcha_solved": false,
+      "model_version": "v2.6",
+      "inference_time_ms": 29
+    },
+    "stealth": {
+      "headless_mode": true,
+      "canvas_fingerprint": "320191c0",
+      "webrtc_leak_protection": true
+    },
+    "analytics": {
+      "traffic_pattern_anomaly": 0.15,
+      "latency_threshold_pass": false,
+      "requests_per_sec": 35
+    }
+  },
+  {
+    "session_id": "9d6a7d22c76867af",
+    "proxy_ip": "***.56.***.***",
+    "geoip_location": {
+      "country": "United States",
+      "city": "San Francisco"
+    },
+    "latency_ms": 186,
+    "action": "TLS handshake signature randomized",
+    "status_code": 403,
+    "bot_detection": {
+      "bot_score": 0.8,
+      "anomaly_score": 0.42,
+      "fingerprint_spoofing": true,
+      "headers_injected": [
+        "X-Forwarded-For",
+        "X-Device-ID",
+        "X-Session-Key"
+      ]
+    },
+    "scraping": {
+      "target_url_hash": "c1bb4a8eabb6",
+      "data_size": "37KB",
+      "rate_limit": "10 req/min"
+    },
+    "security": {
+      "tls_version": "TLS 1.2",
+      "encryption": "AES-256",
+      "dns_leaks_detected": false,
+      "ssl_certificate_mismatch_bypassed": true
+    },
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64)",
+    "machine_learning": {
+      "captcha_solved": true,
+      "model_version": "v1.2",
+      "inference_time_ms": 34
+    },
+    "stealth": {
+      "headless_mode": true,
+      "canvas_fingerprint": "5be8ecaa",
+      "webrtc_leak_protection": true
+    },
+    "analytics": {
+      "traffic_pattern_anomaly": 0.25,
+      "latency_threshold_pass": true,
+      "requests_per_sec": 37
+    }
+  },
+  {
+    "session_id": "79da996fc9ddef8c",
+    "proxy_ip": "***.248.***.***",
+    "geoip_location": {
+      "country": "France",
+      "city": "Bordeaux"
+    },
+    "latency_ms": 36,
+    "action": "Switching to new proxy node",
+    "status_code": 404,
+    "bot_detection": {
+      "bot_score": 0.48,
+      "anomaly_score": 0.19,
+      "fingerprint_spoofing": false,
+      "headers_injected": [
+        "X-Forwarded-For",
+        "X-Device-ID",
+        "X-Session-Key"
+      ]
+    },
+    "scraping": {
+      "target_url_hash": "d9070315f7a2",
+      "data_size": "4KB",
+      "rate_limit": "12 req/min"
+    },
+    "security": {
+      "tls_version": "TLS 1.2",
+      "encryption": "AES-256",
+      "dns_leaks_detected": false,
+      "ssl_certificate_mismatch_bypassed": true
+    },
+    "user_agent": "Mozilla/5.0 (Android 11; Mobile; rv:68.0)",
+    "machine_learning": {
+      "captcha_solved": false,
+      "model_version": "v2.2",
+      "inference_time_ms": 37
+    },
+    "stealth": {
+      "headless_mode": true,
+      "canvas_fingerprint": "faaff915",
+      "webrtc_leak_protection": true
+    },
+    "analytics": {
+      "traffic_pattern_anomaly": 0.25,
+      "latency_threshold_pass": true,
+      "requests_per_sec": 31
+    }
+  },
+  {
+    "session_id": "bebe8de72cabee3d",
+    "proxy_ip": "***.54.***.***",
+    "geoip_location": {
+      "country": "Singapore",
+      "city": "Singapore City"
+    },
+    "latency_ms": 163,
+    "action": "Headless Chrome: Puppeteer stealth plugin enabled",
+    "status_code": 301,
+    "bot_detection": {
+      "bot_score": 0.18,
+      "anomaly_score": 0.37,
+      "fingerprint_spoofing": true,
+      "headers_injected": [
+        "X-Forwarded-For",
+        "X-Device-ID",
+        "X-Session-Key"
+      ]
+    },
+    "scraping": {
+      "target_url_hash": "b60fb6ff4b17",
+      "data_size": "19KB",
+      "rate_limit": "34 req/min"
+    },
+    "security": {
+      "tls_version": "TLS 1.3",
+      "encryption": "AES-256",
+      "dns_leaks_detected": false,
+      "ssl_certificate_mismatch_bypassed": false
+    },
+    "user_agent": "Mozilla/5.0 (Android 11; Mobile; rv:68.0)",
+    "machine_learning": {
+      "captcha_solved": true,
+      "model_version": "v1.6",
+      "inference_time_ms": 42
+    },
+    "stealth": {
+      "headless_mode": true,
+      "canvas_fingerprint": "7ef98ffd",
+      "webrtc_leak_protection": true
+    },
+    "analytics": {
+      "traffic_pattern_anomaly": 0.29,
+      "latency_threshold_pass": true,
+      "requests_per_sec": 35
+    }
+  },
+  {
+    "session_id": "11a38bafcadf8d9b",
+    "proxy_ip": "***.62.***.***",
+    "geoip_location": {
+      "country": "South Korea",
+      "city": "Daegu"
+    },
+    "latency_ms": 155,
+    "action": "Scraping initiated",
+    "status_code": 429,
+    "bot_detection": {
+      "bot_score": 0.89,
+      "anomaly_score": 0.16,
+      "fingerprint_spoofing": true,
+      "headers_injected": [
+        "X-Forwarded-For",
+        "X-Device-ID",
+        "X-Session-Key"
+      ]
+    },
+    "scraping": {
+      "target_url_hash": "bcfd2e3cab6c",
+      "data_size": "32KB",
+      "rate_limit": "81 req/min"
+    },
+    "security": {
+      "tls_version": "TLS 1.3",
+      "encryption": "AES-256",
+      "dns_leaks_detected": false,
+      "ssl_certificate_mismatch_bypassed": true
+    },
+    "user_agent": "Mozilla/5.0 (Android 11; Mobile; rv:68.0)",
+    "machine_learning": {
+      "captcha_solved": false,
+      "model_version": "v3.7",
+      "inference_time_ms": 39
+    },
+    "stealth": {
+      "headless_mode": true,
+      "canvas_fingerprint": "e878ec93",
+      "webrtc_leak_protection": true
+    },
+    "analytics": {
+      "traffic_pattern_anomaly": 0.36,
+      "latency_threshold_pass": true,
+      "requests_per_sec": 23
+    }
+  },
+  {
+    "session_id": "f9b7ef417bc8af9b",
+    "proxy_ip": "***.6.***.***",
+    "geoip_location": {
+      "country": "Netherlands",
+      "city": "Utrecht"
+    },
+    "latency_ms": 285,
+    "action": "Machine learning model updated",
+    "status_code": 500,
+    "bot_detection": {
+      "bot_score": 0.15,
+      "anomaly_score": 0.34,
+      "fingerprint_spoofing": true,
+      "headers_injected": [
+        "X-Forwarded-For",
+        "X-Device-ID",
+        "X-Session-Key"
+      ]
+    },
+    "scraping": {
+      "target_url_hash": "ed5b81e5a98b",
+      "data_size": "20KB",
+      "rate_limit": "15 req/min"
+    },
+    "security": {
+      "tls_version": "TLS 1.3",
+      "encryption": "AES-256",
+      "dns_leaks_detected": false,
+      "ssl_certificate_mismatch_bypassed": false
+    },
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64)",
+    "machine_learning": {
+      "captcha_solved": true,
+      "model_version": "v4.7",
+      "inference_time_ms": 31
+    },
+    "stealth": {
+      "headless_mode": true,
+      "canvas_fingerprint": "e329ace3",
+      "webrtc_leak_protection": true
+    },
+    "analytics": {
+      "traffic_pattern_anomaly": 0.03,
+      "latency_threshold_pass": false,
+      "requests_per_sec": 46
+    }
+  },
+  {
+    "session_id": "c1f1d0d4dbecc6c1",
+    "proxy_ip": "***.51.***.***",
+    "geoip_location": {
+      "country": "South Korea",
+      "city": "Daegu"
+    },
+    "latency_ms": 196,
+    "action": "Scraping initiated",
+    "status_code": 404,
+    "bot_detection": {
+      "bot_score": 0.76,
+      "anomaly_score": 0.42,
+      "fingerprint_spoofing": true,
+      "headers_injected": [
+        "X-Forwarded-For",
+        "X-Device-ID",
+        "X-Session-Key"
+      ]
+    },
+    "scraping": {
+      "target_url_hash": "ff63eeae38e6",
+      "data_size": "22KB",
+      "rate_limit": "26 req/min"
+    },
+    "security": {
+      "tls_version": "TLS 1.3",
+      "encryption": "AES-256",
+      "dns_leaks_detected": false,
+      "ssl_certificate_mismatch_bypassed": true
+    },
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X)",
+    "machine_learning": {
+      "captcha_solved": false,
+      "model_version": "v4.3",
+      "inference_time_ms": 44
+    },
+    "stealth": {
+      "headless_mode": true,
+      "canvas_fingerprint": "fcb8d79c",
+      "webrtc_leak_protection": true
+    },
+    "analytics": {
+      "traffic_pattern_anomaly": 0.19,
+      "latency_threshold_pass": true,
+      "requests_per_sec": 45
+    }
+  },
+  {
+    "session_id": "b2051db48ff7cd1f",
+    "proxy_ip": "***.215.***.***",
+    "geoip_location": {
+      "country": "Netherlands",
+      "city": "Eindhoven"
+    },
+    "latency_ms": 260,
+    "action": "Injecting stealth headers",
+    "status_code": 429,
+    "bot_detection": {
+      "bot_score": 0.25,
+      "anomaly_score": 0.16,
+      "fingerprint_spoofing": true,
+      "headers_injected": [
+        "X-Forwarded-For",
+        "X-Device-ID",
+        "X-Session-Key"
+      ]
+    },
+    "scraping": {
+      "target_url_hash": "dd6dd3e101ce",
+      "data_size": "44KB",
+      "rate_limit": "66 req/min"
+    },
+    "security": {
+      "tls_version": "TLS 1.3",
+      "encryption": "AES-256",
+      "dns_leaks_detected": false,
+      "ssl_certificate_mismatch_bypassed": true
+    },
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+    "machine_learning": {
+      "captcha_solved": true,
+      "model_version": "v4.6",
+      "inference_time_ms": 21
+    },
+    "stealth": {
+      "headless_mode": true,
+      "canvas_fingerprint": "c5a7e396",
+      "webrtc_leak_protection": true
+    },
+    "analytics": {
+      "traffic_pattern_anomaly": 0.22,
+      "latency_threshold_pass": false,
+      "requests_per_sec": 2
+    }
+  },
+  {
+    "session_id": "ce0808ffa518ddcd",
+    "proxy_ip": "***.173.***.***",
+    "geoip_location": {
+      "country": "Netherlands",
+      "city": "Eindhoven"
+    },
+    "latency_ms": 128,
+    "action": "Switching to new proxy node",
+    "status_code": 404,
+    "bot_detection": {
+      "bot_score": 0.75,
+      "anomaly_score": 0.16,
+      "fingerprint_spoofing": true,
+      "headers_injected": [
+        "X-Forwarded-For",
+        "X-Device-ID",
+        "X-Session-Key"
+      ]
+    },
+    "scraping": {
+      "target_url_hash": "d168fb4cb552",
+      "data_size": "7KB",
+      "rate_limit": "23 req/min"
+    },
+    "security": {
+      "tls_version": "TLS 1.3",
+      "encryption": "AES-256",
+      "dns_leaks_detected": false,
+      "ssl_certificate_mismatch_bypassed": false
+    },
+    "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X)",
+    "machine_learning": {
+      "captcha_solved": false,
+      "model_version": "v3.0",
+      "inference_time_ms": 27
+    },
+    "stealth": {
+      "headless_mode": true,
+      "canvas_fingerprint": "184ab6e2",
+      "webrtc_leak_protection": true
+    },
+    "analytics": {
+      "traffic_pattern_anomaly": 0.18,
+      "latency_threshold_pass": true,
+      "requests_per_sec": 20
+    }
+  },
+  {
+    "session_id": "d176ecc7b2cdf0fe",
+    "proxy_ip": "***.44.***.***",
+    "geoip_location": {
+      "country": "United States",
+      "city": "New York"
+    },
+    "latency_ms": 159,
+    "action": "Machine learning model updated",
+    "status_code": 404,
+    "bot_detection": {
+      "bot_score": 0.76,
+      "anomaly_score": 0.44,
+      "fingerprint_spoofing": false,
+      "headers_injected": [
+        "X-Forwarded-For",
+        "X-Device-ID",
+        "X-Session-Key"
+      ]
+    },
+    "scraping": {
+      "target_url_hash": "fc8119a8f22e",
+      "data_size": "34KB",
+      "rate_limit": "22 req/min"
+    },
+    "security": {
+      "tls_version": "TLS 1.3",
+      "encryption": "AES-256",
+      "dns_leaks_detected": false,
+      "ssl_certificate_mismatch_bypassed": true
+    },
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+    "machine_learning": {
+      "captcha_solved": true,
+      "model_version": "v1.4",
+      "inference_time_ms": 29
+    },
+    "stealth": {
+      "headless_mode": true,
+      "canvas_fingerprint": "a5f92bfa",
+      "webrtc_leak_protection": true
+    },
+    "analytics": {
+      "traffic_pattern_anomaly": 0.3,
+      "latency_threshold_pass": true,
+      "requests_per_sec": 48
+    }
+  },
+  {
+    "session_id": "be75ec1f99536d05",
+    "proxy_ip": "***.51.***.***",
+    "geoip_location": {
+      "country": "Brazil",
+      "city": "S\u00e3o Paulo"
+    },
+    "latency_ms": 161,
+    "action": "Headless Chrome: Puppeteer stealth plugin enabled",
+    "status_code": 403,
+    "bot_detection": {
+      "bot_score": 0.99,
+      "anomaly_score": 0.48,
+      "fingerprint_spoofing": true,
+      "headers_injected": [
+        "X-Forwarded-For",
+        "X-Device-ID",
+        "X-Session-Key"
+      ]
+    },
+    "scraping": {
+      "target_url_hash": "a9626c1b85eb",
+      "data_size": "17KB",
+      "rate_limit": "13 req/min"
+    },
+    "security": {
+      "tls_version": "TLS 1.3",
+      "encryption": "AES-256",
+      "dns_leaks_detected": false,
+      "ssl_certificate_mismatch_bypassed": true
+    },
+    "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+    "machine_learning": {
+      "captcha_solved": true,
+      "model_version": "v5.6",
+      "inference_time_ms": 49
+    },
+    "stealth": {
+      "headless_mode": true,
+      "canvas_fingerprint": "edbddce7",
+      "webrtc_leak_protection": true
+    },
+    "analytics": {
+      "traffic_pattern_anomaly": 0.48,
+      "latency_threshold_pass": true,
+      "requests_per_sec": 13
+    }
+  },
+  {
+    "session_id": "d51e79ceff9d8fba",
+    "proxy_ip": "***.251.***.***",
+    "geoip_location": {
+      "country": "South Korea",
+      "city": "Daegu"
+    },
+    "latency_ms": 112,
+    "action": "Switching to new proxy node",
+    "status_code": 429,
+    "bot_detection": {
+      "bot_score": 0.63,
+      "anomaly_score": 0.17,
+      "fingerprint_spoofing": true,
+      "headers_injected": [
+        "X-Forwarded-For",
+        "X-Device-ID",
+        "X-Session-Key"
+      ]
+    },
+    "scraping": {
+      "target_url_hash": "a4bf3a992dcf",
+      "data_size": "1KB",
+      "rate_limit": "37 req/min"
+    },
+    "security": {
+      "tls_version": "TLS 1.3",
+      "encryption": "AES-256",
+      "dns_leaks_detected": false,
+      "ssl_certificate_mismatch_bypassed": true
+    },
+    "user_agent": "Mozilla/5.0 (Android 11; Mobile; rv:68.0)",
+    "machine_learning": {
+      "captcha_solved": true,
+      "model_version": "v1.4",
+      "inference_time_ms": 25
+    },
+    "stealth": {
+      "headless_mode": true,
+      "canvas_fingerprint": "bc44f12c",
+      "webrtc_leak_protection": true
+    },
+    "analytics": {
+      "traffic_pattern_anomaly": 0.06,
+      "latency_threshold_pass": true,
+      "requests_per_sec": 17
+    }
+  }
+]

@@ -65,9 +65,6 @@ const Navbar = () => {
             <a href="https://dexscreener.com/your_link" target="_blank" rel="noopener noreferrer">
               <img src="/dex.png" alt="Dexscreener" className="h-4 w-4" />
             </a>
-            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" className="text-sm">
-              GitHub
-            </a>
           </div>
           <div className="flex items-center gap-2 text-sm text-black font-mono">
             <span>Coming Soon</span>

@@ -59,8 +59,8 @@ const BundleChecker = () => {
         <div className="flex-1 flex flex-col">
           {/* Header Section */}
           <div className="p-8 pb-4">
-            <h1 className="text-4xl font-bold text-matrix-primary">Bundle Checker</h1>
-            <p className="text-matrix-primary-80 mt-2">Real-time token holder analysis</p>
+            <h1 className="text-4xl font-bold text-white text-matrix-primary">Bundle Checker</h1>
+            <p className="text-matrix-primary-80 text-white  mt-2">Real-time token holder analysis</p>
           </div>
 
           {/* Visualization Area */}

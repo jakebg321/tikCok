@@ -125,10 +125,10 @@ const MemeScannerPage = () => {
     <div className="min-h-screen relative lg:ml-[240px]">
       <AnimatedBackground />
       <div className="relative z-10">
-        <header className="backdrop-blur-sm border-b border-emerald-900/30 p-6 mt-[76px] lg:mt-0">
+        <header className="backdrop-blur-sm border-b border-[#6aebfc]/30 p-6 mt-[76px] lg:mt-0">
           <div className="max-w-[1600px] mx-auto">
-            <h1 className="text-2xl font-bold text-emerald-100">Meme Scanner</h1>
-            <p className="text-emerald-300/70 mt-1">Real-time meme trend analysis</p>
+            <h1 className="text-2xl font-bold text-white">Meme Scanner</h1>
+            <p className="text-[#6aebfc]/70 mt-1">Real-time meme trend analysis</p>
           </div>
         </header>
 
@@ -187,8 +187,8 @@ const MemeScannerPage = () => {
           </div>
         </main>
 
-        <footer className="bg-black/50 backdrop-blur-sm border-t border-emerald-900/30 p-4">
-          <div className="max-w-[1600px] mx-auto text-center text-sm text-emerald-300/70">
+        <footer className="bg-black/50 backdrop-blur-sm border-t border-[#6aebfc]/30 p-4">
+          <div className="max-w-[1600px] mx-auto text-center text-sm text-[#6aebfc]/70">
           </div>
         </footer>
       </div>

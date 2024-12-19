@@ -1,12 +1,13 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { HiMenu } from 'react-icons/hi';
-import { RiDashboardLine, RiScanLine, RiBox3Line, RiInformationLine, RiServerLine } from 'react-icons/ri';
+import { RiDashboardLine, RiScanLine, RiBox3Line, RiInformationLine, RiServerLine, RiFileCopyLine } from 'react-icons/ri';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 1024);
   const [currentDate, setCurrentDate] = useState('');
+  const [copied, setCopied] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
@@ -26,6 +27,12 @@ const Navbar = () => {
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText('Coming Soon');
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
 
   const menuItems = [
     { number: '01', path: '/', label: 'Overview', icon: RiDashboardLine },
@@ -51,8 +58,27 @@ const Navbar = () => {
           <div className="text-sm text-black font-mono">
             UPDATED: {currentDate}
           </div>
-          <div className="text-sm text-black font-mono">
-            V2.0
+          <div className="text-sm text-black font-mono flex items-center gap-2">
+            <a href="https://twitter.com/your_handle" target="_blank" rel="noopener noreferrer">
+              <img src="/x.png" alt="X" className="h-4 w-4" />
+            </a>
+            <a href="https://dexscreener.com/your_link" target="_blank" rel="noopener noreferrer">
+              <img src="/dex.png" alt="Dexscreener" className="h-4 w-4" />
+            </a>
+            <a href="https://github.com/your_profile" target="_blank" rel="noopener noreferrer" className="text-sm">
+              GitHub
+            </a>
+          </div>
+          <div className="flex items-center gap-2 text-sm text-black font-mono">
+            <span>Coming Soon</span>
+            <button 
+              onClick={handleCopy}
+              className="hover:bg-gray-100 p-1 rounded"
+              title="Copy to clipboard"
+            >
+              <RiFileCopyLine className={`w-4 h-4 ${copied ? 'text-green-500' : 'text-gray-500'}`} />
+            </button>
+            {copied && <span className="text-xs text-green-500">Copied!</span>}
           </div>
         </div>
 

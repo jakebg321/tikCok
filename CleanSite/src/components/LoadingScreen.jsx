@@ -18,20 +18,20 @@ const LoadingScreen = ({ onLoadingComplete }) => {
               style={{
                 animation: `spin 2s linear infinite ${i * -0.67}s`,
                 transform: `rotate(${i * 60}deg) scale(${1 - i * 0.15})`,
-                opacity: 1 - i * 0.2
+                opacity: 0.7 - i * 0.2
               }}
             />
           ))}
         </div>
         <div className="absolute inset-[35%] animate-pulse">
-          <div className="absolute inset-0 bg-cyan-500 rounded-full"></div>
-          <div className="absolute inset-[-50%] border-2 border-cyan-400 rounded-full animate-ping opacity-75"></div>
+          <div className="absolute inset-0 bg-cyan-500 rounded-full opacity-70"></div>
+          <div className="absolute inset-[-50%] border-2 border-cyan-400 rounded-full animate-ping opacity-45"></div>
         </div>
       </div>
     ),
     // Geometric kaleidoscope
     () => (
-      <div className="w-11 h-11 relative animate-spin-slow">
+      <div className="w-11 h-11 relative animate-spin-slow opacity-70">
         {[...Array(6)].map((_, i) => (
           <div 
             key={i}
@@ -48,7 +48,7 @@ const LoadingScreen = ({ onLoadingComplete }) => {
     ),
     // Matrix of spinning squares
     () => (
-      <div className="w-11 h-11 grid grid-cols-3 grid-rows-3 gap-0.5">
+      <div className="w-11 h-11 grid grid-cols-3 grid-rows-3 gap-0.5 opacity-70">
         {[...Array(9)].map((_, i) => (
           <div key={i} className="relative">
             <div className="absolute inset-0 border-[1.5px] border-cyan-500"
@@ -61,7 +61,7 @@ const LoadingScreen = ({ onLoadingComplete }) => {
     ),
     // Fractal triangle pattern
     () => (
-      <div className="w-11 h-11 relative">
+      <div className="w-11 h-11 relative opacity-70">
         <div className="absolute inset-0 animate-spin-slow">
           {[...Array(3)].map((_, i) => (
             <div 
@@ -79,7 +79,7 @@ const LoadingScreen = ({ onLoadingComplete }) => {
     ),
     // Quantum circuitry
     () => (
-      <div className="w-11 h-11 relative">
+      <div className="w-11 h-11 relative opacity-70">
         <div className="absolute inset-0 border-3 border-cyan-400 rounded-lg animate-pulse"></div>
         <div className="absolute inset-[15%] animate-spin-slow">
           {[...Array(4)].map((_, i) => (
@@ -98,7 +98,7 @@ const LoadingScreen = ({ onLoadingComplete }) => {
     ),
     // Atomic orbital
     () => (
-      <div className="w-11 h-11 relative">
+      <div className="w-11 h-11 relative opacity-70">
         <div className="absolute inset-0" style={{ animation: 'spin 2s infinite' }}>
           <div className="absolute inset-0 border-3 border-cyan-400 rounded-full" 
                style={{ transform: 'rotate3d(1, 1, 0, 45deg)' }}></div>
@@ -112,7 +112,7 @@ const LoadingScreen = ({ onLoadingComplete }) => {
     ),
     // Final closing animation
     () => (
-      <div className="w-11 h-11 relative">
+      <div className="w-8 h-8 relative">
         <div className="absolute inset-0">
           {[...Array(4)].map((_, i) => (
             <div
@@ -120,12 +120,13 @@ const LoadingScreen = ({ onLoadingComplete }) => {
               className="absolute inset-0 border-2 border-cyan-400 rounded-full"
               style={{
                 animation: `ping 1s ease-out infinite ${i * 0.2}s`,
-                opacity: 1 - (i * 0.2)
+                opacity: 0.7 - (i * 0.2),
+                transform: `scale(${0.75})`
               }}
             />
           ))}
         </div>
-        <div className="absolute inset-[40%] bg-cyan-500 rounded-full animate-pulse"></div>
+        <div className="absolute inset-[40%] bg-cyan-500 rounded-full animate-pulse opacity-70"></div>
       </div>
     ),
   ];

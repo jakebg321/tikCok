@@ -3,7 +3,7 @@ import { AlertCircle, Clock } from 'lucide-react';
 import { useMemeScanner } from '../hooks/useMemeScanner';
 import memeData from '../data/meme_data.json';
 import tiktokData from '../data/tiktok_data1.json';
-import youtubeData from '../data/youtube_data.json';
+import youtubeData from '../data/youtube_data1.json';
 import AnimatedBackground from '../components/AnimatedBackground';
 import StatsOverview from '../components/MemeScanner/StatsOverview';
 import MemeAnalytics from '../components/MemeScanner/MemeAnalytics';

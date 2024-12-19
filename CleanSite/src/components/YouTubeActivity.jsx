@@ -1,5 +1,5 @@
 import { useState, useCallback, useEffect, useRef } from 'react';
-import youtubeData from '../data/youtube_data.json';
+import youtubeData from '../data/youtube_data1.json';
 
 const SCAN_DURATION = 12000;
 const HTML_SCROLL_SPEED = 100;
